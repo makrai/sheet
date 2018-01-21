@@ -1,6 +1,7 @@
 \include "deutsch.ly"
 \version "2.10.33"
   \relative d' {
+  \tempo 4 = 66
 \key d \major
   h4 h'8 fis gis4 e16 h e8 cis4
    cis'8 a fis4 d16 a d8 h4 h'
