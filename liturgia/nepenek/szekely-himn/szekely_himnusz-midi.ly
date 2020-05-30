@@ -18,7 +18,7 @@ trackAchannelA = {
 
   \key b \major
     
-    \set Staff.instrumentName = "by"
+  \set Staff.instrumentName = "by"
   
   % [TEXT_EVENT] creator: 
   
@@ -45,16 +45,18 @@ trackBchannelA = \lyricmode {
   "mer"8 "re" "visz" "a" "vég"4 "zet,"4. "Gö"8 "rön" "gyös" 
   "ú"4 "ton," 
   | % 6
-  "sö"8 "tét" "éj"8. "je"16 "len." " " " "8 "Ve"8 "zesd" "még" 
-  "egy"4 "szer" 
-  | % 8
-  "győ"8 "ze" "lem" "re" "né"4 "ped,"4. "Csa"8 "ba" "ki" "rály"4 
-  "fi," 
-  | % 10
-  "csil"8 "lag" "ös" "vé" "nyen!" " " " " "Ma"8 "rok" "nyi" "szé"4 
+  "sö"8 "tét" "éj"8. "je"16 "len."8*5 
+%  "Ve"8 "zesd" "még" 
+%  "egy"4 "szer" 
+%  | % 8
+%  "győ"8 "ze" "lem" "re" "né"4 "ped,"4. "Csa"8 "ba" "ki" "rály"4 
+%  "fi," 
+%  | % 10
+%  "csil"8 "lag" "ös" "vé" "nyen!"8*5 _ _ 
+  "Ma"8 "rok" "nyi" "szé"4 
   "kely" 
   | % 12
-  "por"8 "lik," "mint" "a" "szik "4 _ "la,"4. _ "Né"8 "pek" "har" 
+  "por"8 "lik," "mint" "a" "szik"4 "la,"4. "Né"8 "pek" "har" 
   "cá"4 "nak" 
   | % 14
   "zaj"8 "ló" "ten" "ge" "rén."8*5 "Fe"8 "jünk" "az" "ár,"4. 
@@ -73,67 +75,59 @@ trackB = <<
 
 trackCchannelA = {
   
-  \set Staff.instrumentName = ":soprano"
-  
-
   \key b \major
   
 }
 
 trackCchannelB = {
   
-  \set Staff.instrumentName = ":tenor"
-  
-
   \key b \major
   
 }
 
-trackCchannelC = \relative c {
-  \key b \major
+right = \relative c {
   \voiceOne
-  <d'' f, d b' >4 <d c, d fis>8. c16 <b, d g b >4 <c' c, b es >4 
+  <b'' d>4 d8. c16 <g b>4 c
   | % 2
-  <f, d b>4 <f d a>8. <es c >16 <d b>2 
+  <f, d >4 <f d >8. <es c >16 d2 
   | % 3
-  r8 f d f g4 g 
+  r8 <f d b> <d b f> <f d b> <g es b g>4 <g es b g> 
   | % 4
-  f8 f d f <b d, >4 <b es, >4 
+    <f d b>8 <f d b> <d b f> <f d b> <b g d b>4 <b g es b>4 
   | % 5
-  r8 <f b, >8 <d b' >8 <a' g c >8 <a d fis, >4 <b d f, >4 
+  r8 <f d b >8 <d f b >8 <c g' a c >8 <d fis a d>4 <d f h d>4 
   | % 6
-  <c es g, es>8 <c g c,>8 <d, f> <c es> <d b >8 <c es >8 <b d >4 
-  | % 7
-  r8 f' d f g4 g 
-  | % 8
-  f8 f d f <d b' >4 <b' es, >4 
-  | % 9
-  r8 <f b, >8 <b d, >8 <a c g >8 <d fis, a >4 <b d f, >4 
-  | % 10
-  <es c >8 <c g >8 <f, b >8 <a es >8 <b, d >8 <c es >8 
-  <b d >4 
+  <c' es >8 c8 b8. a16 b2 % f, es <d b >8 <c es >8 <b d >4 
+%  | % 7
+%  r8 f d f g4 g 
+%  | % 8
+%  f8 f d f <d b' >4 <b' es, >4 
+%  | % 9
+%  r8 <f b, >8 <b d, >8 <a c g >8 <d fis, a >4 <b d f, >4 
+%  | % 10
+%  <es c >8 <c g >8 <f, b >8 <a es >8 <b, d >8 <c es >8 <b d >4 
   | % 11
-  r8 d <d cis >8 <d c >8 <d g b, >4 <d b g' >4 
+  r8 d, <d cis >8 <d c >8 <d g b, >4 <d b g' >4 
   | % 12
-  b'8 b <g a es >8 <g e >8 a, g b a 
+  <es g b>8 <es g b> <es g a> <e g> d4 d
   | % 13
-  r8 d <d des >8 <d c >8 <d g b, >4 <d g b, >4 
+  r8 d <d cis >8 <d c >8 <d g b, >4 <b es g>
   | % 14
-  <f d >8 <g es >8 <f d >8 <es c >8 <d b >2 
+  <f' d >8 <g es >8 <f d >8 <es c >8 <d b >2 
   | % 15
-  r8 f d f <es g >4. <es g >8 
+  r8 <f d b> <d b f> <f d b> <g es b g>4. <g es b g>8
   | % 16
-  f f d f <d b' >4 <b' es, >4 
+    <f d b>8 <f d b> <d b f> <f d b> <b g d b>4 <b g es b>4 
   | % 17
-  r8 <f b, >8 <b d, >8 <g c a >8 <a d fis, >4 <b d f, >4 
+  r8 <f d b >8 <d f b >8 <c g' a c >8 <d fis a d>4 <d f h d>4 
   | % 18
-  <es c >8 <c g >8 f, es <b d >8 <c es >8 <b d >4 
+  <c' es >8 c8 b8. a16 b2 % f, es <d b >8 <c es >8 <b d >4 
 %  | % 19
-%  r8 d <d des >8 <d c >8 <g b, d >4 <d g b, >4 
+%  r8 d <d cis >8 <d c >8 <g b, d >4 <d g b, >4 
 %  | % 20
 %  b'8 b <es, g a >8 <g e >8 a, g b a 
 %  | % 21
-%  r8 d <d des >8 <d c >8 <d g b, >4 <d b g' >4 
+%  r8 d <d cis >8 <d c >8 <d g b, >4 <d b g' >4 
 %  | % 22
 %  <f d >8 <g es >8 <f d >8 <es c >8 <d b >2 
 %  | % 23
@@ -144,93 +138,91 @@ trackCchannelC = \relative c {
 %  r8 <f b, >8 <b d, >8 <a c g >8 <a d fis, >4 <b f d' >4 
 %  | % 26
 %  <es c >8 <c g >8 f, es <b d >8 <c es >8 <b d >4 
-  | % 27
-  <b' d f, >4 d8. c16 <b d, g >4 <c, es c' >4 
-  | % 28
-  <f d >4 <f d >8. <es c >16 d2 
-  | % 29
+%  | % 27
+%  <b' d f, >4 d8. c16 <b d, g >4 <c, es c' >4 
+%  | % 28
+%  <f d >4 <f d >8. <es c >16 d2 
   
 }
 
-trackCchannelCvoiceB = \relative c {
+rightvoiceB = \relative c {
   \voiceThree
-  r4 <d' fis >4 r8*13 b8*7 
+  <d' f>4 <c d fis> <b d> <b c es>
   | % 4
-  b2 r4*7 b'8. a16 b2 
-  | % 7
-  r8 b,8*7 
-  | % 8
-  b2 r1*2 b'2 
+  b4 a b2
+  s1 s s2 s4*2 
+  % 6
+  <es g>8 <c g'> <d f> <c es> <b d> <c es> <b d>4
+%  | % 7
+%  s8 b8*7 
+%  | % 8
+%  b2 s b' 
   | % 11
-  r1 
+  s1 
   | % 12
-  es,4 r4 d d 
+  b8 b a a <fis a> <e g> <g b> <fis a>
   | % 13
-  r8*17 b8*7 
+  s1 
+  % 14
+  a2 s 
+  % 15
+  s8 s8*7 
   | % 16
-  b2 r4*7 b'8. a16 b2 
-  | % 19
-  r1 
-  | % 20
-  es,4 r4 d d 
-  | % 21
-  r8*17 b8*7 
-  | % 24
-  b2 r4*7 b'8. a16 b2 
-  | % 27
-  r4 <d, fis >4 
+  s1 s 
+  % 18
+  <es' g>8 <c g'> <d f> <c es> <b d> <c es> <b d>4
+%  | % 19
+%  s1 
+%  | % 20
+%  es,4 s4 d d 
+%  | % 21
+%  s8*17 b8*7 
+%  | % 24
+%  b2 s4*7 b'8. a16 b2 
+%  | % 27
+%  s4 <d, fis >4 
 }
 
-trackCchannelCvoiceC = \relative c {
-  \voiceFour
-  r2*5 es'2 
-  | % 4
-  r2*7 es2 
-  | % 8
-  
-}
-
-trackCchannelD = \relative c {
-  \key b \major
-  <f b, b' >4 <fis d a >4 <d g g, >4 <ges ges, >4 
+left = \relative c {
+  <b f' b>4 <a d fis>4 <d g g, >4 <ges ges,> 
   | % 2
-  <f f,> <f, f,> <b b,>2 
+  <f f,> <f, f,> <b b,>2
   | % 3
-  <f' b, >2 <g es >2 
+  <b, f' b>4 <b f' b> <es b' es> <es b' es>
   | % 4
-  b,4 a g8 f es4 
+  <b f' b> <a a'> <g g'>8 <f f'> <es es'>4
   | % 5
-  f f'8 <c' es, >8 <a d, >4 <g g, >4 
+  <f f'> <f' f'>8 <es es'> <d d'>4 <g, g'> 
   | % 6
-  <c, c,>8 <es es,>8 <f f,>4 f8 ges f4 
-  | % 7
-  <f b, >2 <g es >2 
-  | % 8
-  b,4 a g8 f es4 
-  | % 9
-  f f'8 <c' es, >8 <a d, >4 <g g, >4 
-  | % 10
-  <es' c, >8 <es, c' >8 d' c f, fis f4 
+  <c c'>8 <es es'> <f f'>4 b2
+%  | % 7
+%  <f' b, >2 <g es >2 
+%  | % 8
+%  b,4 a g8 f es4 
+%  | % 9
+%  f f'8 <c' es, >8 <a d, >4 <g g, >4 
+%  | % 10
+%  <es' c, >8 <es, c' >8 d' c f, ges f4 
   | % 11
-  d,2 <g d' >2 
+  d,2 <g d' g>4 <g d' g> 
   | % 12
-  <b' c, >4 c,8 cis fis e g fis 
+  c4 c8 cis d b e d
   | % 13
-  d,2 <d' g, >2 
+  r d e fis <g, d' g>4 <es b' es>
   | % 14
-  f,4 g8 a b a b f 
+  f'2 f
   | % 15
-  <f' b, >2 <g es >2 
+  <b,, f' b>4 <b f' b> <es b' es> <es b' es> 
   | % 16
-  b,4 a g8 f es4 
+  <b f' b> <a a'> <g g'>8 <f f'> <es es'>4
   | % 17
-  f f'8 <c' es, >8 d, e16 fis g4 
+  <f f'>4 <f' f'>8 <es es'> <d d'> <e e'>16 <fis fis'> <g g'>8 <g, g'>
   | % 18
-  <es' c, >8 <c es, >8 d c f, fis f4 
+  <c c'>8 <es es'> <f f'>4 f'8 ges f4
 %  | % 19
 %  d,2 <d' g, >2 
 %  | % 20
-%  <b' c, >4 c,8 des fis e g fis 
+%  <b' c, >4 c,8 cis fis e g fis 
 %  | % 21
 %  d,2 <d' g, >2 
 %  | % 22
@@ -243,94 +235,91 @@ trackCchannelD = \relative c {
 %  f f'8 <c' es, >8 d, e16 fis g4 
 %  | % 26
 %  <es' c, >8 <c es, >8 d c f, fis f4 
-  | % 27
-  <f b b, d' >4 <c' a, d fis >4 <d, g g, b' >4 <fis b fis, >4 
-  | % 28
-  f, f b2 
-  | % 29
+%  | % 27
+%  <f b b, d' >4 <c' a, d fis >4 <d, g g, b' >4 <fis b fis, >4 
+%  | % 28
+%  f, f b2 
   
 }
 
-trackCchannelDvoiceB = \relative c {
+leftvoiceB = \relative c {
   \voiceTwo
-  r1 
+  s1 
   | % 2
-  <f b >1 
+  s1 
   | % 3
-  r1 
+  s1 
   | % 4
-  f2 g 
+  s2 s 
   | % 5
-  b4. r8*7 f4 b,2 
-  | % 7
-  r1 
-  | % 8
-  f'2 g 
-  | % 9
-  b4. r8*7 f4 b,2 
+  s1 
+  % 6
+  s2 f8 ges f4
+%  | % 7
+%  s1 
+%  | % 8
+%  f2 g 
+%  | % 9
+%  b4. s8*7 f4 b,2 
   | % 11
-  r8 d e fis r2. a4 d,2 
+  s8 d e fis s2 c,4 c8 cis d2
   | % 13
-  r8 d e fis r2 
+  d2 s
   | % 14
-  f f 
+  f4 g8 a b a b f 
   | % 15
-  r1 
+  s1 
   | % 16
-  f2 g 
+  s2 s 
   | % 17
-  b4. r8 a4 r8 g, 
+  s4. s8 s4 s8 s
   | % 18
-  r4 f' b,2 
-  | % 19
-  r8 d e fis r2. a4 d,2 
-  | % 21
-  r8 d e fis r2 
-  | % 22
-  f f 
-  | % 23
-  r1 
-  | % 24
-  f2 g 
-  | % 25
-  b4. r8 a4 r8 g, 
-  | % 26
-  r4 f' b,2 
-  | % 27
-  r1 
-  | % 28
-  <f' b >1 
-  | % 29
+  s2 b
+%  | % 19
+%  s8 d e ges s2. a4 d,2 
+%  | % 21
+%  s8 d e fis s2 
+%  | % 22
+%  f f 
+%  | % 23
+%  s1 
+%  | % 24
+%  f2 g 
+%  | % 25
+%  b4. s8 a4 s8 g, 
+%  | % 26
+%  s4 f' b,2 
+%  | % 27
+%  s1 
+%  | % 28
+%  <f' b >1 
   
 }
 
-trackC = <<
-
-  
+trackC = << 
   \context Voice = voiceA \trackCchannelA
-  \context Voice = voiceB \trackCchannelB
-  \context Voice = voiceC \trackCchannelC
-  \context Voice = voiceD \trackCchannelCvoiceB
-  \context Voice = voiceE \trackCchannelCvoiceC
-  \context Voice = voiceF \trackCchannelD
-  \context Voice = voiceG \trackCchannelDvoiceB
+  \context Voice = voiceC \right
+  \context Voice = voiceD \rightvoiceB
+>>
+
+trackD = <<
+
+  \clef bass
+  
+  \context Voice = voiceA \trackCchannelB
+  \context Voice = voiceF \left
+  \context Voice = voiceG \leftvoiceB
 >>
 
 \score {
   \new PianoStaff 
-\transpose b c' 
-{
+%  \transpose b c' {
   <<
-    \new Staff = upper { \new Voice = "singer" \trackCchannelC 
-\trackCchannelCvoiceB
-    }
-
-  \new Lyrics \lyricsto "singer" \trackBchannelA
-    \new Staff = lower { 
-  \clef bass
-    \trackCchannelD }
+    \new Staff = upper { \new Voice = "voiceC" \trackC }
+  \new Lyrics \lyricsto "voiceC" \trackBchannelA
+    \new Staff = lower { \trackD }
   >>
-  }
+%    }
     \layout { }
   \midi { }
 }
