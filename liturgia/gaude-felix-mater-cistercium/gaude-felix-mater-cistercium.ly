@@ -42,7 +42,7 @@ sopWords = \lyricmode {
 
 
   \set stanza = #"2." 
-Arc -- ha No -- e cont -- ra di -- lu -- vi -- um sal -- van -- do -- rum al -- ti -- or ca -- me -- ra,
+Ar -- cha No -- e cont -- ra di -- lu -- vi -- um sal -- van -- do -- rum al -- ti -- or ca -- me -- ra,
 Tu co -- lum -- ba de -- fe -- rens fo -- li -- um o -- li -- va -- rum pa -- cis sig -- ni -- fe -- ra,
 Sca -- la Ja -- cob vi -- sa per som -- ni -- um pæ -- ni -- ten -- tes mit -- tis ad æ -- the -- ra,
 Cha -- ri -- ta -- tis dis -- per -- gens mu -- ne -- ra, sac -- cus ci -- phi Jo -- seph pe -- cu -- li -- um.
@@ -79,7 +79,7 @@ altoMusic = \relative {
 }
 altoWords =\lyricmode {
   \set stanza = #"1." 
-Gau -- de, fe -- lix ma -- ter Cis -- ter -- ci -- um, fir -- ma -- men -- ti spe -- ra stel -- li -- ge -- ra,
+Gau -- de, fe -- lix ma -- ter Cis -- ter -- ci -- um, fir -- ma -- men -- ti sme -- ra stel -- li -- ge -- ra,
 Pa -- ra -- di -- sus lig -- no -- rum om -- ni -- um quem Di -- vi -- na plan -- ta -- vit dex -- te -- ra!
 Fons e -- rum -- pens in quad -- rif -- lu -- vi -- um quo vir -- tu -- tum ri -- gan -- tur o -- le -- ra!
 Te fun -- da -- vit Vir -- go per -- pe -- tu -- a, Tri -- ni -- ta -- tis sac -- rum tric -- li -- ni -- um.
@@ -114,7 +114,7 @@ bassWords = \lyricmode {
 Ru -- bus ar -- dens monst -- rans pro -- di -- gi -- um cas -- ti -- ta -- tis vi -- res per o -- pe -- ra,
 Vir -- ga du -- cis dans ma -- re per -- vi -- um, vi -- ta for -- ti trans -- cen -- dens as -- pe -- ra,
 Tu co -- lum -- na duct -- rix fi -- de -- li -- um per de -- ser -- tum ad mon -- tis su -- pe -- ra,
-Tes -- ta -- men -- ti dans arc -- ha fo -- de -- ra e -- le -- va -- tus clype -- us for -- ti -- um.
+Tes -- ta -- men -- ti dans ar -- cha fo -- de -- ra e -- le -- va -- tus clype -- us for -- ti -- um.
   ho ho ho ho
 }
 
