@@ -55,7 +55,7 @@ tenorWords = \lyricmode {
 }
 bassWords = \lyricmode {
   \set stanza = #"6."
-  Hű gyer -- me -- ked les -- zek min -- dig,
+  Hű gyer -- me -- ked le -- szek min -- dig,
   Í -- gé -- rem ezt, Szűz -- a -- nyám.
   Ó, el ne hagyj en -- gem so -- ha,
   Ol -- tal -- ma -- zó Pát -- ró -- nám!
