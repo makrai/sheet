@@ -55,7 +55,7 @@ tenorWords = \lyricmode { \set stanza = #"3."
 bassWords = \lyricmode { \set stanza = #"5."
   Di -- cső -- ség az ör -- ök A -- tyá -- nak,
   és ér -- tünk szü -- le -- tett Fi -- á -- nak,
-  s mind -- kett -- ő Szent Lel -- ké -- nek, a ma -- laszt kút -- fej -- é -- nek:
+  s_mind -- kett -- ő Szent Lel -- ké -- nek, a ma -- laszt kút -- fej -- é -- nek:
   di -- cső -- ség, di -- cső -- ség Is -- ten -- nek!
 }
 
@@ -71,18 +71,18 @@ bassWords = \lyricmode { \set stanza = #"5."
       \new Staff = "women" <<
         \new Voice = "sopVoice" { \voiceOne \sopMusic }
         \new Voice = "altoVoice" { \voiceTwo \altoMusic }
-        \new Lyrics \lyricsto "sopVoice" \sopWords
-        \new Lyrics \lyricsto "altoVoice" \altoWords
+        \new Lyrics \with { alignAboveContext = "women" }
+          {\lyricsto "sopVoice" \sopWords }
+        \new Lyrics = "altoLyrics" \lyricsto "sopVoice" \altoWords
       >>
       % Férfi szólamok (bal kéz)
       \new Staff = "men" <<
         \clef bass
         \new Voice = "tenorVoice" { \voiceOne \tenorMusic }
         \new Voice = "bassVoice" { \voiceTwo \bassMusic }
-        \new Lyrics \lyricsto "tenorVoice" \tenorWords
-        \new Lyrics \lyricsto "bassVoice" \bassWords
+        \new Lyrics \lyricsto "sopVoice" \tenorWords
+        \new Lyrics \lyricsto "sopVoice" \bassWords
       >>
     >>
   >>
 }
-
