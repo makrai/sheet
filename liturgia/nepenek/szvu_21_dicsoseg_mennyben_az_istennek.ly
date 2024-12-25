@@ -64,25 +64,29 @@ bassWords = \lyricmode { \set stanza = #"5."
 % jászolodnál fogadjuk, hogy a vétket elhagyjuk,
 % ó, Jézus, ne vess meg, hallgass meg!
 
+#(set-default-paper-size "a4landscape")
+
 \score {
-  <<
-    \new GrandStaff <<
+  \transpose c d {
+    <<
+      \new GrandStaff <<
       % Női szólamok (jobb kéz)
       \new Staff = "women" <<
-        \new Voice = "sopVoice" { \voiceOne \sopMusic }
-        \new Voice = "altoVoice" { \voiceTwo \altoMusic }
-        \new Lyrics \with { alignAboveContext = "women" }
-          {\lyricsto "sopVoice" \sopWords }
-        \new Lyrics = "altoLyrics" \lyricsto "sopVoice" \altoWords
+      \new Voice = "sopVoice" { \voiceOne << \global \sopMusic >> }
+    \new Voice = "altoVoice" { \voiceTwo << \global \altoMusic >> }
+    \new Lyrics \with { alignAboveContext = "women" }
+    {\lyricsto "sopVoice" \sopWords }
+    \new Lyrics = "altoLyrics" \lyricsto "sopVoice" \altoWords
       >>
       % Férfi szólamok (bal kéz)
       \new Staff = "men" <<
-        \clef bass
-        \new Voice = "tenorVoice" { \voiceOne \tenorMusic }
-        \new Voice = "bassVoice" { \voiceTwo \bassMusic }
-        \new Lyrics \lyricsto "sopVoice" \tenorWords
-        \new Lyrics \lyricsto "sopVoice" \bassWords
+      \clef bass
+      \new Voice = "tenorVoice" { \voiceOne << \global \tenorMusic >> }
+    \new Voice = "bassVoice" { \voiceTwo << \global \bassMusic >> }
+    \new Lyrics \lyricsto "sopVoice" \tenorWords
+      \new Lyrics \lyricsto "sopVoice" \bassWords
       >>
-    >>
-  >>
+      >>
+      >>
+  }
 }
