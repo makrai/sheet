@@ -32,24 +32,31 @@ bassMusic = \relative a {
 }
 
 sopWords = \lyricmode { \set stanza = #"1."
-  Dicsőség mennyben az Istennek! 
- Dicsőség mennyben az Istennek! 
- Az angyali seregek vígan így énekelnek: 
- Dicsőség, dicsőség Istennek!
- }
-
-altoWords = \lyricmode { \set stanza = #"2."
-   Békesség, földön az embernek!
-Békesség földön az embernek!
-Kit az igaz szeretet a kis Jézushoz vezet:
-Békesség, békesség embernek!
+  Di -- cső -- ség menny -- ben az Is -- ten -- nek!
+  Di -- cső -- ség menny -- ben az Is -- ten -- nek!
+  Az an -- gya -- li se -- re -- gek ví -- gan így é -- ne -- kel -- nek:
+  Di -- cső -- ség, di -- cső -- ség Is -- ten -- nek!
 }
 
-tenorWords = \lyricmode { \set stanza = #"3. "
-   Dicsérjük a szent angyalokkal,
-imádjuk a hív pásztorokkal
-az isteni gyermeket, ki minket így szeretett,
-dicsérjük, imádjuk és áldjuk!
+altoWords = \lyricmode { \set stanza = #"2."
+  Bé -- kes -- ség, föl -- dön az em -- ber -- nek!
+  Bé -- kes -- ség föl -- dön az em -- ber -- nek!
+  Kit az i -- gaz sze -- re -- tet a kis Jé -- zus -- hoz ve -- zet:
+  Bé -- kes -- ség, bé -- kes -- ség em -- ber -- nek!
+}
+
+tenorWords = \lyricmode { \set stanza = #"3."
+  Di -- csér -- jük a szent an -- gya -- lok -- kal,
+  i -- mád -- juk a hív pász -- to -- rok -- kal
+  az is -- te -- ni gyer -- me -- ket, ki min -- ket így sze -- re -- tett,
+  di -- csér -- jük, i -- mád -- juk és áld -- juk!
+}
+
+bassWords = \lyricmode { \set stanza = #"5."
+  Di -- cső -- ség az ör -- ök A -- tyá -- nak,
+  és ér -- tünk szü -- le -- tett Fi -- á -- nak,
+  s mind -- kett -- ő Szent Lel -- ké -- nek, a ma -- laszt kút -- fej -- é -- nek:
+  di -- cső -- ség, di -- cső -- ség Is -- ten -- nek!
 }
 
 % (4) Kis Jézus, ne vess meg bennünket,
@@ -57,29 +64,25 @@ dicsérjük, imádjuk és áldjuk!
 % jászolodnál fogadjuk, hogy a vétket elhagyjuk,
 % ó, Jézus, ne vess meg, hallgass meg!
 
-bassWords = \lyricmode { \set stanza = #"5."
-   Dicsőség az örök Atyának,
-és értünk született Fiának,
-s mindkettő Szent Lelkének, a malaszt kútfejének:
-dicsőség, dicsőség Istennek!
-}
-
 \score {
   <<
-    \new ChoirStaff <<
-      \new Lyrics = "sopranos" \lyricsto sopMusic \sopWords
+    \new GrandStaff <<
+      % Női szólamok (jobb kéz)
       \new Staff = "women" <<
-        \new Voice = "sopranos" { \voiceOne \sopMusic }
-        \new Voice = "altos" { \voiceTwo \altoMusic }
+        \new Voice = "sopVoice" { \voiceOne \sopMusic }
+        \new Voice = "altoVoice" { \voiceTwo \altoMusic }
+        \new Lyrics \lyricsto "sopVoice" \sopWords
+        \new Lyrics \lyricsto "altoVoice" \altoWords
+      >>
+      % Férfi szólamok (bal kéz)
+      \new Staff = "men" <<
+        \clef bass
+        \new Voice = "tenorVoice" { \voiceOne \tenorMusic }
+        \new Voice = "bassVoice" { \voiceTwo \bassMusic }
+        \new Lyrics \lyricsto "tenorVoice" \tenorWords
+        \new Lyrics \lyricsto "bassVoice" \bassWords
       >>
     >>
-    \new Staff = "men" <<
-      \clef bass
-      \new Voice = "tenors" { \voiceOne \tenorMusic }
-      \new Voice = "basses" { \voiceTwo \bassMusic }
-    >>
-    \new Lyrics = "altos" \lyricsto altoMusic \altoWords
-    \new Lyrics = "tenors" \lyricsto tenorMusic \tenorWords
-    \new Lyrics = "basses" \lyricsto bassMusic \bassWords
   >>
 }
+
