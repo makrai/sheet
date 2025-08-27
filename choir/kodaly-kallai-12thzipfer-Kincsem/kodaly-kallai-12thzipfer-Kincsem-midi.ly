@@ -15,27 +15,11 @@ trackAchannelA = {
 
 
   \key f \major
-    
-  \time 4/4 
-  
-  \tempo 4 = 54 
-  \skip 1*35 
-  \time 3/2 
-  \skip 1. 
-  | % 37
-  
-  \time 6/2 
-  \skip 1*3 
-  | % 38
-  
-  \time 2/2 
-  \skip 1*4 
-  \time 3/2 
-  \skip 1. 
-  | % 43
-  
-  \time 2/2 
-  
+
+  \time 4/4
+
+  \tempo 2 = 88
+
 }
 
 trackA = <<
@@ -44,12 +28,12 @@ trackA = <<
 
 
 trackBchannelA = {
-  
+
   \set Staff.instrumentName = "S"
-  
+
 
   \key f \major
-  
+
 }
 
 trackB = <<
@@ -58,12 +42,12 @@ trackB = <<
 
 
 trackCchannelA = {
-  
+
   \set Staff.instrumentName = "A"
-  
+
 
   \key f \major
-  
+
 }
 
 trackC = <<
@@ -72,90 +56,82 @@ trackC = <<
 
 
 trackDchannelA = {
-  
+
   \set Staff.instrumentName = "T"
-  
+
 
   \key f \major
-  
+
 }
 
 trackDchannelB = \relative c {
-  d''4*256/384 r4*128/384 a4*256/384 r4*128/384 d4*64/384 r4*32/384 d8 
-  r16 c4*256/384 r4*128/384 
+  d''4 a4 d16 d8. c4
   | % 2
-  b4*28/384 r4*164/384 b4*128/384 r4*64/384 c4*28/384 r4*164/384 c4*128/384 
-  r4*64/384 b128*5 r128*11 a128*5 r128*11 b128*5 r128*27 
+  b16\staccato r b8\tenuto c16\staccato r c8\tenuto
+ b8\staccato a8\staccato b8\staccato r
   | % 3
-  c4*256/384 r4*128/384 bes4*256/384 r4*128/384 c4*64/384 r4*32/384 a8 
-  r16 aes4*256/384 r4*128/384 
+  c4 bes4 c16 a8. gis4
   | % 4
-  a4*28/384 r4*164/384 a4*128/384 r4*64/384 bes4*28/384 r4*164/384 bes4*128/384 
-  r4*64/384 a128*5 r128*11 g128*5 r128*11 a128*5 r128*27 
+  a16\staccato r a8\tenuto bes16\staccato r bes8\tenuto
+ a8\staccato g8\staccato a8\staccato r
   | % 5
-  f4*256/384 r4*128/384 ges4*256/384 r4*128/384 g4*64/384 r4*32/384 g8 
-  r16 g4*256/384 r4*128/384 
+  f4 fis4 g16 g8. g4
   | % 6
-  ges4*28/384 r4*164/384 ges4*128/384 r4*64/384 ges4*28/384 r4*164/384 ges4*128/384 
-  r4*64/384 ges128*5 r128*11 ges128*5 r128*11 ges128*5 r128*27 
-  | % 7
-  g4*256/384 r4*128/384 g4*256/384 r4*128/384 g r4*64/384 g4*128/384 
-  r4*64/384 ges4*256/384 r4*128/384 
+  fis16\staccato r fis8\tenuto fis16\staccato r fis8\tenuto
+ fis8\staccato fis8\staccato fis8\staccato r
+  | % 7 Mondjon jószeren-
+  g4 g4 g8 g fis4
   | % 8
-  g4*28/384 r4*164/384 g128*5 r128*11 a4*28/384 r4*164/384 a128*5 
-  r128*11 b4*92/384 r4*100/384 c4*92/384 r4*100/384 d4*92/384 r4*100/384 c4*128/384 
-  r4*64/384 
+  g16\staccato r g8\staccato a16\staccato r a8\staccato
+ b8\staccato c8\staccato d8\staccato c8\tenuto
+
   | % 9
-  f,4*256/384 r4*128/384 ges4*256/384 r4*128/384 g4*64/384 r4*32/384 g8 
-  r16 g4*256/384 r4*128/384 
+  f,4 fis4 g16 g8. g4
   | % 10
-  ges4*28/384 r4*164/384 ges4*128/384 r4*64/384 ges4*28/384 r4*164/384 ges4*128/384 
-  r4*64/384 ges128*5 r128*11 ges128*5 r128*11 ges128*5 r128*27 
+  fis16\staccato r fis8\tenuto fis16\staccato r fis8\tenuto
+ fis8\staccato fis8\staccato fis8\staccato r
   | % 11
-  g4*256/384 r4*128/384 g4*256/384 r4*128/384 g r4*64/384 g4*128/384 
-  r4*64/384 ges4*256/384 r4*128/384 
+  g4 g4 g8 g fis4
   | % 12
-  g4*28/384 r4*164/384 g128*5 r128*11 a4*28/384 r4*164/384 a128*5 
-  r128*11 b4*92/384 r4*100/384 c4*92/384 r4*100/384 b4*92/384 r4*292/384 
+  g16\staccato r g8\staccato a16\staccato r a8\staccato 
+ b8\staccato c8\staccato b8\staccato r
   | % 13
-  c4*3020/384 r4*52/384 
-  | % 15
-  d4*256/384 r4*128/384 d4*256/384 r4*128/384 a4*64/384 r4*32/384 a8 
-  r16 d4*256/384 r4*128/384 
+  c1 c
+  | % 15 Beteg vagyok én
+  d4 d4 a16 a8. d4
   | % 16
-  e4*28/384 r4*164/384 f4*128/384 r4*64/384 e4*28/384 r4*164/384 f4*128/384 
-  r4*64/384 e128*5 r128*11 f128*5 r128*11 e128*5 r128*27 
-  | % 17
-  d4*256/384 r4*128/384 a4*256/384 r4*128/384 f'4*64/384 r4*32/384 e4*188/384 
-  r4*4/384 d4*64/384 r4*32/384 c4*188/384 r4*4/384 b4*128/384 r4*64/384 
+  e16\staccato r f8\tenuto e16\staccato r f8\tenuto
+ e8\staccato f8\staccato e8\staccato r
+  | % 17 Meg is halok én
+  d4 a4 f'16 e8
+ d16 c8 b8\tenuto
   | % 18
-  c4*92/384 r4*100/384 f4*128/384 r4*64/384 e4*92/384 r4*100/384 f4*128/384 
-  r4*64/384 e128*5 r128*11 f128*5 r128*11 e128*5 r128*27 
-  | % 19
-  d4*256/384 r4*128/384 ees4*256/384 r4*128/384 d r4*64/384 d4*128/384 
-  r4*64/384 d4*256/384 r4*128/384 
+  c8\staccato f8\tenuto e8\staccato f8\tenuto
+ e8\staccato f8\staccato e8\staccato r
+  | % 19 Érted, kedves ró-
+  d4 ees4 d8 d d4
   | % 20
-  des4*92/384 r4*100/384 d4*128/384 r4*64/384 des4*92/384 r4*100/384 d4*128/384 
-  r4*64/384 des128*5 r128*11 d128*5 r128*11 des128*5 r128*27 
-  | % 21
-  d4*256/384 r4*128/384 ees4*284/384 r4*4/384 c4*64/384 r4*32/384 bes4*128/384 
-  r4*64/384 g4*128/384 r4*64/384 ges4*256/384 r4*128/384 
+  cis8\staccato d8\tenuto cis8\staccato d8\tenuto
+ cis8\staccato d8\staccato cis8\staccato r
+  | % 21 Elhervad az or-
+  d4 ees8. c16 bes8\tenuto
+ g8\tenuto fis4
   | % 22
-  g4*28/384 r4*164/384 a4*128/384 r4*64/384 bes4*28/384 r4*164/384 c4*128/384 
-  r4*64/384 d128*5 r128*11 c128*5 r128*11 bes4*188/384 r4*4/384 a4*128/384 
-  r4*64/384 
+  g16\staccato r a8\tenuto bes16\staccato r c8\tenuto
+ d8\staccato c8\staccato bes8 a8\tenuto
+
   | % 23
-  bes4*256/384 r4*128/384 g4*188/384 r4*4/384 ges4*128/384 r4*64/384 g4*128/384 
-  r4*64/384 g4*128/384 r4*64/384 d'4*256/384 r4*128/384 
+  bes4 g8 fis8\tenuto g8\tenuto
+ g8\tenuto d'4
   | % 24
-  des4*92/384 r4*100/384 d4*128/384 r4*64/384 des4*92/384 r4*100/384 d4*128/384 
-  r4*64/384 des128*5 r128*11 d128*5 r128*11 des128*5 r128*27 
+  cis8\staccato d8\tenuto cis8\staccato d8\tenuto
+ cis8\staccato d8\staccato cis8\staccato r
   | % 25
-  d4*256/384 r4*128/384 ees4*284/384 r4*4/384 c4*64/384 r4*32/384 bes4*128/384 
-  r4*64/384 g4*128/384 r4*64/384 ges4*256/384 r4*128/384 
+  d4 ees8. c16 bes8\tenuto
+ g8\tenuto fis4
   | % 26
-  g4*28/384 r4*164/384 a4*128/384 r4*64/384 b4*28/384 r4*164/384 c4*128/384 
-  r4*64/384 d128*5 r128*11 c128*5 r128*11 b4*188/384 
+  g16\staccato r a8\tenuto b16\staccato r c8\tenuto
+ d8\staccato c8\staccato b8 r
 }
 
 trackD = <<
@@ -165,74 +141,17 @@ trackD = <<
 
 
 trackEchannelA = {
-  
+
   \set Staff.instrumentName = "B"
-  
+
 
   \key f \major
-  
+
 }
 
 trackE = <<
   \context Voice = voiceA \trackEchannelA
 >>
-
-
-trackF = <<
->>
-
-
-trackG = <<
->>
-
-
-trackH = <<
->>
-
-
-trackI = <<
->>
-
-
-trackJ = <<
->>
-
-
-trackK = <<
->>
-
-
-trackL = <<
->>
-
-
-trackM = <<
->>
-
-
-trackN = <<
->>
-
-
-trackO = <<
->>
-
-
-trackP = <<
->>
-
-
-trackQ = <<
->>
-
-
-trackR = <<
->>
-
-
-trackS = <<
->>
-
 
 \score {
   <<
@@ -242,3 +161,4 @@ trackS = <<
   \layout {}
   \midi {}
 }
+\midi{ }
