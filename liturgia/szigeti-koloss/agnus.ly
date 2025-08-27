@@ -14,6 +14,7 @@
 global = {
   \key f \major
   \time 2/4
+  \set Staff.midiInstrument = "electric grand"
 }
 
 % ---------- szólamok ----------
@@ -90,4 +91,5 @@ adj ne -- künk bé -- két!
       >>
     >>
   >>
+\midi { }
 }
