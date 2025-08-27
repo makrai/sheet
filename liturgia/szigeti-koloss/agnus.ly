@@ -3,7 +3,8 @@
 
 \header {
   title = "Missa Hungarica -- Agnus"
-  composer = "Szigeti Kilián dallamára Koloss István összhangzatai"
+    % composer = "Szigeti Kilián dallamára Koloss István összhangzatai" 
+    % Csak a Kyrie elején
   tagline =  "Szeretettel Bélának 1972."
 }
 
