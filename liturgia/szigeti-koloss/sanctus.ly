@@ -28,14 +28,17 @@ rechtsOben = \relative c' {
 rechtsMitte = \relative c' {
  \voiceTwo \global
   r1 r r r r r
-  r4 e4 r d4 cis d r2. d4 c2
+  r4 e4 r d4 r d r2. d4 c2
   }
 
 rechtsUnten = \relative c' {
   \voiceTwo \global
   c2 h4 b d2 c4 cis c h
   <h' e,>4 d, des c b2 e4 d cis c h b~b as
-  <a c>8 <h d> c4 <d f>8 <c e> b4 h h cis c h b~b8 a16 g a4
+  <a c>8 <h d> c4 <d f>8 <c e> b4 <h cis> h cis c h 
+  b~
+   \once \override NoteHead.extra-offset = #'(1 . 0)
+  b8 a16 g a4
 }
 
 linksOben = \relative c {
@@ -54,7 +57,7 @@ linksMitte = \relative c {
 linksUnten = \relative c {
   \voiceThree \stemDown \global
   f4 e d des 
-\override NoteColumn.force-hshift = #0
+  \override NoteColumn.force-hshift = #0
   c h b a as g
   f b es as, des g, c b a d g,2 ges
   f2~f g a4 d g, c f,2

@@ -28,7 +28,7 @@ c,8 d f f f4 \fermata f8 g a a a4 \fermata c8 a b g f4 \fermata  \bar "|."
 rechtsUnten = \relative c' {
 \voiceTwo \global
 c4 c des es d <g es> d4 ces8 <d b> <ces a>4
-c4 d es d cis c b <d gis> <h f>
+c4 d es d cis c b <d gis,> <h f>
 c4 c des es d <g es> d4 ces8 <d b> <ces a>4
 }
 

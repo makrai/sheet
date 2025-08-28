@@ -44,19 +44,17 @@ linksMitte = \relative c {
   \voiceTwo \global
   \repeat volta 2 {
   c4 d e d c d e
-  \override Stem.transparent = ##t
-  f~f
-  \revert Stem.transparent
+  f~
+    \once \override Stem.transparent = ##t
+  f
   e r1
   }
   c4 b a b c d e f
-  \override Stem.transparent = ##t
+    \once \override Stem.transparent = ##t
   f
-  \revert Stem.transparent
   e c d
-  \override Stem.transparent = ##t
+  \once \override Stem.transparent = ##t
   f
-  \revert Stem.transparent
   e
 }
 linksUnten = \relative c, {
