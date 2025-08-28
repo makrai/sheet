@@ -23,7 +23,7 @@ rechtsOben = \relative c' {
   a'8 a g f g4 c, f8 g a4 b8 a g f g2
   c8 d c b a g f c f g a b a4 g 
   c8 c a f b a g4 c,2
-  f8 g a a b a f a g4 g c8 c a f b a g8 d f2 \bar "|."
+  f8 g a a b a f a g4 g c8 c a f b a g8( d) f2 \bar "|."
 }
 rechtsMitte = \relative c' {
  \voiceTwo \global
@@ -67,9 +67,9 @@ textzeile = \lyricmode {
 Szent vagy, szent vagy, szent vagy,
 min -- den --ség U -- ra, Is -- te -- ne!
 Di -- cső -- sé -- ged be -- töl -- ti a mennyet _ és a föl -- det.
-Ho -- zsan -- na a m -- gas -- ság -- ban!
+Ho -- zsan -- na a ma -- gas -- ság -- ban!
 Ál -- dott a -- ki jön az Úr ne -- vé -- ben,
-Ho -- zsan -- na a m -- gas -- ság -- ban!
+Ho -- zsan -- na a ma -- gas -- ság -- ban!
 }
 
 
