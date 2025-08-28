@@ -4,7 +4,7 @@
 \header {
   title = "Missa Hungarica -- Kyrie"
   composer = "Szigeti Kilián dallamára Koloss István összhangzatai"
-  tagline = "Szeretettel Bélának 1972."
+  tagline = "" % Szeretettel Bélának 1972."
 }
 
 % #(set-global-staff-size 16)
@@ -46,6 +46,7 @@ r4 d r f e r4 r2.
 }
 linksUnten = \relative c {
 \voiceThree \stemDown \global
+  \override NoteColumn.force-hshift = #0
 f4 b, es des c f b, g8 c f,4
 d'4 d c b a as g e des
 f'4 b, es des c f b, g8 c f,4
@@ -81,5 +82,6 @@ U -- ram ir -- gal -- mazz!
 >>
 >>
 >>
+  \layout{}
 \midi { }
 }

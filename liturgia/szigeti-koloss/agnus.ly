@@ -3,7 +3,7 @@
 
 \header {
   title = "Missa Hungarica -- Agnus"
-    % composer = "Szigeti Kilián dallamára Koloss István összhangzatai" 
+    % composer = "Szigeti Kilián dallamára Koloss István összhangzatai"
     % Csak a Kyrie elején
   tagline =  "Szeretettel Bélának 1972."
 }
@@ -43,14 +43,27 @@ linksOben = \relative c' {
 linksMitte = \relative c {
   \voiceTwo \global
   \repeat volta 2 {
-  c4 d e d c d e f~f e r1
+  c4 d e d c d e
+  \override Stem.transparent = ##t
+  f~f
+  \revert Stem.transparent
+  e r1
   }
-  c4 b a b c d e f f e c d f e
+  c4 b a b c d e f
+  \override Stem.transparent = ##t
+  f
+  \revert Stem.transparent
+  e c d
+  \override Stem.transparent = ##t
+  f
+  \revert Stem.transparent
+  e
 }
 linksUnten = \relative c, {
   \voiceThree \stemDown \global
+    \override NoteColumn.force-hshift = #0
   \repeat volta 2 {
-  f4 g a g f g a b h b a as g ges 
+  f4 g a g f g a b h b a as g ges
   }
   f4 es d es f g a b h c f, b c2
 }
@@ -62,15 +75,6 @@ ir -- gal -- mazz ne -- künk!
 }
 Is -- ten Bá -- rá -- nya, te el -- ve -- szed a vi -- lág bű -- ne -- it,
 adj ne -- künk bé -- két!
-% U -- ram ir -- gal -- mazz,
-% U -- ram ir -- gal -- mazz,
-% U -- ram ir -- gal -- mazz!
-% Krisz -- tus ke -- gyel -- mezz,
-% Krisz -- tus ke -- gyel -- mezz,
-% Krisz -- tus ke -- gyel -- mezz!
-% U -- ram ir -- gal -- mazz,
-% U -- ram ir -- gal -- mazz,
-% U -- ram ir -- gal -- mazz!
 }
 
 % ---------- kotta ----------
@@ -91,5 +95,6 @@ adj ne -- künk bé -- két!
       >>
     >>
   >>
-\midi { }
+  \layout{}
+\midi {}
 }
