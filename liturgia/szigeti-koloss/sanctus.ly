@@ -66,7 +66,7 @@ linksUnten = \relative c {
 textzeile = \lyricmode {
 Szent vagy, szent vagy, szent vagy,
 min -- den --ség U -- ra, Is -- te -- ne!
-Di -- cső -- sé -- ged be -- töl -- ti a meny -- nyet és a föl -- det.
+Di -- cső -- sé -- ged be -- töl -- ti a mennyet _ és a föl -- det.
 Ho -- zsan -- na a m -- gas -- ság -- ban!
 Ál -- dott a -- ki jön az Úr ne -- vé -- ben,
 Ho -- zsan -- na a m -- gas -- ság -- ban!
