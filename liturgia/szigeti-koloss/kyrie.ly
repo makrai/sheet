@@ -21,9 +21,10 @@ global = {
 % ---------- szólamok ----------
 rechtsOben = \relative c' {
 \voiceOne \global
-c8 d f f f4 \fermata f8 g a a a4 \fermata c8 a b g f4 \fermata 
-a8 f g g f4 \fermata a8 f g g f4 \fermata d8 c f g g4 \fermata 
-c,8 d f f f4 \fermata f8 g a a a4 \fermata c8 a b g f4 \fermata  \bar "|."
+c8 d f f f4 f8 g a a a4 c8 a b g f4 \fermata
+a8 f g g f4 a8 f g g f4 d8 c f g g4 \fermata
+c,8 d f f f4 f8 g a a a4 c8 a b g f4 \fermata
+\bar "|."
 }
 rechtsUnten = \relative c' {
 \voiceTwo \global
