@@ -14,47 +14,34 @@
 
 TimeAndTempo = {
 
-  \time 4/4
 
-  \skip 2
+
   \tempo "Andante" 4 = 100
-  % \partial 2 TODO
+  \time 4/4
+  \partial 2
   \skip 2
   \skip 1*5
-  % \time 8/4
-  \skip 1*1
+  \skip 2. \skip 8
+
   \tempo "Animato" 4 = 120
+  \skip 8
+  \skip 1*1
+  \time 4/4 \skip 1*1
   \skip 1*1
 
-  \time 4/4
-
-  \skip 1*1
-  \skip 1*1
   \tempo "Più mosso" 4 = 120
-  \time 5/4
-  \skip 4*2
-  \skip 4*3
-  | % 12
-
-  \time 4/4
-  \skip 1*3
-  \time 5/4
-  \skip 4*15
-  \time 6/4
-  \skip 1.
-  | % 19
-
-  \time 5/4
-  \skip 4*5
-  | % 20
-
-  \time 4/4
-  \skip 1
-  | % 21
-
+  \time 5/4 \skip 4*5
+  \time 4/4 \skip 1
+  \time 5/4 \skip 4*5
+  \time 3/4 \skip 2.
+  \time 5/4 \skip 4*15
+  \time 6/4 \skip 1.  | % 19
+  \time 5/4 \skip 4*5 | % 20
+  \time 4/4 \skip 1 | % 21
   \time 2/4
 
   \tempo "Con moto" 4 = 120
+  \set Staff.beatStructure = #'(4)
   \skip 2*45
   \tempo "poco sost." 4 = 120
   \skip 2*2
@@ -101,7 +88,7 @@ TimeAndTempo = {
 Key = {
 
   \key d \minor
-  \skip 4*91
+  \skip 4*85
 
   \key c \minor
   \skip 2*79
@@ -115,130 +102,97 @@ Key = {
 
 Soprano = \relative c {
   \voiceOne
-  r2 d'8. d16 d8. d16
-  | % 2
-  a'4 a4*256/384 r4*512/384 a4
-  | % 3
-  d4 d8. c16 d4 a4
-  | % 4
-  f'4. d8 d4 c4
-  | % 5
-  a4 r c2
-  | % 6
-  d2 d2
-  | % 7
-  d2. r8 d,8
-  | % 9
-  e16 f16 g16 f16 e8 d8 b'4 a4
-  | % 10
-  c8 g4 c8 e8 d4 c8
-  | % 11
-  a4 g8 d8 e8 r r
+  % 1. Elközelge húsvet és felméne Jézus
+  d'8. d16 d8. d16 a'4 a4*256/384 r4*512/384
+  a4 d4 d8. c16 d4 a4 f'4. d8 d4 c4 a4 r c2 d2 d2 d2. r8
 
-  g8 | % 12 Più mosso
-  c4 b4 a4 g4 f8 g8 
-  a16 g16 f16 e16 d4 c r r1*3 r8 d8 a'4
-  | % 18
-  g4 f4 dis4 d r4*64/384 e8
-  | % 19
-  f16 g16 a16 b4*64/384 r4*32/384 c4 d2
-  | % 20
-  b r4*128/384 a4 g4 c16 b16 a16 g16
-  | % 21
-  f4*256/384 r4*320/384 c'8 f4 dis4
-  | % 22
-  d4 c4 b8 c4*128/384 r4*64/384 d16 c16 b16 a16
-  | % 23
-  g4 fis4*764/384 r4*11140/384 d4 f r4*64/384 e4 d8 b'4
-  | % 32
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 f r4*64/384 g8 a4
-  | % 34
-  g4 d4 d8 e4*128/384 r4*64/384 fis8 g8
-  | % 35
-  a8 d,4*128/384 r4*448/384 d8 e4*128/384 r4*64/384 fis8 g8
-  | % 36
-  a4 d, r4*64/384 e8 fis4*128/384 r4*64/384 g8 a4
-  | % 37
-  d, r4*256/384 g8 a8 b4*128/384 r4*64/384 c8 d4*320/384 r4*64/384
-  | % 38
-  g,4*128/384 r4*256/384 g8 a8 b4*128/384 r4*64/384 c8 d8 g,4*512/384 r4*64/384 g8 a8 b4*128/384 r4*64/384 c8 d4*128/384 r4*256/384
-  | % 40
-  g, r4*128/384 gis8 g4 f r4*64/384 cis'4
-  | % 41
-  cis4 c4 b4 g' r4*64/384 f4 c8 b4 gis8 b8 c4
-  | % 43
-  b4 f2 fis4*704/384 r4*64/384 gis4*704/384 r4*64/384 b4*704/384 r4*64/384 c4*704/384 r4*64/384 cis4*704/384 r4*64/384 dis8 f4*188/384 r4*4/384 fis4 f4
-  | % 47
-  b, r4*64/384 c8 d8 dis4*128/384 r4*64/384 f4 b, r4*256/384
-  | % 48
-  b8 c8 d8 dis4*128/384 r4*64/384 f4 b, r4*64/384 c8
-  | % 49
-  d8 dis8 f8 b,4*512/384 r4*64/384 b8 c8
-  | % 50
-  cis8 dis8 f4 b, r4*256/384 b8 c8
-  | % 51
-  cis8 dis8 f8 b,4*704/384 r4*64/384 gis8
-  | % 52
-  b8 c8 cis8 c4*188/384 r4*4/384 cis8 dis8 f4*188/384 r4*4/384 e8
-  | % 53
-  f8 g8 f8 e4*188/384 r4*4/384 f8 g8 f8 e4*188/384 r4*4/384
-  | % 54
-  f8 g8 f8 e4*188/384 r4*4/384 f8 g8 gis4*128/384 r4*1024/384 gis,8. b16 c16 b16 gis16 g16
-  | % 56
-  f4 dis4 gis4 dis'4
-  | % 57
-  f8. c16 g16 f16 g16 gis16 b16 gis16 g16 f16 c4*256/384 r4*3968/384 b'8 r16 c16 d16 c16 b16 a16
-  | % 61
-  g4 f4 b4 f'4
-  | % 62
-  g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 d4
-  | % 63
-  d'4 e4 e8 e4*128/384 r4*64/384 d8 e4. f4 d4 e2 e r4*128/384 e8 e4*128/384 r4*64/384 d8 e4. g4 d4 e2 e r4*128/384 e8 e4*128/384 r4*64/384 d8 e4. a4 d,4 a4*256/384 r4*896/384 f8. g16 a16 g16 f16 e16
-  | % 70
-  d4 c4 g'4 f4
-  | % 71
-  c'4 d8. a16 e16 d16 e16 f16 g16 f16 e16 d16
-  | % 72
-  a4*256/384 r4*512/384 a'4 b8 a4 g8 dis'4 dis4 d4
-  | % 74
-  c4 a' r4*64/384 g4 d r4*64/384 c4
-  | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*5116/384 a4*44/384 r4*20/384 a128*11 r128*5 a4*88/384 r4*424/384 b4*380/384 r4*772/384
-  | % 81
-  a4*88/384 r4*40/384 a4*88/384 r4*40/384 a4*88/384 r4*808/384 g4
-  | % 82
-  g4*640/384 r4*896/384
-  | % 83
-  a4*256/384 r4*512/384 g4*256/384 r4*512/384
-  | % 84
-  f4*256/384 r4*512/384 g8 f8 e4*128/384
-  r4*64/384 d4*128/384 r4*448/384 cis4 d4*380/384 r4*4/384 e8 g8
-  | % 86
-  e4*512/384 r4*640/384 e8 e8
-  | % 87
-  e8 e8 a4 a4*512/384 r4*2176/384 a4*1088/384 r4*64/384
-  | % 90
-  a4 b4 a4*512/384 r4*640/384 a4*128/384 r4*64/384 a4. <d a >4
+  % 8. Animato. És ott találá ökrök, juhok, galambok árusait,
+  d,8 e16 f16 g16 f16 e8 d8 b'4 a4 c8 g4 c8 e8 d4 c8 a4 g8 d8 e8 r r
+
+  % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c r r1*5/4 r1*3/4 r1*5/4 r8
+
+  % 15. és ott terpeszkedtek a pénzváltók.
+  d8 a'4 g4 f4 es4 d8 e8 f16 g16 a16 b16 c4 d2
+
+  % 18
+  b4 a4 g4 c16 b16 a16 g16 f4*256/384 r4*320/384
+
+  % 19
+  c'8 f4 es4 d4 c4 b8 c8 d16 c16 b16 a16 g4 ges2 r2*14 r4
+
+  % 35. És kötélböl ostort fonván kihajtá öket a templomból,
+  d4 f8 e4 d8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8  g8 a4 g4 d4
+
+  % 41. Kavarog
+  d8 e8 ges8 g8 a8 d,8 r4
+  d8 e8 ges8 g8 a4
+  d,8 e8 ges8 g8 a4 d,
+
+  g8 a8 b8 c8 d4
+  g,8 r8 g8 a8 b8 c8 d8 g,4.
+  g8 a8 b8 c8 d8 r8
+
+  | % 53. És kötélböl ostort fonván kihajtá öket a templomból,
+  g,4 as8 g4 f8 des'4 des4 c4 b4
+  g'8 f4 c8 \tempo "4. oldal" b4 as8 b8 c4 b4 f4. r8
+
+  | % ... kihajtá a templomból,
+  ges2\tenuto as2\tenuto b2\tenuto c2\tenuto des2\tenuto es8 f8 ges4 f4
+
+  | % 66. Szalad a sok árus,
+  b,8 c8 d8 es8 f4 b,8 r
+  b8 c8 d8 es8 f4
+  b,8 c8 d8 es8 f8 b,4.
+  b8 c8 des8 es8 f4 b,8 r
+  b8 c8 des8 es8 f8 b,4.~b8 a b8 c8 des8 c8 des8 es8 f8 e8 f8 g8 f8 e8 f8 g8
+  f8 e8 f8 g8 f8 e8 f8 g8 as8 r r4 \tempo "5. oldal" r
+
+  % 83. És a pénzváltók pénzét szerteszórá,
+  as,8. b16 c16 b16 as16 g16 f4 es4 as4 es'4 f8. c16 g16 f16 g16 as16 b16 as16
+  g16 f16 c4 r r2. r2 r2. r4
+
+  b'8 r16 c16 d16 c16 b16 a16 g4 f4 b4 f'4 g8. d16 a16 g16 a16 b16 c16 b16 a16
+  g16 d4
+
+  % 97. És asztalaikat feldönté.
+  d'4 e4 e8 e8 d8 e4. f4 d4 e2 e r4*128/384 e8 e8 d8 e4. g4 d4 e2 e
+  r4*128/384 e8 e8 d8 e4. a4 d,4 a4*256/384 r4*896/384
+
+  % 110. És a pénzváltók sok pénzét szerteszórá,
+  f8. g16 a16 g16 f16 e16 d4 c4 g'4 f4 c'4 d8. a16 e16 d16 e16 f16 g16 f16 e16
+  d16 a4*256/384 r4*512/384
+
+  % 116. És kötélböl ostort fonván kihajtá öket a templomból,
+  a'4 b8 a4 g8 es'4 es4 d4 c4
+  a'8 g4 d8 c4 b8 c8 d4 c4 g2 r2*2 r2. r2 r4 r
+
+  % 127. Vigyétek el ezeket innét!
+  \tuplet 3/2 {a16 a8. a8} r4 h r r \tuplet 3/2 {a8 a a} r4 r g4 g4 r4 r a r g r f r
+  g8 f e d r4 cis d e8 g e2 r4 e8 e e e a4 a2 r4 r2
+
+  | % 140. Írva vagyon: az én házam imádságnak háza
+  a2. a4 b4 a4*512/384 r4*640/384 a8 a4. <d a >4
   | % 92
   <d a >4 a8 b4. c4
   | % 93
   b4 a2 a r4*512/384 a4 b4 c4
   | % 95
-  d4 a4*256/384 r4*1280/384 b8 c4 r8 d8 d4 e r4*448/384 <a f >4*128/384 r4*64/384 <a f >4*832/384 r4*512/384 <gis e >8 <gis e >4*832/384 r4*512/384 <g dis >8 <g dis >4*832/384 r4*512/384 <fis d >4*128/384 r4*64/384 <fis d >4*832/384 r4*512/384 <f cis >8 <f cis >4 r8
+  d4 a4*256/384 r4*1280/384 b8 c4 r8 d8 d4 e r4*448/384 <a f >8 <a f >4*832/384 r4*512/384 <as e >8 <as e >4*832/384 r4*512/384 <g es >8 <g es >4*832/384 r4*512/384 <ges d >8 <ges d >4*832/384 r4*512/384 <f des >8 <f des >4 r8
   | % 102
-  <dis c >8 <dis c >4*512/384 r4*64/384 <b cis >4*128/384 r4*64/384 <cis b >4*896/384 r4*448/384 <c gis >8 <c gis >4*896/384 r4*448/384 <b fis >8 <b fis >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >4*128/384 r4*64/384 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
+  <es c >8 <es c >4. <b des >8 <des b >4*896/384 r4*448/384 <c as >8 <c as >4*896/384 r4*448/384 <b ges >8 <b ges >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
   | % 112
   r1
   | % 113
-  <f dis >8 <f dis >4*896/384 r4*448/384
+  <f es >8 <f es >4*896/384 r4*448/384
   | % 114
-  <dis a' >8 <dis a' >4*1280/384 r4*832/384 <a' dis, >4*128/384 r4*64/384 <a dis, >4.*5 <g cis, >8 <g cis, >4*896/384 r4*448/384 <f c >8 <f c >4.*5 <e h >4*128/384 r4*64/384 <e h >4*896/384 r4*448/384 <e c >8 <e c >4*896/384 r4*448/384 <dis h >8 <dis h >4*1088/384 r4*2176/384 e4*128/384 r4*64/384 e8
+  <es a' >8 <es a' >4*1280/384 r4*832/384 <a' es, >8 <a es, >4.*5 <g des, >8 <g des, >4*896/384 r4*448/384 <f c >8 <f c >4.*5 <e h >8 <e h >4*896/384 r4*448/384 <e c >8 <e c >4*896/384 r4*448/384 <es h >8 <es h >4*1088/384 r4*2176/384 e8 e8
   | % 123
   e8 e8 a8 a4 r8 c8 c8
   | % 124
   c4 f4. d8 c4
   | % 125
-  d8 d4*956/384 r4*772/384 d4*764/384 r4*4/384 f4*1148/384 r4*4/384 <f cis >4 <g dis >4*1532/384 r4*4/384 <a fis d >4*3068/384
+  d8 d4*956/384 r4*772/384 d2 f4*1148/384 r4*4/384 <f des >4 <g es >4*1532/384 r4*4/384 <a ges d >4*3068/384
 }
 
 SopranoOne = \relative c {
@@ -247,99 +201,73 @@ SopranoOne = \relative c {
 }
 
 Alto = \relative c {
-  r4*7 a'4
-  | % 3
-  d4 d8. c16 d4 a4
-  | % 4
-  a'4. a8 a4 g4
-  | % 5
-  fis4 r g2
-  | % 6
-  b2 gis2
-  | % 7
-  g2. r4 r r8 d8 e16 f16 g16 f16 e8 d4*128/384 r4*64/384
-  | % 10
-  b'4 a4 g16 a16 b16 a16 g8 f4*128/384 r4*64/384
-  | % 11
-  e4. d8 d r r4 r1*5/4 r2 r4 r8 d g4 f4 e4
-  | % 15
-  d4 c8 d8 e16 d16 c16 b16 a4
-  | % 16
-  g4*256/384 r4*1472/384 b8 dis4 d4 c4
-  | % 18
-  b4 a8 b8 c16 d16 e16 f16 g4
-  | % 19
-  a8 f8 b4 a4 g4
-  | % 20
-  f4 e8 f8 g16 f16 e16 d16 c4
-  | % 21
-  d4*256/384 r4*320/384 g8 c4 b4
-  | % 22
-  a4 g4 f8 g4*128/384 r4*64/384 a16 g16 f16 e16
-  | % 23
-  d4 c4*764/384 r4*5764/384 g4 b r4*64/384 a4 g8 dis'4 dis4 d4
-  | % 29
-  c4 a' r4*64/384 g4 d r4*64/384 c4
-  | % 30
-  b8 c8 d4 c4 g4*1280/384 r4*448/384 d'8
-  | % 32
-  e8 f8 g8 f4*128/384 r4*64/384 e4 f4
-  | % 33
-  g8 a8 b8 a4 g8 f8 g8
-  | % 34
-  e4 d8 e8 fis4*128/384 r4*64/384 g8 a8 d,4*512/384 r4*64/384 d8 e8 fis4*128/384 r4*64/384 g8 a4
-  | % 36
-  d, r4*64/384 e8 fis8 g4*128/384 r4*64/384 a4 d,4*320/384 r4*832/384 g4*128/384 r4*64/384 a8 b8 c4*128/384 r4*64/384
-  | % 38
-  d4*320/384 r4*64/384 g,4*128/384 r4*256/384 g8 a4*128/384 r4*64/384 b8 c8
-  | % 39
-  d8 g,4*128/384 r4*448/384 g8 f4*128/384 r4*64/384 e8 d8
-  | % 40
-  c4 c4 c8 d4*128/384 r4*64/384 e8 f8
-  | % 41
-  g8 gis8 b8 gis4*128/384 r4*64/384 g4*256/384 r4*320/384 gis8
-  | % 42
-  b8 c8 cis8 c4 b8 gis8 b4*128/384 r4*64/384
-  | % 43
-  fis4 f8 dis8 cis4 b r4*256/384
-  | % 44
-  b r4*128/384 cis8 c4 b r4*64/384 fis'4
-  | % 45
-  fis4 f4 dis4 c' r4*64/384 b4 f8 dis4 cis8 dis8 f8 dis4*188/384 r4*4/384
-  | % 47
-  d8 c8 b4 c4 d4
-  | % 48
-  gis8 fis8 f8 dis4*188/384 r4*4/384 d4 gis8 fis4*188/384 r4*4/384
-  | % 49
-  f8 dis8 d4 dis4 f r4*256/384
-  | % 50
-  b8 gis8 g8 f4*128/384 r4*64/384 dis8 f8 g4*188/384 r4*4/384 f8
-  | % 51
-  g8 gis8 b8 gis4*188/384 r4*4/384 g8 f8 g4*188/384 r4*4/384 f8
-  | % 52
-  g8 gis8 b8 gis4*188/384 r4*4/384 b8 g8 c4*128/384 r4*64/384 b8
-  | % 53
-  c8 cis8 c8 b4*188/384 r4*4/384 c8 cis8 c4*128/384 r4*64/384 b8
-  | % 54
-  c8 cis8 c8 b4*188/384 r4*4/384 c8 d8 dis4*128/384 r4*4864/384 dis,8. f16 g16 f16 dis16 d16 c4 b4
-  | % 59
-  dis4 b'4 c8. g4*64/384 r4*32/384 d16 c16 d16 dis16
-  | % 60
-  f16 dis16 d16 c4*64/384 r4*32/384 g4*256/384 r4*2048/384 f'8. g16
-  | % 62
-  a16 g16 f16 e4*64/384 r4*32/384 d4 c4 f4
-  | % 63
-  b4 a4 a8 a4*128/384 r4*64/384 g8 a4. b4 g4 a2 a r4*128/384 a8 a4*128/384 r4*64/384 g8 a4. c4 g4 a2 a r4*128/384 a8 a4*128/384 r4*64/384 g8 a4. d4 g,4 d4*256/384 r4*896/384 f8. g16 a16 g16 f16 e16
+  % (Elközelge húsvet) és felméne Jézus Jeruzálembe a templomba
+  r4*5 a'4 d4 d8. c16 d4 a4 a'4. a8 a4 g4 ges4 r g2 b2 as2 g2. r4 r r8
+
+  % 8. És ott találá ökrök, juhok, galambok árusait,
+  d8 e16 f16 g16 f16 e8 d8 b'4 a4 g16 a16 b16 a16 g8 f8 e4. d8 d r r4 r1*5/4 r2
+  r4 r8
+
+  % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
+  d g4 f4 e4 d4 c8 d8 e16 d16 c16 b16 a4 g4 r2 r4 r8
+
+  % 15. és ott terpeszkedtek a pénzváltók.
+  b8 es4 d4 c4 b4 a8 b8 c16 d16 e16 f16 g4 a8 \noBeam
+  f8 b4 a4 g4 f4 e8 f8 g16 f16 e16 d16 c4 d4 r8
+
+  % 19. És ott terpeszkedtek a pénzváltók.
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c2 r2*7 r4
+
+  % 27. És kötélböl ostort fonván kihajtá öket a templomból,
+  g4 b8 a4 g8 es'4 es4 d4 c4
+  a'8 g4 d8 c4 b8 c8 \tempo "3. oldal" d4 c4 g2~g r8
+
+  % 36. szalad a sok ökör
+  d'8 e8 f8 g8 f8 e4 f4 g8 a8 b8 a4 g8 f8 g8 e4
+
+  % 41. Kavarog
+  d8 e8 ges8 g8 a8 d,4.
+  d8 e8 ges8 g8 a4
+  d,8 e8 ges8 g8 a4 d,4 r4 r
+  g8 a8 b8 c8 d4 g,8 r8
+  g8 a8 b8 c8 d8 g,8 r4
+  g8 f8 e8 d8 c4
+  c4 c8 d8 e8 f8 g8 as8 b8 as8 g4 r8
+  as8 b8 c8 des8 c4 b8 as8 b8 ges4 f8 es8 des4 b8 r
+
+  | % 61. És kötélböl
+  b4 des8 c4 b8 ges'4 ges4 f4 es4
+  c'8 b4 f8 es4 des8 es8
+  f8 es8 d8 c8 b4 c4 d4
+  as'8 ges8 f8 es8 d4
+  as'8 ges8 f8 es8 d4 es4 f8 r
+
+  | % 72. Kavarog a barom,
+  b8 as8 g8 f8 es8 f8 g8 f8
+  g8 as8 b8 as8 g8 f8 g8 f8
+  g8 as8 b8 as8 b8 g8 c8 b8
+  c8 des8 c8 b8 c8 des8 c8 b8
+  c8 des8 c8 b8 c8 d8 es8 r8 r4 r2 r2. r2 r2. r4
+
+  % 83. És a pénzváltók pénzét szerteszórá,
+  es,8. f16 g16 f16 es16 d16 c4 b4
+  es4 b'4 c8. g16 d16 c16 d16 es16
+  f16 es16 d16 c16 g4*256/384 r4*2048/384 f'8. g16
+  a16 g16 f16 e16 d4 c4 f4
+  b4 a4 a8 a8 g8 a4. b4 g4 a2
+
+  # asztalaikat
+  a r4*128/384 a8 a8 g8 a4. c4 g4 a2 a r4*128/384 a8 a8 g8 a4. d4 g,4 d4*256/384 r4*896/384 f8. g16 a16 g16 f16 e16
   | % 70
   d4 c4 g'4 f4
   | % 71
   c'4 d8. a16 e16 d16 e16 f16 g16 f16 e16 d16
   | % 72
-  a4*256/384 r4*512/384 a'4 b8 a4 g8 dis'4 dis4 d4
+  a4*256/384 r4*512/384 a'4 b8 a4 g8 es'4 es4 d4
   | % 74
-  c4 a8 g4 d r4*64/384 c4
+  c4 a8 g4 8 c4
   | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*700/384 d'4 e8 f4*128/384 r4*64/384 e4 d8 e4
+  b8 c8 d4 c4 g4*1028/384 r4*700/384 d'4 e8 f8 e4 d8 e4
   | % 78
   r8 d8 c8 d8 c4 a4*512/384 r4*1024/384 f'4*44/384 r4*20/384 f128*11 r128*5 f4*88/384 r4*424/384 e4*380/384 r4*772/384
   | % 81
@@ -349,152 +277,103 @@ Alto = \relative c {
   | % 83
   f4*256/384 r4*512/384 e4*256/384 r4*512/384
   | % 84
-  d4*256/384 r4*512/384 e8 d8 c4*128/384 r4*64/384 b4*128/384 r4*448/384 a4 b4*380/384 r4*4/384 cis8 b8
+  d4*256/384 r4*512/384 e8 d8 c8 b8 a4 b4*380/384 r4*4/384 des8 b8
   | % 86
-  cis4*512/384 r4*4480/384 f4*1088/384 r4*64/384
+  des4*512/384 r4*4480/384 f2.
   | % 90
-  f4 f4 f4*512/384 r4*640/384 f4*128/384 r4*64/384 f4. f4
+  f4 f4 f4*512/384 r4*640/384 f8 f4. f4
   | % 92
   f4 f8 g4. a4
   | % 93
   g4 f2 f r4*512/384 f4 g4 a4
   | % 95
-  g4 f4*256/384 r4*1280/384 g8 a4 r8 b8 b4 c r4*448/384 d4*128/384 r4*64/384 d4*832/384 r4*512/384 d8 d4*572/384 r4*4/384
+  g4 f4*256/384 r4*1280/384 g8 a4 r8 b8 b4 c r4*448/384 d8 d4*832/384 r4*512/384 d8 d4.
   | % 99
-  c4*256/384 r4*512/384 c8 c4*832/384 r4*512/384 c4*128/384 r4*64/384 c4*572/384 r4*4/384
+  c4*256/384 r4*512/384 c8 c4*832/384 r4*512/384 c8 c4.
   | % 101
-  b4*380/384 r4*388/384 gis8 gis4.
+  b4*380/384 r4*388/384 as8 as4.
   | % 102
-  g8 g4*512/384 r4*64/384 f8 f4*896/384 r4*448/384 f8 f4*896/384 r4*448/384 dis4*128/384 r4*64/384 dis4*896/384 r4*448/384 c8 c4*896/384 r4*448/384 c8 c4*896/384 r4*1600/384 c4 c4 c4
+  g8 g4. f8 f4*896/384 r4*448/384 f8 f4*896/384 r4*448/384 es8 es4*896/384 r4*448/384 c8 c4*896/384 r4*448/384 c8 c4*896/384 r4*1600/384 c4 c4 c4
   | % 109
-  c4 cis4. c8 c4*128/384 r4*64/384 c4. f4 c4 c r4*64/384 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b4*128/384 r4*64/384 c8. b16
+  c4 des4. c8 c8 c4. f4 c4 8 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
   | % 113
-  a4*128/384 r4*256/384 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b4*64/384 r4*32/384
+  a8 r8 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
   | % 114
-  a4*128/384 r4*256/384 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g4*64/384 r4*32/384
+  a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
   | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 cis2 a r4*128/384
+  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a r4*128/384
   | % 116
   a8 g8 a2 a4*128/384 r4*640/384 d2 a r4*128/384
   | % 118
-  a8 g8 a2 a4*128/384 r4*1024/384 a8 a4*896/384 r4*448/384 a4*128/384 r4*64/384 a4*1088/384 r4*2176/384 e'8 e4*128/384 r4*64/384
+  a8 g8 a2 a4*128/384 r4*1024/384 a8 a4*896/384 r4*448/384 a8 a4*1088/384 r4*2176/384 e'8 e8
   | % 123
-  e8 e8 e4*764/384 r4*4/384 d4*3068/384 r4*772/384 a'4*764/384 r4*4/384 gis4*1148/384 r4*4/384 gis4*380/384 r4*4/384 <b g >4*1532/384 r4*4/384 <d a fis >4*3068/384
+  e8 e8 e2 d4*3068/384 r4*772/384 a'2 as4*1148/384 r4*4/384 as4*380/384 r4*4/384 <b g >4*1532/384 r4*4/384 <d a ges >4*3068/384
 }
 
 Tenor = \relative c, {
-  r2 d'8. d16 d8. d16
-  | % 2
-  a'4 a4*256/384 r4*512/384 a4
-  | % 3
-  d4 d8. c16 d4 a4
-  | % 4
-  d4. d8 d4 e4
-  | % 5
-  d4 r e2
-  | % 6
-  d2 c2
-  | % 7
-  h2. r4 r8 f8 g16 a16 b16 a16 g4 f4
-  | % 10
-  d'4 c4 f8 c4 d8
-  | % 11
-  b16 c16 d16 c16 b8 a8 g r r4 
+  % 1. Elközelge
+  d'8. d16 d8. d16 a'4 a4 r a4 d4 d8. c16 d4 a4 d4. d8 d4 e4 d4 r e2 d2 c2 h2.  r4 r8
 
-  % Più mosso TODO
-  r2 r8 a8 d4
-  | % 13
-  c4 b4 a4 g r4*64/384 a8
-  | % 14
-  b16 a16 g16 f4*64/384 r4*32/384 e4 d8 g8 c4
-  | % 15
-  b4 a4 g4 f r4*64/384 g8
-  | % 16
-  a16 g16 f16 e4*64/384 r4*32/384 d4 c8 f8 b4
-  | % 17
-  a4 g4 fis4 e r4*64/384 fis8
-  | % 18
-  g16 f16 dis16 d16 c4 f4*256/384 r4*1472/384 a4*128/384 r4*64/384 b4
-  | % 20
-  c4 d4 e4 f r4*64/384 e8
-  | % 21
-  d16 c16 b16 a16 b8 g8 fis4 g4
-  | % 22
-  a4 b4 c8 b4*128/384 r4*64/384 a16 b16 c16 d4*64/384 r4*32/384
-  | % 23
-  e4 fis4*512/384 r4*6016/384 g,4 b8 a4 g r4*64/384 dis'4 dis4 d4
-  | % 29
-  c4 a' r4*64/384 g4 d r4*64/384 c4
-  | % 30
-  b8 c8 d4 c4 g4*1280/384 r4*256/384 g8 f4*128/384 r4*64/384
-  | % 32
-  e8 d8 cis4*128/384 r4*640/384 a'4*128/384 r4*64/384 g8
-  | % 33
-  f8 e8 d4*128/384 r4*256/384 d'4*128/384 r4*64/384 d8 d4
-  | % 34
-  cis4 d4*256/384 r4*896/384
-  | % 35
-  d,8 e8 fis8 g4*128/384 r4*64/384 a8 d,4*128/384 r4*448/384
-  | % 36
-  c'8 b8 a8 b4*188/384 r4*4/384 a8 g8 fis4*188/384 r4*4/384 e8
-  | % 37
-  d4*256/384 r4*1280/384
-  | % 38
-  g8 a8 b8 c4*128/384 r4*64/384 d8 g,4*128/384 r4*448/384
-  | % 39
-  d'8 c8 b8 c4*188/384 r4*4/384 b8 a8 g8 f4*188/384 r4*4/384
-  | % 40
-  e4 f r4*256/384 f r4*128/384 gis8 g4 f8 cis'4 cis4 c4
-  | % 42
-  b4 g' r4*64/384 f4 c r4*64/384 b4
-  | % 43
-  gis8 b8 c4 b4 f2 dis'2 cis4*512/384 r4*256/384 gis'4 fis4 f4
-  | % 46
-  b,8 gis8 fis4*188/384 r4*4/384 gis8 b8 c4*188/384 r4*4/384 d8 c8
-  | % 47
-  b8 gis8 fis4 gis4 b4
-  | % 48
-  f'8 dis8 d8 c4*188/384 r4*4/384 b4 f'8 dis4*188/384 r4*4/384
-  | % 49
-  d8 c8 b4 c4 cis r4*256/384
-  | % 50
-  cis8 c8 b8 gis4*128/384 r4*64/384 g8 gis8 b4*188/384 r4*4/384 gis8
-  | % 51
-  b8 c8 cis8 c4*188/384 r4*4/384 cis8 dis8 f4*188/384 r4*4/384 dis8
-  | % 52
-  f8 dis8 cis8 dis4*188/384 r4*4/384 cis4 c8 cis4*188/384 r4*4/384
-  | % 53
-  c8 b8 c8 cis4*188/384 r4*4/384 c8 b8 c8 cis4*188/384 r4*4/384
-  | % 54
-  c8 b8 c8 cis4*188/384 r4*4/384 c8 b8 gis4*128/384 r4*1024/384 gis8. b16 c16 b16 gis16 g16
-  | % 56
-  f4 dis4 gis4 dis'4
-  | % 57
-  f8. c16 g16 f16 g16 gis16 b16 gis16 g16 f16 c4*256/384 r4*4736/384 b'8 r16 c16 d16 c16 b16 a16 g4 f4
-  | % 62
-  b4 f'4 g8. d4*64/384 r4*32/384 a16 g16 a16 b16
-  | % 63
-  c16 b16 a16 g4*64/384 r4*32/384 a4*256/384 r4*512/384 e'4
-  | % 64
-  e8 e8 d8 e4. f4
-  | % 65
-  d4 e2 e r4*128/384
-  | % 66
-  e8 e8 d8 e4. g4
-  | % 67
-  d4 e2 a r4*128/384
-  | % 68
-  d,4 e4*1024/384 r4*128/384
-  | % 69
-  e,4 f8 e4 d r4*64/384 b'4
+  % 8. Animato. És ott találá ökrök, juhok, galambok árusait,
+  f8 g16 a16 b16 a16 g4 f4 d'4 c4 f8 c4 d8 b16 c16 d16 c16 b8 a8 g r r4 r2 r8
+
+  % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
+  a8 d4 c4 b4 a4 g8 a8 b16 a16 g16 f16 e4 d8 \noBeam
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c8 \noBeam
+  f8 b4 a4 g4 ges4 e8 ges8 g16 f16 es16 d16 c4 f4 r2 r4 r8
+  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 ges4
+  g4 a4 b4 c8 b8 a16 b16 c16 d16 e4 ges2 r2*7 r4
+
+  % 21. Con moto. És kötélböl ostort fonván kihajtá öket a templomból,
+  g,4 b8 a4 g8 es'4 es4 d4 c4
+  a'8 g4 d8 c4 b8 c8 d4 c4 g2~g
+
+  % 36. mind az ökröket, mind a juhokat, mind kihajtá
+  g8 f8 e8 d8 des8 r r4 a'8 g8 f8 e8 d8 r8 d'8 d8 d4 des4 d4 r r
+
+  % 43. Kavarog a barom
+  d,8 e8 ges8 g8 a8 d,8 r4
+  c'8 b8 a8 b8 a8 g8 ges8 e8 d4 r2 r4
+  g8 a8 b8 c8 d8 g,8 r4
+  d'8 c8 h8 c8 h8 a8 g8 f8 e4 f8 r
+
+  % 54. És kötélböl ostort fonván kihajtá öket a templomból,
+  f4 as8 g4 f8 des'4 des4 c4 b4
+  g'8 f4 c8 b4 as8 b8 c4 b4 f2
+  es'2 des2 as'4 ges4 f4 b,8 as8 ges8 as8 b8 c8 d8 c8 b8 as8 ges4 as4 b4
+
+  f'8 es8 d8 c8 b4 f'8 es8
+  d8 c8 b4 c4 des8 r8
+
+  | % 72. Kavarog a barom
+  des8 c8 b8 as8 g8 as8 b8 as8
+  b8 c8 des8 c8 des8 es8 f8 es8
+  f8 es8 des8 es8 des4 c8 des8
+  c8 b8 c8 des8 c8 b8 c8 des8
+  c8 b8 c8 des8 c8 b8 as8 r8 r4 r
+
+  % 83. És a pénzváltók sok pénzét szerteszórá,
+  as8. b16 c16 b16 as16 g16 f4 es4 as4 es'4 f8. c16 g16 f16 g16 as16 b16 as16
+  g16 f16 c4 r 2. 2 2. 2 4
+  b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4 g8. d16 a16 g16 a16 b16 c16 b16 a16 g16
+  a4 r
+
+  % asztalaikat
+  e'4 e8 e8 d8 e4. f4 d4 e2
+  e4 e8 e8 d8 e4. g4 d4 e2
+  a4 d,4 e2~4
+
+  | % 119. és kötélböl ostort fonván kihajtá öket a templomból,
+  e,4 f8 e4 8 b'4
   | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 f r4*64/384 g8 a4
+  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
   | % 72
-  g4 d4 a'4 b r4*64/384 a4 g8 dis'4 dis4 d4
+  g4 d4 a'4 8 a4 g8 es'4 es4 d4
   | % 74
-  c4 a' r4*64/384 g4 d r4*64/384 c4
-  | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*5116/384 e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
+  c4
+  a' r4*64/384 g4 8 c4
+  b8 c8 d4 c4 g4*1028/384 r4*5116/384
+  e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
   | % 81
   c4*88/384 r4*40/384 c4*88/384 r4*40/384 c4*88/384 r4*808/384 b4
   | % 82
@@ -502,29 +381,32 @@ Tenor = \relative c, {
   | % 83
   c4*256/384 r4*512/384 b4*256/384 r4*512/384
   | % 84
-  a4*256/384 r4*512/384 b8 a8 g4*128/384 r4*64/384 f4*128/384 r4*448/384 e8 f4*128/384 r4*64/384 g8 f8 e4*188/384 r4*4/384 d8
+  a4*256/384 r4*512/384 b8 a8 g8 f8 e8 f8 g8 f8 e8 d8
   | % 86
-  e4*512/384 r4*4480/384 d'4*1088/384 r4*64/384
+  e4*512/384 r4*4480/384 d'2.
   | % 90
-  d4 d4 d4*512/384 r4*640/384 d4*128/384 r4*64/384 d4. d4
+  d4 d4 d4*512/384 r4*640/384 d8 d4. d4
   | % 92
   d4 d8 e4. f4
   | % 93
   e4 d2 d r4*512/384 d4 e4 f4
   | % 95
-  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a r4*448/384 <a f >4*128/384 r4*64/384 <a f >4*832/384 r4*512/384 <gis e >8 <gis e >4*832/384 r4*512/384 <g dis >8 <g dis >4*832/384 r4*512/384 <fis d >4*128/384 r4*64/384 <fis d >4*832/384 r4*512/384 <f cis >8 <f cis >4 r8
+  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a
+
+  % Rablók
+  r4*448/384 <a f >8 <a f >4*832/384 r4*512/384 <as e >8 <as e >4*832/384 r4*512/384 <g es >8 <g es >4*832/384 r4*512/384 <ges d >8 <ges d >4*832/384 r4*512/384 <f des >8 <f des >4 r8
   | % 102
-  <dis c >8 <dis c >4*512/384 r4*64/384 <b cis >4*128/384 r4*64/384 <cis b >4*896/384 r4*448/384 <c gis >8 <c gis >4*896/384 r4*448/384 <b fis >8 <b fis >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >4*128/384 r4*64/384 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
+  <es c >8 <es c >4. <b des >8 <des b >4*896/384 r4*448/384 <c as >8 <c as >4*896/384 r4*448/384 <b ges >8 <b ges >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
   | % 112
   r1
   | % 113
-  <f dis >8 <f dis >4*896/384 r4*448/384
+  <f es >8 <f es >4*896/384 r4*448/384
   | % 114
-  <dis a' >8 <dis a' >4*1280/384 r4*832/384 <a' dis, >4*128/384 r4*64/384 <a dis, >4.*5 <g dis >8 <g dis >4*896/384 r4*448/384 <fis d >8 <fis d >4.*5 <f cis >4*128/384 r4*64/384 <f cis >4*896/384 r4*448/384 <f c >8 <f c >4*896/384 r4*448/384 <f cis >8 <f cis >4*1088/384 r4*2944/384 f4*128/384 r4*64/384 f8 f8 f4*128/384 r4*64/384 f4*3068/384 r4*772/384 b4*764/384 r4*4/384 <f' cis >4*1148/384 r4*4/384 <f cis >4 <g dis >4*1532/384 r4*4/384 <fis d >4*3068/384
+  <es a' >8 <es a' >4*1280/384 r4*832/384 <a' es, >8 <a es, >4.*5 <g es >8 <g es >4*896/384 r4*448/384 <ges d >8 <ges d >4.*5 <f des >8 <f des >4*896/384 r4*448/384 <f c >8 <f c >4*896/384 r4*448/384 <f des >8 <f des >4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 <f' des >4*1148/384 r4*4/384 <f des >4 <g es >4*1532/384 r4*4/384 <ges d >4*3068/384
 }
 
 TennorTwo = \relative c {
-  r2 d'8. d16 d8. d16
+  d'8. d16 d8. d16
   | % 2
   a'4 a4*256/384 r4*512/384 a4
   | % 3
@@ -542,77 +424,77 @@ TennorTwo = \relative c {
   | % 11
   b16 c16 d16 c16 b8 a8 g4*128/384 r4*1600/384 a8 d4
   | % 13
-  c4 b4 a4 g r4*64/384 a8
+  c4 b4 a4 8 a8
   | % 14
-  b16 a16 g16 f4*64/384 r4*32/384 e4 d8 g8 c4
+  b16 a16 g16 f16 e4 d8 g8 c4
   | % 15
-  b4 a4 g4 f r4*64/384 g8
+  b4 a4 g4 8 g8
   | % 16
-  a16 g16 f16 e4*64/384 r4*32/384 d4 c8 f8 b4
+  a16 g16 f16 e16 d4 c8 f8 b4
   | % 17
-  a4 g4 fis4 e r4*64/384 fis8
+  a4 g4 ges4 8 ges8
   | % 18
-  g16 f16 dis16 d16 c4 f4*256/384 r4*1472/384 a4*128/384 r4*64/384 b4
+  g16 f16 es16 d16 c4 f4*256/384 r4*1472/384 a8 b4
   | % 20
-  c4 d4 e4 f r4*64/384 e8
+  c4 d4 e4 8 e8
   | % 21
-  d16 c16 b16 a16 b8 g8 fis4 g4
+  d16 c16 b16 a16 b8 g8 ges4 g4
   | % 22
-  a4 b4 c8 b4*128/384 r4*64/384 a16 b16 c16 d4*64/384 r4*32/384
+  a4 b4 c8 b8 a16 b16 c16 d16
   | % 23
-  e4 fis4*512/384 r4*6016/384 g,4 b8 a4 g r4*64/384 dis'4 dis4 d4
+  e4 ges4*512/384 r4*6016/384 g,4 b8 a4 8 es'4 es4 d4
   | % 29
-  c4 a' r4*64/384 g4 d r4*64/384 c4
+  c4 a' r4*64/384 g4 8 c4
   | % 30
-  b8 c8 d4 c4 g4*1280/384 r4*256/384 g8 f4*128/384 r4*64/384
+  b8 c8 d4 c4 g4*1280/384 r4*256/384 g8 f8
   | % 32
-  e8 d8 cis4*128/384 r4*640/384 a'4*128/384 r4*64/384 g8
+  e8 d8 des4*128/384 r4*640/384 a'8 g8
   | % 33
-  f8 e8 d4*128/384 r4*256/384 d'4*128/384 r4*64/384 d8 d4
+  f8 e8 d8 r8 d'8 d8 d4
   | % 34
-  cis4 d4*256/384 r4*896/384
+  des4 d4*256/384 r4*896/384
   | % 35
-  d,8 e8 fis8 g4*128/384 r4*64/384 a8 d,4*128/384 r4*448/384
+  d,8 e8 ges8 g8 a8 d,8
   | % 36
-  c'8 b8 a8 b4*188/384 r4*4/384 a8 g8 fis4*188/384 r4*4/384 e8
+  c'8 b8 a8 b8 a8 g8 ges8 e8
   | % 37
   d4*256/384 r4*1280/384
   | % 38
-  g8 a8 b8 c4*128/384 r4*64/384 d8 g,4*128/384 r4*448/384
+  g8 a8 b8 c8 d8 g,8
   | % 39
-  d'8 c8 b8 c4*188/384 r4*4/384 b8 a8 g8 f4*188/384 r4*4/384
+  d'8 c8 b8 c8 b8 a8 g8 f8
   | % 40
-  e4 f r4*256/384 f r4*128/384 gis8 g4 f8 cis'4 cis4 c4
+  e4 f r4*256/384 f r4*128/384 as8 g4 f8 des'4 des4 c4
   | % 42
-  b4 g' r4*64/384 f4 c r4*64/384 b4
+  b4 g' r4*64/384 f4 8 b4
   | % 43
-  gis8 b8 c4 b4 f2 dis'2 cis4*512/384 r4*256/384 gis'4 fis4 f4
+  as8 b8 c4 b4 f2 es'2 des2 as'4 ges4 f4
   | % 46
-  b,8 gis8 fis4*188/384 r4*4/384 gis8 b8 c4*188/384 r4*4/384 d8 c8
+  b,8 as8 ges8 as8 b8 c8 d8 c8
   | % 47
-  b8 gis8 fis4 gis4 b4
+  b8 as8 ges4 as4 b4
   | % 48
-  f'8 dis8 d8 c4*188/384 r4*4/384 b4 f'8 dis4*188/384 r4*4/384
+  f'8 es8 d8 c8 b4 f'8 es8
   | % 49
-  d8 c8 b4 c4 cis r4*256/384
+  d8 c8 b4 c4 des r4*256/384
   | % 50
-  cis8 c8 b8 gis4*128/384 r4*64/384 g8 gis8 b4*188/384 r4*4/384 gis8
+  des8 c8 b8 as8 g8 as8 b8 as8
   | % 51
-  b8 c8 cis8 c4*188/384 r4*4/384 cis8 dis8 f4*188/384 r4*4/384 dis8
+  b8 c8 des8 c8 des8 es8 f8 es8
   | % 52
-  f8 dis8 cis8 dis4*188/384 r4*4/384 cis4 c8 cis4*188/384 r4*4/384
+  f8 es8 des8 es8 des4 c8 des8
   | % 53
-  c8 b8 c8 cis4*188/384 r4*4/384 c8 b8 c8 cis4*188/384 r4*4/384
+  c8 b8 c8 des8 c8 b8 c8 des8
   | % 54
-  c8 b8 c8 cis4*188/384 r4*4/384 c8 b8 gis4*128/384 r4*1024/384 gis8. b16 c16 b16 gis16 g16
+  c8 b8 c8 des8 c8 b8 as4*128/384 r4*1024/384 as8. b16 c16 b16 as16 g16
   | % 56
-  f4 dis4 gis4 dis'4
+  f4 es4 as4 es'4
   | % 57
-  f8. c16 g16 f16 g16 gis16 b16 gis16 g16 f16 c4*256/384 r4*4736/384 b'8 r16 c16 d16 c16 b16 a16 g4 f4
+  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4*256/384 r4*4736/384 b'8 r16 c16 d16 c16 b16 a16 g4 f4
   | % 62
-  b4 f'4 g8. d4*64/384 r4*32/384 a16 g16 a16 b16
+  b4 f'4 g8. d16 a16 g16 a16 b16
   | % 63
-  c16 b16 a16 g4*64/384 r4*32/384 a4*256/384 r4*512/384 e'4
+  c16 b16 a16 g16 a4*256/384 r4*512/384 e'4
   | % 64
   e8 e8 d8 e4. f4
   | % 65
@@ -624,13 +506,13 @@ TennorTwo = \relative c {
   | % 68
   d,4 e4*1024/384 r4*128/384
   | % 69
-  e,4 f8 e4 d r4*64/384 b'4
+  e,4 f8 e4 8 b'4
   | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 f r4*64/384 g8 a4
+  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
   | % 72
-  g4 d4 a'4 b r4*64/384 a4 g8 dis'4 dis4 d4
+  g4 d4 a'4 8 a4 g8 es'4 es4 d4
   | % 74
-  c4 a' r4*64/384 g4 d r4*64/384 c4
+  c4 a' r4*64/384 g4 8 c4
   | % 75
   b8 c8 d4 c4 g4*1028/384 r4*5116/384 e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
   | % 81
@@ -640,101 +522,80 @@ TennorTwo = \relative c {
   | % 83
   c4*256/384 r4*512/384 b4*256/384 r4*512/384
   | % 84
-  a4*256/384 r4*512/384 b8 a8 g4*128/384 r4*64/384 f4*128/384 r4*448/384 e8 f4*128/384 r4*64/384 g8 f8 e4*188/384 r4*4/384 d8
+  a4*256/384 r4*512/384 b8 a8 g8 f8 e8 f8 g8 f8 e8 d8
   | % 86
-  e4*512/384 r4*4480/384 d'4*1088/384 r4*64/384
+  e4*512/384 r4*4480/384 d'2.
   | % 90
-  d4 d4 d4*512/384 r4*640/384 d4*128/384 r4*64/384 d4. d4
+  d4 d4 d4*512/384 r4*640/384 d8 d4. d4
   | % 92
   d4 d8 e4. f4
   | % 93
   e4 d2 d r4*512/384 d4 e4 f4
   | % 95
-  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a r4*448/384 f4*128/384 r4*64/384 f4*832/384 r4*512/384 e8 e4*832/384 r4*512/384 dis8 dis4*832/384 r4*512/384 d4*128/384 r4*64/384 d4*832/384 r4*512/384 cis8 cis4.
+  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a r4*448/384 f8 f4*832/384 r4*512/384 e8 e4*832/384 r4*512/384 es8 es4*832/384 r4*512/384 d8 d4*832/384 r4*512/384 des8 des4.
   | % 102
-  c8 c4*512/384 r4*64/384 b8 b4*896/384 r4*448/384 gis8 gis4*896/384 r4*448/384 fis4*128/384 r4*64/384 fis4*832/384 r4*512/384 f8 f4*832/384 r4*512/384 f8 f4*832/384 r4*6272/384 f4 f2
+  c8 c4. b8 b4*896/384 r4*448/384 as8 as4*896/384 r4*448/384 ges8 ges4*832/384 r4*512/384 f8 f4*832/384 r4*512/384 f8 f4*832/384 r4*6272/384 f4 f2
   | % 112
   r1
   | % 113
-  dis8 dis4*896/384 r4*448/384
+  es8 es4*896/384 r4*448/384
   | % 114
-  dis8 dis4*1280/384 r4*832/384 dis4*128/384 r4*64/384 dis4.*5 dis8 dis4*896/384 r4*448/384 d4*128/384 r4*64/384 d4.*5 cis8 cis4*896/384 r4*448/384 c4*128/384 r4*64/384 c4*896/384 r4*448/384 cis8 cis4*1088/384 r4*2944/384 f8 f8 f4*128/384 r4*64/384 f8 f4*3068/384 r4*772/384 b4*764/384 r4*4/384 cis4*1148/384 r4*4/384 cis4 dis4*1532/384 r4*4/384 d4*3068/384
+  es8 es4*1280/384 r4*832/384 es8 es4.*5 es8 es4*896/384 r4*448/384 d8 d4.*5 des8 des4*896/384 r4*448/384 c8 c4*896/384 r4*448/384 des8 des4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 des4*1148/384 r4*4/384 des4 es4*1532/384 r4*4/384 d4*3068/384
 }
 
 Bass = \relative c {
-  r1*3 <b f' >4. <b f' >8 <b f' >4 <c g' >4
-  | % 5
-  <d a' >4 r <c g' >2
-  | % 6
-  <b f' >2 <gis dis' >2
-  | % 7
-  <g d' >2. r4 r2 r4 r8 d'8
-  | % 10
-  e16 f16 g16 f16 e8 d8 b'4 a4
-  | % 11
-  g4. f8 e r r4 r r8 g8 c4 b4
-  | % 13
-  a4 g4 f8 g4*128/384 r4*64/384 a16 g16 f16 e4*64/384 r4*32/384
-  | % 14
-  d4 c4*256/384 r4*2624/384 c8 f4 e4 d4
-  | % 17
-  c4 b8 c8 d16 c16 b16 a16 g4*188/384 r4*4/384 a8
-  | % 18
-  b4 f4*256/384 r4*320/384 f'8 b4
-  | % 19
-  a4 g4 f4 e r4*64/384 f8
-  | % 20
-  g16 f16 e16 d4*64/384 r4*32/384 c4 b4 a4*256/384 r4*512/384 g'16 g16 f16 dis4*64/384 r4*32/384 d4 e4
-  | % 22
-  fis4 g4 a8 g4*128/384 r4*64/384 fis16 g16 a16 b4*64/384 r4*32/384
-  | % 23
-  c4 d4*764/384 r4*388/384
-  | % 24
-  d,4 dis8 d4 c r4*64/384 gis'4
-  | % 25
-  gis4 g4 f4 d' r4*64/384 c4 g8 f4 dis r4*64/384 f8 g4
-  | % 27
-  f4 c4*1664/384 r4*64/384 b8 c4*188/384 r4*4/384 d8 dis8 d4*188/384 r4*4/384
-  | % 29
-  dis8 f8 g8 fis4*188/384 r4*4/384 g8 a8 b4*188/384 r4*4/384 a8
-  | % 30
-  b8 c8 d4 c4 g4*764/384 r4*4/384 g,4*956/384 r4*4/384 fis4*188/384 r4*4/384
-  | % 32
-  g8 a8 b8 a4*188/384 r4*4/384 b8 c8 d4*188/384 r4*4/384 cis8
-  | % 33
-  d8 e8 f8 e4*188/384 r4*4/384 d4 b'4*956/384 r4*4/384 a4*188/384 r4*4/384 g4 d8 e8
-  | % 35
-  fis8 g8 a8 d,4*512/384 r4*64/384 d8 e8
-  | % 36
-  fis8 g8 a4 d, r4*64/384 e8 fis8 g4*128/384 r4*64/384
-  | % 37
-  a4 g r4*640/384 g8 a4*128/384 r4*64/384
-  | % 38
-  b8 c8 d4*320/384 r4*64/384 g,4*128/384 r4*256/384 g8 a8
-  | % 39
-  b8 c8 d8 g,4*704/384 r4*256/384
-  | % 40
-  c,4*320/384 r4*64/384 f4*704/384 r4*64/384 b,4*704/384 r4*64/384 dis4*704/384 r4*64/384 d4*704/384 r4*64/384 d4*704/384 r4*64/384 c4*704/384 r4*64/384 b4 b4 cis r4*64/384 c4 b8 fis'4 fis4 f4
-  | % 45
-  dis4 c' r4*64/384 b4 f r4*64/384 dis4
-  | % 46
-  cis8 dis8 f4 dis4 b8 c8
-  | % 47
-  d8 dis8 f4 dis4 b8 c8
-  | % 48
-  d8 dis8 f4 b, r4*64/384 c8 d8 dis4*128/384 r4*64/384
-  | % 49
-  f8 fis8 gis8 fis4*128/384 r4*64/384 f4 dis4
-  | % 50
-  dis8 f8 g8 gis4*128/384 r4*64/384 b4 dis,4
-  | % 51
-  dis8 f8 g8 gis4*128/384 r4*64/384 b8 c8 cis4*188/384 r4*4/384 c8
-  | % 52
-  cis8 c8 b8 c4*188/384 r4*4/384 b4 gis4*1340/384 r4*4/384 g4*188/384 r4*4/384 gis4*572/384 r4*4/384 g8 gis4*188/384 r4*4/384 g8 gis8 g4*188/384 r4*4/384 f4*128/384 r4*5632/384 dis8. f16 g16 f16 dis16 d16
+  % (Elközelge húsvet és felméne Jézus)
+  % 4. Jeruzálembe a templomba
+  r2 r1 r <b f' >4. <b f' >8 <b f' >4 <c g' >4 <d a' >4 r
+  <c g' >2 <b f' >2 <as es' >2 <g d' >2. r4 r2 r4 r8
+
+  % 8. Animato
+  d'8 e16 f16 g16 f16 e8 d8 b'4 a4 g4. f8 e r r4 r r8
+
+  % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c4 r r r2 r4 r r8
+
+  % 15. és ott terpeszkedtek a pénzváltók.
+  c8
+  \tempo "2. oldal"
+  f4 e4 d4 c4 b8 c8 d16 c16 b16 a16 g8 a8 b4 f4 r8
+  f'8 b4 a4 g4 f4 e8 f8 g16 f16 e16 d16 c4 b4 a4 r
+  a'16 g16 f16 es16 d4 e4 ges4 g4 a8 g8 ges16 g16 a16 b16 c4 d2 r4
+
+  % 22. És kötélböl ostort fonván kihajtá öket a templomból,
+  d,4 es8 d4 c8 as'4 as4 g4 f4 d'8 c4 g8 f4 es8 f8 g4 f4 c2~c~c8
+  h c8 d8 es8 d8 es8 f8 g8 ges8 g8 a8 b8 a8 b8 c8 d4 c4 g2 g,~g8
+  ges8 g8 a8 b8 a8 b8 c8 d8 des8 d8 e8 f8 e8 d4 b'2~b8 a8 g4
+
+  % 42. Kavarog a barom, szalad a sok juh,
+  d8 e8 ges8 g8 a8 d,4.
+  d8 e8 ges8 g8 a4
+  d,8 e8 ges8 g8 a4 g8 r8 r4
+  g8 a8 h8 c8 d4 g,8 r8
+  g8 a8 h8 c8 d8 g,4.~g8 r8
+
+  % 53. És kihajtá a
+  c,4 f2\tenuto b,2\tenuto es2\tenuto d2\tenuto des2\tenuto c2\tenuto b4
+
+  % 59. És kötélböl ostort fonván kihajtá öket a templomból,
+  b4 des8 c4 b8 ges'4 ges4 f4 es4
+  c'8 b4 f8 es4 des8 es8 f4 es4
+  b8 c8 d8 es8 f4 es4
+  b8 c8 d8 es8 f4
+
+  % 70. Szalad a sok
+  b,8 c8 d8 es8 f8 ges8 as8 ges8 f4 es4
+
+  | % 75. Kavarog
+  es8 f8 g8 as8 b4 es,4 es8 f8 g8 as8 b8 c8 des8 c8 des8 c8 b8 c8 b4
+  as2~as4. g8 as4. g8 as8 g8 as8 g8 f8 r r4 r2 r2. r2 r2. r2 r4
+
+  % És a pénzváltók pénzét szerteszórá,
+  es8. f16 g16 f16 es16 d16
   | % 59
-  c4 b4 dis4 b'4
+  c4 b4 es4 b'4
   | % 60
-  c8. g16 d16 c16 d16 dis16 f16 dis16 d16 c16 g4*512/384 r4*4096/384 a'4
+  c8. g16 d16 c16 d16 es16 f16 es16 d16 c16 g4*512/384 r4*4096/384 a'4
   | % 64
   a8 a8 g8 a4. b4
   | % 65
@@ -746,49 +607,49 @@ Bass = \relative c {
   | % 68
   g,4 a4*1024/384 r4*128/384
   | % 69
-  e4 f8 e4 d r4*64/384 b'4
+  e4 f8 e4 8 b'4
   | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 f r4*64/384 g8 a4
+  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
   | % 72
-  g4 d4 a4 b r4*64/384 a4 g8 dis'4 dis4 d4
+  g4 d4 a4 8 a4 g8 es'4 es4 d4
   | % 74
-  c4 a' r4*64/384 g4 d r4*64/384 c4
+  c4 a' r4*64/384 g4 8 c4
   | % 75
   b8 c8 d4 c4 g4*1028/384 r4*4732/384 a'8 a4 a8
   | % 80
-  g2 g4*64/384 r4*64/384 e8 d r4*64/384 e4*128/384 r4*64/384 e4*1600/384 r4*1280/384 f8 f4*128/384 r4*64/384
+  g2 g4*64/384 r4*64/384 e8 8 e8 e4*1600/384 r4*1280/384 f8 f8
   | % 83
   e8 d8 e8 a,4 r8 b4
   | % 84
-  c4 e16 d8. d4*64/384 r4*32/384 c4 b16 a16 g16
+  c4 e16 d8. d16 c4 b16 a16 g16
   | % 85
-  a2 a r4*128/384 a4*896/384 r4*2944/384 d4 r8 d8 c8 a4.*9 d4*128/384 r4*64/384 d4. a'4
+  a2 a r4*128/384 a4*896/384 r4*2944/384 d4 r8 d8 c8 a4.*9 d8 d4. a'4
   | % 91
   a4 c8 c4. b4
   | % 92
   g4 a2 a r4*512/384 d4 c4 a4
   | % 94
-  g4 d4*256/384 r4*1280/384 g8 a4*128/384 r4*64/384 b4*128/384 r4*256/384 c8 a4. a4 g4 e4*256/384 r4*512/384 e'4*128/384 r4*64/384 e4*832/384 r4*128/384
+  g4 d4*256/384 r4*1280/384 g8 a8 b8 r8 c8 a4. a4 g4 e4*256/384 r4*512/384 e'8 e4*832/384 r4*128/384
   | % 98
-  d8 c8 a2 a4*512/384 r4*256/384 d8 d4*896/384 r4*64/384
+  d8 c8 a2 a2 d8 d4*896/384 r4*64/384
   | % 100
   c8 b8 g2 g4*3584/384 r4*256/384 g8 g4*896/384 r4*64/384
   | % 104
-  f8 dis8 c2 c4*3776/384 r4*1600/384 c4 c4 c4
+  f8 es8 c2 c4*3776/384 r4*1600/384 c4 c4 c4
   | % 109
-  c4 cis4. c8 c4*128/384 r4*64/384 c4. f4 c4 c r4*64/384 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b4*128/384 r4*64/384 c8. b16
+  c4 des4. c8 c8 c4. f4 c4 8 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
   | % 113
-  a4*128/384 r4*256/384 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b4*64/384 r4*32/384
+  a8 r8 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
   | % 114
-  a4*128/384 r4*256/384 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g4*64/384 r4*32/384
+  a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
   | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 cis2 a r4*128/384
+  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a r4*128/384
   | % 116
   a8 g8 a2 a4*128/384 r4*640/384 d2 a r4*128/384
   | % 118
   a8 g8 a2 a4*128/384 r4*640/384 c2 a r4*128/384
   | % 120
-  a8 g8 a4*1472/384 r4*64/384 a4*128/384 r4*4096/384 f'4 b,4*2300/384 r4*772/384 b'4*764/384 r4*4/384 f4*1148/384 r4*4/384 f4 <b dis, >4*1532/384 r4*4/384 <a d, >4*3068/384
+  a8 g8 a4*1472/384 r4*64/384 a4*128/384 r4*4096/384 f'4 b,4*2300/384 r4*772/384 b'2 f4*1148/384 r4*4/384 f4 <b es, >4*1532/384 r4*4/384 <a d, >4*3068/384
 }
 
 \score {
@@ -796,6 +657,7 @@ Bass = \relative c {
     \new StaffGroup <<
       % Soprano staff
       \new Staff = "S" <<
+        \set Staff.midiInstrument = #"violin"
         \clef treble
         \Key
         \TimeAndTempo
@@ -804,6 +666,7 @@ Bass = \relative c {
       >>
       % Alto staff
       \new Staff = "A" <<
+        \set Staff.midiInstrument = #"violin"
         \clef treble
         \Key
         \TimeAndTempo
@@ -811,6 +674,7 @@ Bass = \relative c {
       >>
       % Tenor staff
       \new Staff = "T" <<
+      % \set Staff.midiInstrument = #"viola"
         \clef "treble_8"
         \Key
         \TimeAndTempo
@@ -819,6 +683,7 @@ Bass = \relative c {
       >>
       % Bass staff
       \new Staff = "B" <<
+        \set Staff.midiInstrument = #"cello"
         \clef bass
         \Key
         \TimeAndTempo
