@@ -79,6 +79,9 @@ TimeAndTempo = {
   \tempo "rallent."
   \skip 1*1
   \tempo "Lento" 4 = 66
+  \time 3/4
+  \skip 2.*2
+  \time 4/4
 }
 
 Key = {
@@ -98,7 +101,7 @@ Key = {
 
 Soprano = \relative c {
   \voiceOne
-  % 1. Elközelge húsvet és felméne Jézus
+  % 1. Elközelge húsvet és felméne Jézus Jeruzálembe a templomba
   d'8. d16 d8. d16 a'4 a4*256/384 r4*512/384
   a4 d4 d8. c16 d4 a4 f'4. d8 d4 c4 a4 r c2 d2 d2 d2. r8
 
@@ -115,15 +118,15 @@ Soprano = \relative c {
   b4 a4 g4 c16 b16 a16 g16 f4*256/384 r4*320/384
 
   % 19
-  c'8 f4 es4 d4 c4 b8 c8 d16 c16 b16 a16 g4 ges2 r2*14 r4
+  c'8 f4 es4 d4 c4 b8 c8 d16 c16 b16 a16 g4 fis2 r2*14 r4
 
   % 35. És kötélböl ostort fonván kihajtá öket a templomból,
   d4 f8 e4 d8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8  g8 a4 g4 d4
 
   % 41. Kavarog
-  d8 e8 ges8 g8 a8 d,8 r4
-  d8 e8 ges8 g8 a4
-  d,8 e8 ges8 g8 a4 d,
+  d8 e8 fis8 g8 a8 d,8 r4
+  d8 e8 fis8 g8 a4
+  d,8 e8 fis8 g8 a4 d,
 
   g8 a8 b8 c8 d4
   g,8 r8 g8 a8 b8 c8 d8 g,4.
@@ -134,7 +137,7 @@ Soprano = \relative c {
   g'8 f4 c8 \tempo "4. oldal" b4 as8 b8 c4 b4 f4. r8
 
   | % ... kihajtá a templomból,
-  ges2\tenuto as2\tenuto b2\tenuto c2\tenuto des2\tenuto es8 f8 ges4 f4
+  fis2\tenuto as2\tenuto b2\tenuto c2\tenuto des2\tenuto es8 f8 fis4 f4
 
   | % 66. Szalad a sok árus,
   b,8 c8 d8 es8 f4 b,8 r
@@ -168,41 +171,55 @@ Soprano = \relative c {
   % 127. Vigyétek el ezeket innét!
   \tuplet 3/2 {a16 a8. a8} r4 h r r 
   \tuplet 3/2 {a8 a a} r4 \tempo "7. oldal" r g4 g4 r4 r 
-  a r g r f r g8 f e d r4 cis d e8 
-  g e2 r4 e8 e e e a4 a2 r4 r1
+  a r g r f r g8 f e d r4 cis d e8 g e2 
+  r4 e8 e e e a4 a2 r4 r1
 
-  | % 140. Írva vagyon: az én házam imádságnak háza
-  a2. a4 b4 a4*512/384 r4*640/384 a8 a4. <d a >4
-  | % 92
-  <d a >4 a8 b4. c4
-  | % 93
-  b4 a2 a r4*512/384 a4 b4 c4
-  | % 95
-  d4 a4*256/384 r4*1280/384 b8 c4 r8 d8 d4 e r4*448/384 <a f >8 <a f >4*832/384 r4*512/384 <as e >8 <as e >4*832/384 r4*512/384 <g es >8 <g es >4*832/384 r4*512/384 <ges d >8 <ges d >4*832/384 r4*512/384 <f des >8 <f des >4 r8
-  | % 102
-  <es c >8 <es c >4. <b des >8 <des b >4*896/384 r4*448/384 <c as >8 <c as >4*896/384 r4*448/384 <b ges >8 <b ges >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
-  | % 112
-  r1
-  | % 113
-  <f es >8 <f es >4*896/384 r4*448/384
-  | % 114
-  <es a' >8 <es a' >4*1280/384 r4*832/384 <a' es, >8 <a es, >4.*5 <g des, >8 <g des, >4*896/384 r4*448/384 <f c >8 <f c >4.*5 <e h >8 <e h >4*896/384 r4*448/384 <e c >8 <e c >4*896/384 r4*448/384 <es h >8 <es h >4*1088/384 r4*2176/384 e8 e8
-  | % 123
-  e8 e8 a8 a4 r8 c8 c8
-  | % 124
-  c4 f4. d8 c4
-  | % 125
-  d8 d4*956/384 r4*772/384 d2 f4*1148/384 r4*4/384 <f des >4 <g es >4*1532/384 r4*4/384 <a ges d >4*3068/384
+  | % 140. Írva vagyon: az én házam imádságnak háza Minden népek közt
+  a2. a4 b4 a2 r4 a8 a4. <d a>4 <d a>4 a8 b4. c4 b4 a2 a4 r 
+  a4 b4 c4 d4 a4 r r2 
+
+  % mivé tettétek?
+  b8 c4. d8 d4 e8 
+
+  % Rablók
+  r4 <a f>8 <a f>8~2 r4 <gis e>8 <gis e>8~2 r4 
+  <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2 r4 
+
+  % 151
+  <f des>8 8~<f des>4 
+  <es c>8 8~<es c>4
+  <b des>8 <des b>8~2 r4 <c as>8 <c as>8~2
+  \tempo "8. oldal" 
+  r4 <b fis>8 <b fis>8~2 
+  r4 <a f>8 <a f>8~2 r4 <a f>8 <a f>8~2 r1*4
+
+  % 161 Più mosso. (Andante con moto.) Rablók!
+  <a f>4 <a f>2. r2 r4 <f es>8 <f es>8~2 r4 <es a>8 <es a>8~2. r4 
+
+  % 165
+  r4 <a es>8 8~<a es>4 r r <g des>8 <g des>8~2 
+  r4 <f c>8 8~<f c>4 r 
+  r4 <e h>8 <e h>8~2 
+  r4 <e c>8 <e c>8~2 
+  r4 <es h>8 <es h>8~2~8 r8 r4 r2 r2
+  
+  | % 123 Mivelhogy az egész SOKASÁG RAJTA CSÜGG VALA
+  e8 e8 e8 e8 a8 a4. c8 c8 c4 f4. d8 c4 d8 d~2 r  
+
+  % úgy hallgatá Öt
+  d2 f2. <f des>4 <g es>1 <a fis d>
+  % Ebben a fájlban az utolsó három ütemben több hang van,
+  % mint a Gesualdós kottában.
 }
 
-SopranoOne = \relative c {
+SopranoTwo = \relative c {
   \voiceTwo
-  r4*491 a''4*3068/384
+  s4*482 a''2~2.~2.
 }
 
 Alto = \relative c {
   % (Elközelge húsvet) és felméne Jézus Jeruzálembe a templomba
-  r4*5 a'4 d4 d8. c16 d4 a4 a'4. a8 a4 g4 ges4 r g2 b2 as2 g2. r4 r r8
+  r4*5 a'4 d4 d8. c16 d4 a4 a'4. a8 a4 g4 fis4 r g2 b2 as2 g2. r4 r r8
 
   % 8. És ott találá ökrök, juhok, galambok árusait,
   d8 e16 f16 g16 f16 e8 d8 b'4 a4 g16 a16 b16 a16 g8 f8 e4. d8 d r r4 r1*5/4 r2
@@ -226,21 +243,21 @@ Alto = \relative c {
   d'8 e8 f8 g8 f8 e4 f4 g8 a8 b8 a4 g8 f8 g8 e4
 
   % 41. Kavarog
-  d8 e8 ges8 g8 a8 d,4.
-  d8 e8 ges8 g8 a4
-  d,8 e8 ges8 g8 a4 d,4 r4 r
+  d8 e8 fis8 g8 a8 d,4.
+  d8 e8 fis8 g8 a4
+  d,8 e8 fis8 g8 a4 d,4 r4 r
   g8 a8 b8 c8 d4 g,8 r8
   g8 a8 b8 c8 d8 g,8 r4
   g8 f8 e8 d8 c4
   c4 c8 d8 e8 f8 g8 as8 b8 as8 g4 r8
-  as8 b8 c8 des8 c4 b8 as8 b8 ges4 f8 es8 des4 b8 r
+  as8 b8 c8 des8 c4 b8 as8 b8 fis4 f8 es8 des4 b8 r
 
   | % 61. És kötélböl
-  b4 des8 c4 b8 ges'4 ges4 f4 es4
+  b4 des8 c4 b8 fis'4 fis4 f4 es4
   c'8 b4 f8 es4 des8 es8
   f8 es8 d8 c8 b4 c4 d4
-  as'8 ges8 f8 es8 d4
-  as'8 ges8 f8 es8 d4 es4 f8 r
+  as'8 fis8 f8 es8 d4
+  as'8 fis8 f8 es8 d4 es4 f8 r
 
   | % 72. Kavarog a barom,
   b8 as8 g8 f8 es8 f8 g8 f8
@@ -270,45 +287,44 @@ Alto = \relative c {
   d'4 e8 f8 e4 d8 e4. d8 c8 d8 c4 a2 r4 r
 
   % 127 Vigyétek
-  f'4*44/384 r4*20/384 f128*11 r128*5 f4*88/384 r4*424/384 e4*380/384 r4*772/384
-  | % 81
-  d4*88/384 r4*40/384 d4*88/384 r4*40/384 d4*88/384 r4*808/384 e4
-  | % 82
-  e4*640/384 r4*896/384
-  | % 83
-  f4*256/384 r4*512/384 e4*256/384 r4*512/384
-  | % 84
-  d4*256/384 r4*512/384 e8 d8 c8 b8 a4 b4*380/384 r4*4/384 des8 b8
-  | % 86
-  des4*512/384 r4*4480/384 f2.
-  | % 90
-  f4 f4 f4*512/384 r4*640/384 f8 f4. f4
-  | % 92
-  f4 f8 g4. a4
-  | % 93
-  g4 f2 f r4*512/384 f4 g4 a4
-  | % 95
-  g4 f4*256/384 r4*1280/384 g8 a4 r8 b8 b4 c r4*448/384 d8 d4*832/384 r4*512/384 d8 d4.
-  | % 99
-  c4*256/384 r4*512/384 c8 c4*832/384 r4*512/384 c8 c4.
-  | % 101
-  b4*380/384 r4*388/384 as8 as4.
-  | % 102
-  g8 g4. f8 f4*896/384 r4*448/384 f8 f4*896/384 r4*448/384 es8 es4*896/384 r4*448/384 c8 c4*896/384 r4*448/384 c8 c4*896/384 r4*1600/384 c4 c4 c4
-  | % 109
-  c4 des4. c8 c8 c4. f4 c4 8 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
-  | % 113
-  a8 r8 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
-  | % 114
-  a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
+  \tuplet 3/2 {f'16 f8. f8} r4 e r r 
+  \tuplet 3/2 {d8 d d} r4 r e e r r 
+  f r e r d r e8 d c b r4 a h cis8 h cis2 r2*3/2 r1 r
+
+  % 140 Írva vagyon: az én házam imádságnak háza
+  f2. f4 f4 f2 r4 f8 f4. f4 f4 f8 g4. a4 g4 f2 f4 r f4 g4 a4 g4 f4 r r2 
+
+  % mivé tettétek
+  g8 a4. b8 b4 c8 
+
+  % Rablók 
+  r4 d8 d8~2 r4 d8 d8~d4 c r4 c8 c8~2 r4 c8 c8~c4 b
+
+  % 151
+  r4 as8 8~4 g8 8~4 f8 8~2 
+  r4 f8 f8~2
+  r4 es8 es~2
+  r4 c8 c~2
+  r4 c8 c~2 r1
+
+  % Hallván ezt a föpapok és irástudók
+  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4 
+
+  % El akarák öt veszteni, el akarák öt veszteni
+  \tuplet 3/2 {c8 c8 b8} a8 b8 c8. b16 a8 r8 
+  \tuplet 3/2 {d8 c8 b8} a8 b8 c8. b16 a8 r8 
+  \tuplet 3/2 {h'8 a8 g8} f8 g8 a8. g16
   | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a4
-  | % 116
-  a8 g8 a2 a4*128/384 r4*640/384 d2 a4
-  | % 118
-  a8 g8 a2 a4*128/384 r4*1024/384 a8 a4*896/384 r4*448/384 a8 a4*1088/384 r4*2176/384 e'8 e8
-  | % 123
-  e8 e8 e2 d4*3068/384 r4*772/384 a'2 as4*1148/384 r4*4/384 as4*380/384 r4*4/384 <b g >4*1532/384 r4*4/384 <d a ges >4*3068/384
+  \tuplet 3/2 {f8 r 
+
+  % mert féltek vala töle
+  c} 
+  cis2 a4 a8 g8 a2 a8 r r4 
+  d2 a4 a8 g8 a2 a8 r r4 
+  r a8 a8~2 
+  r4 a8 a8~2~8 r r4 r2 r
+  e'8 e8 e8 e8 e2 d2~2.~2. r2 
+  a'2 as2. 4 <b g>1 <d a fis>
 }
 
 Tenor = \relative c, {
@@ -321,9 +337,9 @@ Tenor = \relative c, {
   % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
   a8 d4 c4 b4 a4 g8 a8 b16 a16 g16 f16 e4 d8 \noBeam
   g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c8 \noBeam
-  f8 b4 a4 g4 ges4 e8 ges8 g16 f16 es16 d16 c4 f4 r2 r4 r8
-  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 ges4
-  g4 a4 b4 c8 b8 a16 b16 c16 d16 e4 ges2 r2*7 r4
+  f8 b4 a4 g4 fis4 e8 fis8 g16 f16 es16 d16 c4 f4 r2 r4 r8
+  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 fis4
+  g4 a4 b4 c8 b8 a16 b16 c16 d16 e4 fis2 r2*7 r4
 
   % 21. Con moto. És kötélböl ostort fonván kihajtá öket a templomból,
   g,4 b8 a4 g8 es'4 es4 d4 c4
@@ -333,15 +349,15 @@ Tenor = \relative c, {
   g8 f8 e8 d8 des8 r r4 a'8 g8 f8 e8 d8 r8 d'8 d8 d4 des4 d4 r r
 
   % 43. Kavarog a barom
-  d,8 e8 ges8 g8 a8 d,8 r4
-  c'8 b8 a8 b8 a8 g8 ges8 e8 d4 r2 r4
+  d,8 e8 fis8 g8 a8 d,8 r4
+  c'8 b8 a8 b8 a8 g8 fis8 e8 d4 r2 r4
   g8 a8 b8 c8 d8 g,8 r4
   d'8 c8 h8 c8 h8 a8 g8 f8 e4 f8 r
 
   % 54. És kötélböl ostort fonván kihajtá öket a templomból,
   f4 as8 g4 f8 des'4 des4 c4 b4
   g'8 f4 c8 b4 as8 b8 c4 b4 f2
-  es'2 des2 as'4 ges4 f4 b,8 as8 ges8 as8 b8 c8 d8 c8 b8 as8 ges4 as4 b4
+  es'2 des2 as'4 fis4 f4 b,8 as8 fis8 as8 b8 c8 d8 c8 b8 as8 fis4 as4 b4
 
   f'8 es8 d8 c8 b4 f'8 es8
   d8 c8 b4 c4 des8 r8
@@ -370,36 +386,40 @@ Tenor = \relative c, {
   a'4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r r4 r
 
   % 127. Vigyétek
-  e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
-  | % 81
-  c4*88/384 r4*40/384 c4*88/384 r4*40/384 c4*88/384 r4*808/384 b4
-  | % 82
-  b4*640/384 r4*896/384
-  | % 83
-  c4*256/384 r4*512/384 b4*256/384 r4*512/384
-  | % 84
-  a4*256/384 r4*512/384 b8 a8 g8 f8 e8 f8 g8 f8 e8 d8
-  | % 86
-  e4*512/384 r4*4480/384 d'2.
-  | % 90
-  d4 d4 d4*512/384 r4*640/384 d8 d4. d4
-  | % 92
-  d4 d8 e4. f4
-  | % 93
-  e4 d2 d r4*512/384 d4 e4 f4
-  | % 95
-  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a
+  \tuplet 3/2 {e'16 e8. e8} r4 d r r 
+  \tuplet 3/2 {c8 c c} r4 r h h r r 
+  c r h r a r h8 a g f r4 e8 f g f e d e2 r2*3/2 r1 r
+
+  % 140 Írva vagyon: az én házam imádságnak háza Minden népek közt. 
+  d'2.  d4 d4 d2 r4 d8 d4. d4 d4 d8 e4. f4 e4 d2 d4 r d4 e4 f4 e4 d4 r r2 
+
+  % 146 mivé tettétek
+  e8 f4. g8 g4 a8
 
   % Rablók
-  r4*448/384 <a f >8 <a f >4*832/384 r4*512/384 <as e >8 <as e >4*832/384 r4*512/384 <g es >8 <g es >4*832/384 r4*512/384 <ges d >8 <ges d >4*832/384 r4*512/384 <f des >8 <f des >4 r8
-  | % 102
-  <es c >8 <es c >4. <b des >8 <des b >4*896/384 r4*448/384 <c as >8 <c as >4*896/384 r4*448/384 <b ges >8 <b ges >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*512/384 <a f >8 <a f >4*832/384 r4*6272/384 <a f >4 <a f >2
-  | % 112
-  r1
-  | % 113
-  <f es >8 <f es >4*896/384 r4*448/384
-  | % 114
-  <es a' >8 <es a' >4*1280/384 r4*832/384 <a' es, >8 <a es, >4.*5 <g es >8 <g es >4*896/384 r4*448/384 <ges d >8 <ges d >4.*5 <f des >8 <f des >4*896/384 r4*448/384 <f c >8 <f c >4*896/384 r4*448/384 <f des >8 <f des >4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 <f' des >4*1148/384 r4*4/384 <f des >4 <g es >4*1532/384 r4*4/384 <ges d >4*3068/384
+  r4 <a f>8 <a f>8~2 r4 <as e>8 <as e>8~2 
+  r4 <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2 
+
+  % 151 
+  r4 <f des>8 8~<f des>4 
+  <es c>8 8~<es c>4 
+  <b des>8 <des b>8~2 
+  r4 <c as>8 <c as>8~2 r4 <b fis>8 <b fis>8~2 r4 <a f>8 <a f>8~2 r4 <a f>8 <a f>8~2 
+
+  % Più mosso. (Andante com moto.)
+  r1 r r r
+  <a f>4 <a f>2. r2 r4 
+  <f es>8 <f es>8~2 r4 
+  <es a>8 <es a>8~2. r4 
+
+  r <a es>8 <a es>8~4 r4 r <g es>8 <g es>8~2 
+  r4 <fis d>8 <fis d>8~4 r4 r <f des>8 <f des>8~2 
+  r4 <f c>8 <f c>8~2 
+  r4 <f des>8 <f des>8~2~8 r8 r4 r2 r1
+
+  % Mivelhogy az egész nép úgy hallgatá Öt
+  f8 f8 f8 f8 f2~2.~2. r2
+  b2 <f' des>2. <f des>4 <g es>1 <fis d>
 }
 
 TennorTwo = \relative c {
@@ -429,33 +449,33 @@ TennorTwo = \relative c {
   | % 16
   a16 g16 f16 e16 d4 c8 f8 b4
   | % 17
-  a4 g4 ges4 8 ges8
+  a4 g4 fis4 8 fis8
   | % 18
   g16 f16 es16 d16 c4 f4*256/384 r4*1472/384 a8 b4
   | % 20
   c4 d4 e4 8 e8
   | % 21
-  d16 c16 b16 a16 b8 g8 ges4 g4
+  d16 c16 b16 a16 b8 g8 fis4 g4
   | % 22
   a4 b4 c8 b8 a16 b16 c16 d16
   | % 23
-  e4 ges4*512/384 r4*6016/384 g,4 b8 a4 8 es'4 es4 d4
+  e4 fis4*512/384 r4*6016/384 g,4 b8 a4 8 es'4 es4 d4
   | % 29
   c4 a' r4*64/384 g4 8 c4
   | % 30
   b8 c8 d4 c4 g4*1280/384 r4*256/384 g8 f8
   | % 32
-  e8 d8 des4*128/384 r4*640/384 a'8 g8
+  e8 d8 des8 r r4 a'8 g8
   | % 33
   f8 e8 d8 r8 d'8 d8 d4
   | % 34
   des4 d4*256/384 r4*896/384
   | % 35
-  d,8 e8 ges8 g8 a8 d,8
+  d,8 e8 fis8 g8 a8 d,8
   | % 36
-  c'8 b8 a8 b8 a8 g8 ges8 e8
+  c'8 b8 a8 b8 a8 g8 fis8 e8
   | % 37
-  d4*256/384 r4*1280/384
+  d4 r r2
   | % 38
   g8 a8 b8 c8 d8 g,8
   | % 39
@@ -465,11 +485,11 @@ TennorTwo = \relative c {
   | % 42
   b4 g' r4*64/384 f4 8 b4
   | % 43
-  as8 b8 c4 b4 f2 es'2 des2 as'4 ges4 f4
+  as8 b8 c4 b4 f2 es'2 des2 as'4 fis4 f4
   | % 46
-  b,8 as8 ges8 as8 b8 c8 d8 c8
+  b,8 as8 fis8 as8 b8 c8 d8 c8
   | % 47
-  b8 as8 ges4 as4 b4
+  b8 as8 fis4 as4 b4
   | % 48
   f'8 es8 d8 c8 b4 f'8 es8
   | % 49
@@ -483,7 +503,7 @@ TennorTwo = \relative c {
   | % 53
   c8 b8 c8 des8 c8 b8 c8 des8
   | % 54
-  c8 b8 c8 des8 c8 b8 as4*128/384 r4*1024/384 as8. b16 c16 b16 as16 g16
+  c8 b8 c8 des8 c8 b8 as8 r r4 r as8. b16 c16 b16 as16 g16
   | % 56
   f4 es4 as4 es'4
   | % 57
@@ -511,7 +531,7 @@ TennorTwo = \relative c {
   | % 74
   c4 a' r4*64/384 g4 8 c4
   | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*5116/384 e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
+  b8 c8 d4 c4 g4*1028/384 r4*5116/384 e'2. e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
   | % 81
   c4*88/384 r4*40/384 c4*88/384 r4*40/384 c4*88/384 r4*808/384 b4
   | % 82
@@ -523,28 +543,28 @@ TennorTwo = \relative c {
   | % 86
   e4*512/384 r4*4480/384 d'2.
   | % 90
-  d4 d4 d4*512/384 r4*640/384 d8 d4. d4
+  d4 d4 d2 r4 d8 d4. d4
   | % 92
   d4 d8 e4. f4
   | % 93
-  e4 d2 d r4*512/384 d4 e4 f4
+  e4 d2 d4 r d4 e4 f4
   | % 95
-  e4 d4*256/384 r4*1280/384 e8 f4 r8 g8 g4 a r4*448/384 f8 f4*832/384 r4*512/384 e8 e4*832/384 r4*512/384 es8 es4*832/384 r4*512/384 d8 d4*832/384 r4*512/384 des8 des4.
+  e4 d4 r r2 e8 f4 r8 g8 g4 a r4*448/384 f8 f8~2 r4 e8 e8~2 r4 es8 es8~2 r4 d8 d8~2 r4 des8 des4.
   | % 102
-  c8 c4. b8 b4*896/384 r4*448/384 as8 as4*896/384 r4*448/384 ges8 ges4*832/384 r4*512/384 f8 f4*832/384 r4*512/384 f8 f4*832/384 r4*6272/384 f4 f2
+  c8 c4. b8 b8~2 r4 as8 as8~2 r4 fis8 fis8~2 r4 f8 f8~2 r4 f8 f8~2 r4 f4 f2
   | % 112
   r1
   | % 113
-  es8 es4*896/384 r4*448/384
+  es8 es8~2 r4
   | % 114
-  es8 es4*1280/384 r4*832/384 es8 es4.*5 es8 es4*896/384 r4*448/384 d8 d4.*5 des8 des4*896/384 r4*448/384 c8 c4*896/384 r4*448/384 des8 des4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 des4*1148/384 r4*4/384 des4 es4*1532/384 r4*4/384 d4*3068/384
+  es8 es8~2. r4 r es8 es4.*5 es8 es8~2 r4 d8 d4.*5 des8 des8~2 r4 c8 c8~2 r4 des8 des4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 des2. des4 es1 d4*3068/384
 }
 
 Bass = \relative c {
   % (Elközelge húsvet és felméne Jézus)
   % 4. Jeruzálembe a templomba
-  r2 r1 r <b f' >4. <b f' >8 <b f' >4 <c g' >4 <d a' >4 r
-  <c g' >2 <b f' >2 <as es' >2 <g d' >2. r4 r2 r4 r8
+  r2 r1 r <b f'>4. <b f'>8 <b f'>4 <c g'>4 <d a'>4 r
+  <c g'>2 <b f'>2 <as es'>2 <g d'>2. r4 r2 r4 r8
 
   % 8. Animato
   d'8 e16 f16 g16 f16 e8 d8 b'4 a4 g4. f8 e r r4 r r8
@@ -557,17 +577,17 @@ Bass = \relative c {
   \tempo "2. oldal"
   f4 e4 d4 c4 b8 c8 d16 c16 b16 a16 g8 a8 b4 f4 r8
   f'8 b4 a4 g4 f4 e8 f8 g16 f16 e16 d16 c4 b4 a4 r
-  a'16 g16 f16 es16 d4 e4 ges4 g4 a8 g8 ges16 g16 a16 b16 c4 d2 r4
+  a'16 g16 f16 es16 d4 e4 fis4 g4 a8 g8 fis16 g16 a16 b16 c4 d2 r4
 
   % 22. És kötélböl ostort fonván kihajtá öket a templomból,
   d,4 es8 d4 c8 as'4 as4 g4 f4 d'8 c4 g8 f4 es8 f8 g4 f4 c2~c~c8
-  h c8 d8 es8 d8 es8 f8 g8 ges8 g8 a8 b8 a8 b8 c8 d4 c4 g2 g,~g8
-  ges8 g8 a8 b8 a8 b8 c8 d8 des8 d8 e8 f8 e8 d4 b'2~b8 a8 g4
+  h c8 d8 es8 d8 es8 f8 g8 fis8 g8 a8 b8 a8 b8 c8 d4 c4 g2 g,~g8
+  fis8 g8 a8 b8 a8 b8 c8 d8 des8 d8 e8 f8 e8 d4 b'2~b8 a8 g4
 
   % 42. Kavarog a barom, szalad a sok juh,
-  d8 e8 ges8 g8 a8 d,4.
-  d8 e8 ges8 g8 a4
-  d,8 e8 ges8 g8 a4 g8 r8 r4
+  d8 e8 fis8 g8 a8 d,4.
+  d8 e8 fis8 g8 a4
+  d,8 e8 fis8 g8 a4 g8 r8 r4
   g8 a8 h8 c8 d4 g,8 r8
   g8 a8 h8 c8 d8 g,4.~g8 r8
 
@@ -575,13 +595,13 @@ Bass = \relative c {
   c,4 f2\tenuto b,2\tenuto es2\tenuto d2\tenuto des2\tenuto c2\tenuto b4
 
   % 59. És kötélböl ostort fonván kihajtá öket a templomból,
-  b4 des8 c4 b8 ges'4 ges4 f4 es4
+  b4 des8 c4 b8 fis'4 fis4 f4 es4
   c'8 b4 f8 es4 des8 es8 f4 es4
   b8 c8 d8 es8 f4 es4
   b8 c8 d8 es8 f4
 
   % 70. Szalad a sok
-  b,8 c8 d8 es8 f8 ges8 as8 ges8 f4 es4
+  b,8 c8 d8 es8 f8 fis8 as8 fis8 f4 es4
 
   | % 75. Kavarog
   es8 f8 g8 as8 b4 es,4 es8 f8 g8 as8 b8 c8 des8 c8 des8 c8 b8 c8 b4
@@ -602,41 +622,32 @@ Bass = \relative c {
   a4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r2*3/2 r4
 
   % 127 Vigyétek
-  a'8 a4 a8
-  | % 80
-  g2 g4*64/384 r4*64/384 e8 8 e8 e4*1600/384 r4*1280/384 f8 f8
-  | % 83
-  e8 d8 e8 a,4 r8 b4
-  | % 84
-  c4 e16 d8. d16 c4 b16 a16 g16
-  | % 85
-  a2 a4 a4*896/384 r4*2944/384 d4 r8 d8 c8 a4.*9 d8 d4. a'4
-  | % 91
-  a4 c8 c4. b4
-  | % 92
-  g4 a2 a r4*512/384 d4 c4 a4
-  | % 94
-  g4 d4*256/384 r4*1280/384 g8 a8 b8 r8 c8 a4. a4 g4 e4*256/384 r4*512/384 e'8 e4*832/384 r4*128/384
-  | % 98
-  d8 c8 a2 a2 d8 d4*896/384 r4*64/384
-  | % 100
-  c8 b8 g2 g4*3584/384 r4*256/384 g8 g4*896/384 r4*64/384
-  | % 104
-  f8 es8 c2 c4*3776/384 r4*1600/384 c4 c4 c4
-  | % 109
-  c4 des4. c8 c8 c4. f4 c4 8 c4*1664/384 r4*448/384 c4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
-  | % 113
-  a8 r8 d4*88/384 r4*40/384 c4*88/384 r4*40/384 b4*88/384 r4*40/384 a8 b8 c8. b16
-  | % 114
-  a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
-  | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a4
-  | % 116
-  a8 g8 a2 a4*128/384 r4*640/384 d2 a4
-  | % 118
-  a8 g8 a2 a4*128/384 r4*640/384 c2 a4
-  | % 120
-  a8 g8 a4*1472/384 r4*64/384 a4*128/384 r4*4096/384 f'4 b,4*2300/384 r4*772/384 b'2 f4*1148/384 r4*4/384 f4 <b es, >4*1532/384 r4*4/384 <a d, >4*3068/384
+  a'8 a4 a8 g2 \tuplet 3/2 {g8 e d} e e~e2~e2 r4 r 
+
+  % Ne tegyétek atyám házát kereskedés házává!
+  f8 f8 e8 d8 e8 a,4 r8 b4 c4 e16 d8. d16 c8.~16 b16 a16 g16 a2 a4 a2. r2*3/2 r1
+
+  % 139 Írva
+  d4. d8 c8 a4. r1 d8 d4. a'4 a4 c8 c4. b4 g4 a2 a4 r d4 c4 a4 g4 d4 r r2 g8 a8
+  b8 r8 c8 a4. a4 g4 e4 r
+
+  % 147 Rablók
+  e'8 e4.~4 d8 c8 a2 a2 
+  d8 d4.~4 c8 b8 g2 g2~1~1
+  g8 g4.~4 f8 es8 c2 c~1~1 r
+
+  % Hallván ezt a föpapok és irástudók
+  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4 
+  \tuplet 3/2 {c8 c b} a b c8. b16 a8 r
+  \tuplet 3/2 {d8 c b} a b c8. b16 a8 r
+  \tuplet 3/2 {b'8 a g} a g a8. g16 \tuplet 3/2 {f8 r 
+
+  % mert féltek vala töle Mivelhogy az egész nép úgy hallgatá Öt
+  c} 
+  cis2 a4 a8 g8 a2 a8 r r4
+  d2 a4 a8 g8 a2 a8 r r4
+  c2 a4 a8 g8 a1 a8 r r4 r2 r1 r2 r4 
+  f' b2.~b r2 b' f2. f4 es1 d
 }
 
 \score {
@@ -648,8 +659,8 @@ Bass = \relative c {
         \clef treble
         \Key
         \TimeAndTempo
-        % \new Voice = "SopranoOne" { \voiceOne \SopranoOne }
-        \new Voice = "Soprano"    { \voiceTwo \Soprano }
+        \new Voice = "Soprano"    { \voiceOne \Soprano }
+  \new Voice = "SopranoTwo" { \voiceTwo \SopranoTwo }
       >>
       % Alto staff
       \new Staff = "A" <<
