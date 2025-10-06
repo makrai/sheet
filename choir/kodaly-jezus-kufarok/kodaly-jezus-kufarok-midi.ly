@@ -13,9 +13,6 @@
 }
 
 TimeAndTempo = {
-
-
-
   \tempo "Andante" 4 = 100
   \time 4/4
   \partial 2
@@ -47,27 +44,30 @@ TimeAndTempo = {
   \skip 2*2
 
   \tempo "a tempo" 4 = 75
-  \skip 2*21
-  \time 3/4
-  \skip 2*9
-  \time 2/4
-  \skip 2*27
-  \time 4/4
-  \skip 1
-  | % 123
+  \skip 2*17
 
-  \time 2/4
+  % 83. És a pénzváltók
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \time 3/4 \skip 4*3 \time 2/4 \skip 4*2
+  \skip 2*28
 
-  \tempo "6. oldal alja" 4 = 54
-  \skip 1
+  | % 125
   \time 3/4
-  \skip 1*6
-  \time 2/4
-  \skip 2
-  | % 134
+  \skip 2.*7
 
+  % 132
+  \time 2/4
+  \skip 2*2
+
+  | % 134 
   \time 3/4
-  \skip 1*3
+  \skip 2.*4
+
+  % 138
   \time 4/4
   \skip 1*10
   \tempo "Largo" 4 = 45
@@ -79,10 +79,6 @@ TimeAndTempo = {
   \tempo "rallent."
   \skip 1*1
   \tempo "Lento" 4 = 66
-  \skip 1*2
-  \time 4/4
-
-
 }
 
 Key = {
@@ -148,28 +144,32 @@ Soprano = \relative c {
   b8 c8 des8 es8 f8 b,4.~b8 a b8 c8 des8 c8 des8 es8 f8 e8 f8 g8 f8 e8 f8 g8
   f8 e8 f8 g8 f8 e8 f8 g8 as8 r r4 \tempo "5. oldal" r
 
+  % Soprano
   % 83. És a pénzváltók pénzét szerteszórá,
-  as,8. b16 c16 b16 as16 g16 f4 es4 as4 es'4 f8. c16 g16 f16 g16 as16 b16 as16
-  g16 f16 c4 r r2. r2 r2. r4
+  as,8. b16 c16 b16 as16 g16 f4 es4 as4 es'4
+  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r2*3/2 r2 r2*3/2 r4
 
-  b'8 r16 c16 d16 c16 b16 a16 g4 f4 b4 f'4 g8. d16 a16 g16 a16 b16 c16 b16 a16
-  g16 d4
+  b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4
+  g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 d4
 
   % 97. És asztalaikat feldönté.
-  d'4 e4 e8 e8 d8 e4. f4 d4 e2 e r4*128/384 e8 e8 d8 e4. g4 d4 e2 e
-  r4*128/384 e8 e8 d8 e4. a4 d,4 a4*256/384 r4*896/384
+  d'4 e4 e8 e d8 e4. f4 d e2
+      e4 e8 e \tempo "6. oldal" d8 e4. g4 d e2
+      e4 e8 e d8 e4. a4 d, a r r
 
   % 110. És a pénzváltók sok pénzét szerteszórá,
   f8. g16 a16 g16 f16 e16 d4 c4 g'4 f4 c'4 d8. a16 e16 d16 e16 f16 g16 f16 e16
-  d16 a4*256/384 r4*512/384
+  d16 a4 r
 
   % 116. És kötélböl ostort fonván kihajtá öket a templomból,
   a'4 b8 a4 g8 es'4 es4 d4 c4
-  a'8 g4 d8 c4 b8 c8 d4 c4 g2 r2*2 r2. r2 r4 r
+  a'8 g4 d8 c4 b8 c8 d4 c4 g2 r2 r r2*3/2 r r4 r
 
   % 127. Vigyétek el ezeket innét!
-  \tuplet 3/2 {a16 a8. a8} r4 h r r \tuplet 3/2 {a8 a a} r4 r g4 g4 r4 r a r g r f r
-  g8 f e d r4 cis d e8 g e2 r4 e8 e e e a4 a2 r4 r2
+  \tuplet 3/2 {a16 a8. a8} r4 h r r 
+  \tuplet 3/2 {a8 a a} r4 \tempo "7. oldal" r g4 g4 r4 r 
+  a r g r f r g8 f e d r4 cis d e8 
+  g e2 r4 e8 e e e a4 a2 r4 r1
 
   | % 140. Írva vagyon: az én házam imádságnak háza
   a2. a4 b4 a4*512/384 r4*640/384 a8 a4. <d a >4
@@ -247,29 +247,30 @@ Alto = \relative c {
   g8 as8 b8 as8 g8 f8 g8 f8
   g8 as8 b8 as8 b8 g8 c8 b8
   c8 des8 c8 b8 c8 des8 c8 b8
-  c8 des8 c8 b8 c8 d8 es8 r8 r4 r2 r2. r2 r2. r4
+  c8 des8 c8 b8 c8 d8 es8 r8 r4 r2 r2*3/2 r2 r2*3/2 r4
 
-  % 83. És a pénzváltók pénzét szerteszórá,
+  % Alto
+  % 88. És a pénzváltók pénzét szerteszórá,
   es,8. f16 g16 f16 es16 d16 c4 b4
   es4 b'4 c8. g16 d16 c16 d16 es16
-  f16 es16 d16 c16 g4*256/384 r4*2048/384 f'8. g16
-  a16 g16 f16 e16 d4 c4 f4
-  b4 a4 a8 a8 g8 a4. b4 g4 a2
+  f16 es16 d16 c16 g4 r4 r2*3/2 r4
+  f'8. g16 a16 g16 f16 e16 d4 c4 f4 b4
 
-  # asztalaikat
-  a r4*128/384 a8 a8 g8 a4. c4 g4 a2 a r4*128/384 a8 a8 g8 a4. d4 g,4 d4*256/384 r4*896/384 f8. g16 a16 g16 f16 e16
-  | % 70
-  d4 c4 g'4 f4
-  | % 71
-  c'4 d8. a16 e16 d16 e16 f16 g16 f16 e16 d16
-  | % 72
-  a4*256/384 r4*512/384 a'4 b8 a4 g8 es'4 es4 d4
-  | % 74
-  c4 a8 g4 8 c4
-  | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*700/384 d'4 e8 f8 e4 d8 e4
-  | % 78
-  r8 d8 c8 d8 c4 a4*512/384 r4*1024/384 f'4*44/384 r4*20/384 f128*11 r128*5 f4*88/384 r4*424/384 e4*380/384 r4*772/384
+  % 97. asztalaikat
+  a4 a8 a g8 a4. b4 g4 a2 a4 a8 a g8 a4. c4 g4 a2 a4 a8 a g8 a4. d4 g,4 d4 r r
+
+  % 110. És a pénzváltók pénzét szerteszórá,
+  f8. g16 a16 g16 f16 e16 d4 c4 g'4 f4 c'4
+  d8. a16 e16 d16 e16 f16 g16 f16 e16 d16 a4 r
+
+  % 115 és kötélböl
+  a'4 b8 a4 g8 es'4 es4 d4 c4 a8 g4 d8 c4 b8 c8 d4 c4 g2 r8
+
+  % 12 És a galambok árusinak mondá
+  d'4 e8 f8 e4 d8 e4. d8 c8 d8 c4 a2 r4 r
+
+  % 127 Vigyétek
+  f'4*44/384 r4*20/384 f128*11 r128*5 f4*88/384 r4*424/384 e4*380/384 r4*772/384
   | % 81
   d4*88/384 r4*40/384 d4*88/384 r4*40/384 d4*88/384 r4*808/384 e4
   | % 82
@@ -301,9 +302,9 @@ Alto = \relative c {
   | % 114
   a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
   | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a r4*128/384
+  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a4
   | % 116
-  a8 g8 a2 a4*128/384 r4*640/384 d2 a r4*128/384
+  a8 g8 a2 a4*128/384 r4*640/384 d2 a4
   | % 118
   a8 g8 a2 a4*128/384 r4*1024/384 a8 a4*896/384 r4*448/384 a8 a4*1088/384 r4*2176/384 e'8 e8
   | % 123
@@ -353,26 +354,22 @@ Tenor = \relative c, {
   c8 b8 c8 des8 c8 b8 as8 r8 r4 r
 
   % 83. És a pénzváltók sok pénzét szerteszórá,
-  as8. b16 c16 b16 as16 g16 f4 es4 as4 es'4 f8. c16 g16 f16 g16 as16 b16 as16
-  g16 f16 c4 r 2. 2 2. 2 4
-  b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4 g8. d16 a16 g16 a16 b16 c16 b16 a16 g16
-  a4 r
+  as8. b16 c16 b16 as16 g16 f4 es4 as4 es'4
+  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r2*3/2 r2 r2*3/2 r2 4
+  b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4
+  g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 a4 r
 
-  % asztalaikat
+  % Tenor
+  % asztalaikat feldönté
   e'4 e8 e8 d8 e4. f4 d4 e2
   e4 e8 e8 d8 e4. g4 d4 e2
   a4 d,4 e2~4
 
-  | % 119. és kötélböl ostort fonván kihajtá öket a templomból,
-  e,4 f8 e4 8 b'4
-  | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
-  | % 72
-  g4 d4 a'4 8 a4 g8 es'4 es4 d4
-  | % 74
-  c4
-  a' r4*64/384 g4 8 c4
-  b8 c8 d4 c4 g4*1028/384 r4*5116/384
+  | % 109. és kötélböl ostort fonván kihajtá öket a templomból,
+  e,4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 8 g8 a4 g4 d4
+  a'4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r r4 r
+
+  % 127. Vigyétek
   e'4*44/384 r4*20/384 e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
   | % 81
   c4*88/384 r4*40/384 c4*88/384 r4*40/384 c4*88/384 r4*808/384 b4
@@ -464,7 +461,7 @@ TennorTwo = \relative c {
   | % 39
   d'8 c8 b8 c8 b8 a8 g8 f8
   | % 40
-  e4 f r4*256/384 f r4*128/384 as8 g4 f8 des'4 des4 c4
+  e4 f r4*256/384 f4 as8 g4 f8 des'4 des4 c4
   | % 42
   b4 g' r4*64/384 f4 8 b4
   | % 43
@@ -498,11 +495,11 @@ TennorTwo = \relative c {
   | % 64
   e8 e8 d8 e4. f4
   | % 65
-  d4 e2 e r4*128/384
+  d4 e2 e4
   | % 66
   e8 e8 d8 e4. g4
   | % 67
-  d4 e2 a r4*128/384
+  d4 e2 a4
   | % 68
   d,4 e4*1024/384 r4*128/384
   | % 69
@@ -588,34 +585,24 @@ Bass = \relative c {
 
   | % 75. Kavarog
   es8 f8 g8 as8 b4 es,4 es8 f8 g8 as8 b8 c8 des8 c8 des8 c8 b8 c8 b4
-  as2~as4. g8 as4. g8 as8 g8 as8 g8 f8 r r4 r2 r2. r2 r2. r2 r4
+  as2~as4. g8 as4. g8 as8 g8 as8 g8 f8 r r4 r2 r2*3/2 r2 r2*3/2 r2 r4
 
-  % És a pénzváltók pénzét szerteszórá,
-  es8. f16 g16 f16 es16 d16
-  | % 59
-  c4 b4 es4 b'4
-  | % 60
-  c8. g16 d16 c16 d16 es16 f16 es16 d16 c16 g4*512/384 r4*4096/384 a'4
-  | % 64
-  a8 a8 g8 a4. b4
-  | % 65
-  g4 a2 a r4*128/384
-  | % 66
-  a8 a8 g8 a4. c4
-  | % 67
-  g4 a2 d r4*128/384
-  | % 68
-  g,4 a4*1024/384 r4*128/384
-  | % 69
-  e4 f8 e4 8 b'4
-  | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
-  | % 72
-  g4 d4 a4 8 a4 g8 es'4 es4 d4
-  | % 74
-  c4 a' r4*64/384 g4 8 c4
-  | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*4732/384 a'8 a4 a8
+  % Bass
+  % 88. És a pénzváltók pénzét szerteszórá,
+  es8. f16 g16 f16 es16 d16 c4 b4 es4 b'4
+  c8. g16 d16 c16 d16 es16 f16 es16 d16 c16 g2 r4 r2 r2*3/2 r2 r
+
+  % 98. asztalaikat feldönté.
+  a'4 a8 a8 g8 a4. b4 g4 a2
+  a4 a8 a8 g8 a4. c4 g4 a2
+  d4 g,4 a2~a4
+
+  | % 110. És kötélböl ostort fonván kihajtá őket a templomból
+  e4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8 g8 a4 g4 d4
+  a4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r2*3/2 r4
+
+  % 127 Vigyétek
+  a'8 a4 a8
   | % 80
   g2 g4*64/384 r4*64/384 e8 8 e8 e4*1600/384 r4*1280/384 f8 f8
   | % 83
@@ -623,7 +610,7 @@ Bass = \relative c {
   | % 84
   c4 e16 d8. d16 c4 b16 a16 g16
   | % 85
-  a2 a r4*128/384 a4*896/384 r4*2944/384 d4 r8 d8 c8 a4.*9 d8 d4. a'4
+  a2 a4 a4*896/384 r4*2944/384 d4 r8 d8 c8 a4.*9 d8 d4. a'4
   | % 91
   a4 c8 c4. b4
   | % 92
@@ -643,11 +630,11 @@ Bass = \relative c {
   | % 114
   a8 r8 h'4*88/384 r4*40/384 a4*88/384 r4*40/384 g4*88/384 r4*40/384 f8 g8 a8. g16
   | % 115
-  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a r4*128/384
+  f4*88/384 r64*7 c4*88/384 r4*40/384 des2 a4
   | % 116
-  a8 g8 a2 a4*128/384 r4*640/384 d2 a r4*128/384
+  a8 g8 a2 a4*128/384 r4*640/384 d2 a4
   | % 118
-  a8 g8 a2 a4*128/384 r4*640/384 c2 a r4*128/384
+  a8 g8 a2 a4*128/384 r4*640/384 c2 a4
   | % 120
   a8 g8 a4*1472/384 r4*64/384 a4*128/384 r4*4096/384 f'4 b,4*2300/384 r4*772/384 b'2 f4*1148/384 r4*4/384 f4 <b es, >4*1532/384 r4*4/384 <a d, >4*3068/384
 }
