@@ -63,7 +63,7 @@ TimeAndTempo = {
   \time 2/4
   \skip 2*2
 
-  | % 134 
+  | % 134
   \time 3/4
   \skip 2.*4
 
@@ -85,18 +85,10 @@ TimeAndTempo = {
 }
 
 Key = {
-
-  \key d \minor
-  \skip 4*85
-
-  \key c \minor
-  \skip 2*79
-
-  \key f \major
-  \skip 2*27
-
+  \key d \minor \skip 4*85
+  \key c \minor \skip 2*79
+  \key f \major \skip 2*27
   \key a \minor
-
 }
 
 Soprano = \relative c {
@@ -169,42 +161,42 @@ Soprano = \relative c {
   a'8 g4 d8 c4 b8 c8 d4 c4 g2 r2 r r2*3/2 r r4 r
 
   % 127. Vigyétek el ezeket innét!
-  \tuplet 3/2 {a16 a8. a8} r4 h r r 
-  \tuplet 3/2 {a8 a a} r4 \tempo "7. oldal" r g4 g4 r4 r 
-  a r g r f r g8 f e d r4 cis d e8 g e2 
+  \tuplet 3/2 {a16 a8. a8} r4 h r r
+  \tuplet 3/2 {a8 a a} r4 \tempo "7. oldal" r g4 g4 r4 r
+  a r g r f r g8 f e d r4 cis d e8 g e2
   r4 e8 e e e a4 a2 r4 r1
 
   | % 140. Írva vagyon: az én házam imádságnak háza Minden népek közt
-  a2. a4 b4 a2 r4 a8 a4. <d a>4 <d a>4 a8 b4. c4 b4 a2 a4 r 
-  a4 b4 c4 d4 a4 r r2 
+  a2. a4 b4 a2 r4 a8 a4. <d a>4 <d a>4 a8 b4. c4 b4 a2 a4 r
+  a4 b4 c4 d4 a4 r r2
 
   % mivé tettétek?
-  b8 c4. d8 d4 e8 
+  b8 c4. d8 d4 e8
 
   % Rablók
-  r4 <a f>8 <a f>8~2 r4 <gis e>8 <gis e>8~2 r4 
-  <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2 r4 
+  r4 <a f>8 <a f>8~2 r4 <gis e>8 <gis e>8~2 r4
+  <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2 r4
 
   % 151
-  <f des>8 8~<f des>4 
+  <f des>8 8~<f des>4
   <es c>8 8~<es c>4
   <b des>8 <des b>8~2 r4 <c as>8 <c as>8~2
-  \tempo "8. oldal" 
-  r4 <b fis>8 <b fis>8~2 
+  \tempo "8. oldal"
+  r4 <b fis>8 <b fis>8~2
   r4 <a f>8 <a f>8~2 r4 <a f>8 <a f>8~2 r1*4
 
   % 161 Più mosso. (Andante con moto.) Rablók!
-  <a f>4 <a f>2. r2 r4 <f es>8 <f es>8~2 r4 <es a>8 <es a>8~2. r4 
+  <a f>4 <a f>2. r2 r4 <f es>8 <f es>8~2 r4 <es a>8 <es a>8~2. r4
 
   % 165
-  r4 <a es>8 8~<a es>4 r r <g des>8 <g des>8~2 
-  r4 <f c>8 8~<f c>4 r 
-  r4 <e h>8 <e h>8~2 
-  r4 <e c>8 <e c>8~2 
+  r4 <a es>8 8~<a es>4 r r <g des>8 <g des>8~2
+  r4 <f c>8 8~<f c>4 r
+  r4 <e h>8 <e h>8~2
+  r4 <e c>8 <e c>8~2
   r4 <es h>8 <es h>8~2~8 r8 r4 r2 r2
-  
+
   | % 123 Mivelhogy az egész SOKASÁG RAJTA CSÜGG VALA
-  e8 e8 e8 e8 a8 a4. c8 c8 c4 f4. d8 c4 d8 d~2 r  
+  e8 e8 e8 e8 a8 a4. c8 c8 c4 f4. d8 c4 d8 d~2 r
 
   % úgy hallgatá Öt
   d2 f2. <f des>4 <g es>1 <a fis d>
@@ -214,7 +206,9 @@ Soprano = \relative c {
 
 SopranoTwo = \relative c {
   \voiceTwo
-  s4*482 a''2~2.~2.
+  s4*482
+  % 173 egész nép
+  a''2~2.~2.
 }
 
 Alto = \relative c {
@@ -287,43 +281,43 @@ Alto = \relative c {
   d'4 e8 f8 e4 d8 e4. d8 c8 d8 c4 a2 r4 r
 
   % 127 Vigyétek
-  \tuplet 3/2 {f'16 f8. f8} r4 e r r 
-  \tuplet 3/2 {d8 d d} r4 r e e r r 
+  \tuplet 3/2 {f'16 f8. f8} r4 e r r
+  \tuplet 3/2 {d8 d d} r4 r e e r r
   f r e r d r e8 d c b r4 a h cis8 h cis2 r2*3/2 r1 r
 
   % 140 Írva vagyon: az én házam imádságnak háza
-  f2. f4 f4 f2 r4 f8 f4. f4 f4 f8 g4. a4 g4 f2 f4 r f4 g4 a4 g4 f4 r r2 
+  f2. f4 f4 f2 r4 f8 f4. f4 f4 f8 g4. a4 g4 f2 f4 r f4 g4 a4 g4 f4 r r2
 
   % mivé tettétek
-  g8 a4. b8 b4 c8 
+  g8 a4. b8 b4 c8
 
-  % Rablók 
+  % Rablók
   r4 d8 d8~2 r4 d8 d8~d4 c r4 c8 c8~2 r4 c8 c8~c4 b
 
   % 151
-  r4 as8 8~4 g8 8~4 f8 8~2 
+  r4 as8 8~4 g8 8~4 f8 8~2
   r4 f8 f8~2
   r4 es8 es~2
   r4 c8 c~2
   r4 c8 c~2 r1
 
   % Hallván ezt a föpapok és irástudók
-  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4 
+  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4
 
   % El akarák öt veszteni, el akarák öt veszteni
-  \tuplet 3/2 {c8 c8 b8} a8 b8 c8. b16 a8 r8 
-  \tuplet 3/2 {d8 c8 b8} a8 b8 c8. b16 a8 r8 
+  \tuplet 3/2 {c8 c8 b8} a8 b8 c8. b16 a8 r8
+  \tuplet 3/2 {d8 c8 b8} a8 b8 c8. b16 a8 r8
   \tuplet 3/2 {h'8 a8 g8} f8 g8 a8. g16
   | % 115
-  \tuplet 3/2 {f8 r 
+  \tuplet 3/2 {f8 r
 
   % mert féltek vala töle
-  c} 
-  cis2 a4 a8 g8 a2 a8 r r4 
-  d2 a4 a8 g8 a2 a8 r r4 
-  r a8 a8~2 
+  c}
+  cis2 a4 a8 g8 a2 a8 r r4
+  d2 a4 a8 g8 a2 a8 r r4
+  r a8 a8~2
   r4 a8 a8~2~8 r r4 r2 r
-  e'8 e8 e8 e8 e2 d2~2.~2. r2 
+  e'8 e8 e8 e8 e2 d2~2.~2. r2
   a'2 as2. 4 <b g>1 <d a fis>
 }
 
@@ -386,35 +380,35 @@ Tenor = \relative c, {
   a'4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r r4 r
 
   % 127. Vigyétek
-  \tuplet 3/2 {e'16 e8. e8} r4 d r r 
-  \tuplet 3/2 {c8 c c} r4 r h h r r 
+  \tuplet 3/2 {e'16 e8. e8} r4 d r r
+  \tuplet 3/2 {c8 c c} r4 r h h r r
   c r h r a r h8 a g f r4 e8 f g f e d e2 r2*3/2 r1 r
 
-  % 140 Írva vagyon: az én házam imádságnak háza Minden népek közt. 
-  d'2.  d4 d4 d2 r4 d8 d4. d4 d4 d8 e4. f4 e4 d2 d4 r d4 e4 f4 e4 d4 r r2 
+  % 140 Írva vagyon: az én házam imádságnak háza Minden népek közt.
+  d'2.  d4 d4 d2 r4 d8 d4. d4 d4 d8 e4. f4 e4 d2 d4 r d4 e4 f4 e4 d4 r r2
 
   % 146 mivé tettétek
   e8 f4. g8 g4 a8
 
   % Rablók
-  r4 <a f>8 <a f>8~2 r4 <as e>8 <as e>8~2 
-  r4 <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2 
+  r4 <a f>8 <a f>8~2 r4 <as e>8 <as e>8~2
+  r4 <g es>8 <g es>8~2 r4 <fis d>8 <fis d>8~2
 
-  % 151 
-  r4 <f des>8 8~<f des>4 
-  <es c>8 8~<es c>4 
-  <b des>8 <des b>8~2 
-  r4 <c as>8 <c as>8~2 r4 <b fis>8 <b fis>8~2 r4 <a f>8 <a f>8~2 r4 <a f>8 <a f>8~2 
+  % 151
+  r4 <f des>8 8~<f des>4
+  <es c>8 8~<es c>4
+  <b des>8 <des b>8~2
+  r4 <c as>8 <c as>8~2 r4 <b fis>8 <b fis>8~2 r4 <a f>8 <a f>8~2 r4 <a f>8 <a f>8~2
 
   % Più mosso. (Andante com moto.)
   r1 r r r
-  <a f>4 <a f>2. r2 r4 
-  <f es>8 <f es>8~2 r4 
-  <es a>8 <es a>8~2. r4 
+  <a f>4 <a f>2. r2 r4
+  <f es>8 <f es>8~2 r4
+  <es a>8 <es a>8~2. r4
 
-  r <a es>8 <a es>8~4 r4 r <g es>8 <g es>8~2 
-  r4 <fis d>8 <fis d>8~4 r4 r <f des>8 <f des>8~2 
-  r4 <f c>8 <f c>8~2 
+  r <a es>8 <a es>8~4 r4 r <g es>8 <g es>8~2
+  r4 <fis d>8 <fis d>8~4 r4 r <f des>8 <f des>8~2
+  r4 <f c>8 <f c>8~2
   r4 <f des>8 <f des>8~2~8 r8 r4 r2 r1
 
   % Mivelhogy az egész nép úgy hallgatá Öt
@@ -422,7 +416,7 @@ Tenor = \relative c, {
   b2 <f' des>2. <f des>4 <g es>1 <fis d>
 }
 
-TennorTwo = \relative c {
+TenorTwo = \relative c {
   d'8. d16 d8. d16
   | % 2
   a'4 a4*256/384 r4*512/384 a4
@@ -622,7 +616,7 @@ Bass = \relative c {
   a4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r2*3/2 r4
 
   % 127 Vigyétek
-  a'8 a4 a8 g2 \tuplet 3/2 {g8 e d} e e~e2~e2 r4 r 
+  a'8 a4 a8 g2 \tuplet 3/2 {g8 e d} e e~e2~e2 r4 r
 
   % Ne tegyétek atyám házát kereskedés házává!
   f8 f8 e8 d8 e8 a,4 r8 b4 c4 e16 d8. d16 c8.~16 b16 a16 g16 a2 a4 a2. r2*3/2 r1
@@ -632,22 +626,22 @@ Bass = \relative c {
   b8 r8 c8 a4. a4 g4 e4 r
 
   % 147 Rablók
-  e'8 e4.~4 d8 c8 a2 a2 
+  e'8 e4.~4 d8 c8 a2 a2
   d8 d4.~4 c8 b8 g2 g2~1~1
   g8 g4.~4 f8 es8 c2 c~1~1 r
 
   % Hallván ezt a föpapok és irástudók
-  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4 
+  c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4
   \tuplet 3/2 {c8 c b} a b c8. b16 a8 r
   \tuplet 3/2 {d8 c b} a b c8. b16 a8 r
-  \tuplet 3/2 {b'8 a g} a g a8. g16 \tuplet 3/2 {f8 r 
+  \tuplet 3/2 {b'8 a g} a g a8. g16 \tuplet 3/2 {f8 r
 
   % mert féltek vala töle Mivelhogy az egész nép úgy hallgatá Öt
-  c} 
+  c}
   cis2 a4 a8 g8 a2 a8 r r4
   d2 a4 a8 g8 a2 a8 r r4
-  c2 a4 a8 g8 a1 a8 r r4 r2 r1 r2 r4 
-  f' b2.~b r2 b' f2. f4 es1 d
+  c2 a4 a8 g8 a1 a8 r r4 r2 r1 r2 r4
+  f' b,2.~b r2 b' f2. f4 es1 d
 }
 
 \score {
@@ -677,7 +671,7 @@ Bass = \relative c {
         \Key
         \TimeAndTempo
         \new Voice = "Tenor"    { \voiceOne \Tenor }
-        % \new Voice = "TennorTwo" { \voiceTwo \TennorTwo }
+        % \new Voice = "TenorTwo" { \voiceTwo \TenorTwo }
       >>
       % Bass staff
       \new Staff = "B" <<
