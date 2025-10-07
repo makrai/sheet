@@ -94,7 +94,7 @@ Key = {
 Soprano = \relative c {
   \voiceOne
   % 1. Elközelge húsvet és felméne Jézus Jeruzálembe a templomba
-  d'8. d16 d8. d16 a'4 a4*256/384 r4*512/384
+  d'8. d16 d8. d16 a'4 a4 r
   a4 d4 d8. c16 d4 a4 f'4. d8 d4 c4 a4 r c2 d2 d2 d2. r8
 
   % 8. Animato. És ott találá ökrök, juhok, galambok árusait,
@@ -107,7 +107,7 @@ Soprano = \relative c {
   d8 a'4 g4 f4 es4 d8 e8 f16 g16 a16 b16 c4 d2
 
   % 18
-  b4 a4 g4 c16 b16 a16 g16 f4*256/384 r4*320/384
+  b4 a4 g4 c16 b16 a16 g16 f4 r8
 
   % 19
   c'8 f4 es4 d4 c4 b8 c8 d16 c16 b16 a16 g4 fis2 r2*14 r4
@@ -270,8 +270,8 @@ Alto = \relative c {
   f'8. g16 a16 g16 f16 e16 d4 c4 f4 b4 \breathe
 
   % 97. asztalaikat
-  a4 a8 a g8 a4. b4 g4 a2 \breath 
-  a4 a8 a g8 a4. c4 g4 a2 \breath 
+  a4 a8 a g8 a4. b4 g4 a2 \breathe
+  a4 a8 a g8 a4. c4 g4 a2 \breathe
   a4 a8 a g8 a4. d4 g,4 d4 r r
 
   % 110. És a pénzváltók pénzét szerteszórá,
@@ -313,7 +313,7 @@ Alto = \relative c {
   \tuplet 3/2 {d8 c8 b8} a8 b8 c8. b16 a8 r8
   \tuplet 3/2 {h'8 a8 g8} f8 g8 a8. g16
   | % 115
-  \tuplet 3/2 {f8 r \breath
+  \tuplet 3/2 {f8 r \breathe
 
   % mert féltek vala töle
   c}
@@ -369,7 +369,7 @@ Tenor = \relative c, {
 
   % 83. És a pénzváltók sok pénzét szerteszórá,
   as8. b16 c16 b16 as16 g16 f4 es4 as4 es'4
-  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r2*3/2 r2 r2*3/2 r2 4
+  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r2*3/2 r2 r2*3/2 r2 r4
   b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4
   g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 a4 r
 
@@ -380,7 +380,7 @@ Tenor = \relative c, {
   a4 d,4 e2~4 \breathe
 
   | % 109. és kötélböl ostort fonván kihajtá öket a templomból,
-  e,4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 8 g8 a4 g4 d4 \breathe
+  e,4 f8 e4 d8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8 g8 a4 g4 d4 \breathe
   a'4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r r4 r
 
   % 127. Vigyétek
@@ -421,67 +421,56 @@ Tenor = \relative c, {
 }
 
 TenorTwo = \relative c {
-  d'8. d16 d8. d16
+  d8. d16 d8. d16
   | % 2
-  a'4 a4*256/384 r4*512/384 a4
+  a'4 a4 r a4
   | % 3
   d4 d8. c16 d4 a4
   | % 4
   d4. d8 d4 e4
   | % 5
-  d4*256/384 r4*512/384 e r4*256/384
+  d4 r e2
   | % 6
   d2 c2
   | % 7
-  b4*1540/384 r4*1724/384 f8 g16 a16 b16 a16 g4 f4
-  | % 10
+  h2. r4 r8
+
+  % 8 És ott találá
+  f8 g16 a16 b16 a16 g4 f4
   d'4 c4 f8 c4 d8
   | % 11
-  b16 c16 d16 c16 b8 a8 g4*128/384 r4*1600/384 a8 d4
-  | % 13
-  c4 b4 a4 8 a8
-  | % 14
-  b16 a16 g16 f16 e4 d8 g8 c4
-  | % 15
-  b4 a4 g4 8 g8
-  | % 16
-  a16 g16 f16 e16 d4 c8 f8 b4
-  | % 17
-  a4 g4 fis4 8 fis8
-  | % 18
-  g16 f16 es16 d16 c4 f4*256/384 r4*1472/384 a8 b4
-  | % 20
-  c4 d4 e4 8 e8
-  | % 21
-  d16 c16 b16 a16 b8 g8 fis4 g4
-  | % 22
-  a4 b4 c8 b8 a16 b16 c16 d16
-  | % 23
-  e4 fis4*512/384 r4*6016/384 g,4 b8 a4 8 es'4 es4 d4
-  | % 29
-  c4 a' r4*64/384 g4 8 c4
-  | % 30
-  b8 c8 d4 c4 g4*1280/384 r4*256/384 g8 f8
-  | % 32
-  e8 d8 des8 r r4 a'8 g8
-  | % 33
-  f8 e8 d8 r8 d'8 d8 d4
-  | % 34
-  des4 d4*256/384 r4*896/384
-  | % 35
-  d,8 e8 fis8 g8 a8 d,8
-  | % 36
+  b16 c16 d16 c16 b8 a8 g8 r r4 r2 r8
+
+  % 11 És ott terpeszkedtek
+  a8 d4 c4 b4 a4 g8 a8 b16 a16 g16 f16 e4 d8
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c8
+  f8 b4 a4 g4 fis4 e8 fis8 g16 f16 es16 d16 c4 f4 r2 f4 r8
+  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 fis4
+  g4 a4 b4 c8 b8 a16 b16 c16 d16 e4 fis2 r2*7 r4
+
+  % 21 És kötélböl
+  g,4 b8 a4 8 es'4 es4 d4 c4 a8' g4 d8 c4 b8 c8 d4 c4 g2~2
+
+  % 36 mind az ökröket
+  g8 f8 e8 d8 des8 r r4
+  a'8 g8 f8 e8 d8 r8 d'8 d8 d4 des4 d4 r r
+  d,8 e8 fis8 g8 a8 d,8 r4
+
+  | % 44
   c'8 b8 a8 b8 a8 g8 fis8 e8
   | % 37
-  d4 r r2
-  | % 38
-  g8 a8 b8 c8 d8 g,8
+  d4 r2 r4
+  | % 48 Kavarog
+  g8 a8 b8 c8 d8 g,8 r4
   | % 39
   d'8 c8 b8 c8 b8 a8 g8 f8
   | % 40
-  e4 f r4*256/384 f4 as8 g4 f8 des'4 des4 c4
+  e4 f8 r
+
+  % 53 és kötélböl
+  f4 as8 g4 f8 des'4 des4 c4
   | % 42
-  b4 g' r4*64/384 f4 8 b4
+  b4 g'8 f4 c8 b4
   | % 43
   as8 b8 c4 b4 f2 es'2 des2 as'4 fis4 f4
   | % 46
@@ -491,7 +480,7 @@ TenorTwo = \relative c {
   | % 48
   f'8 es8 d8 c8 b4 f'8 es8
   | % 49
-  d8 c8 b4 c4 des r4*256/384
+  d8 c8 b4 c4 des8 r
   | % 50
   des8 c8 b8 as8 g8 as8 b8 as8
   | % 51
@@ -505,41 +494,33 @@ TenorTwo = \relative c {
   | % 56
   f4 es4 as4 es'4
   | % 57
-  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4*256/384 r4*4736/384 b'8 r16 c16 d16 c16 b16 a16 g4 f4
+  f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r1*3/4 r2 r1*3/4 r2 r4
+
+  % 92 És a pénzváltók
+  b'8. c16 d16 c16 b16 a16 g4 f4
   | % 62
   b4 f'4 g8. d16 a16 g16 a16 b16
   | % 63
-  c16 b16 a16 g16 a4*256/384 r4*512/384 e'4
-  | % 64
-  e8 e8 d8 e4. f4
-  | % 65
-  d4 e2 e4
-  | % 66
-  e8 e8 d8 e4. g4
-  | % 67
-  d4 e2 a4
-  | % 68
-  d,4 e4*1024/384 r4*128/384
-  | % 69
-  e,4 f8 e4 8 b'4
-  | % 70
-  b4 a4 g4 e' r4*64/384 d4 a8 g4 8 g8 a4
-  | % 72
-  g4 d4 a'4 8 a4 g8 es'4 es4 d4
-  | % 74
-  c4 a' r4*64/384 g4 8 c4
-  | % 75
-  b8 c8 d4 c4 g4*1028/384 r4*5116/384 e'2. e128*11 r128*5 e4*88/384 r4*424/384 d4*380/384 r4*772/384
-  | % 81
-  c4*88/384 r4*40/384 c4*88/384 r4*40/384 c4*88/384 r4*808/384 b4
-  | % 82
-  b4*640/384 r4*896/384
-  | % 83
-  c4*256/384 r4*512/384 b4*256/384 r4*512/384
+  c16 b16 a16 g16 a4 r
+
+  % 98 asztalaikat
+  e'4 e8 e8 d8 e4. f4 d4 e2
+  e4 e8 e8 d8 e4. g4 d4 e2
+  a4 d,4 e2~4 \breathe
+
+  e,4 f8 e4 d8 b'4 b4 a4 g4 e8' d4 a8 g4 f8 g8 a4 g4 d4
+  a'4 8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4
+  b8 c8 d4 c4 g2 r2 r r1*3/4 r r4 r
+  \tuplet 3/2 {e'16 e8. e8} r4 d r r
+  \tuplet 3/2 {c8 c c} r4 r h h r r
+  c4 r b4 r
   | % 84
-  a4*256/384 r4*512/384 b8 a8 g8 f8 e8 f8 g8 f8 e8 d8
+  a4 r b8 a8 g8 f8 r4 e8 f8 g8 f8 e8 d8
   | % 86
-  e4*512/384 r4*4480/384 d'2.
+  e2 r1*3/4 r1 r
+
+  % 140 Írva
+  d'2.
   | % 90
   d4 d4 d2 r4 d8 d4. d4
   | % 92
@@ -547,15 +528,25 @@ TenorTwo = \relative c {
   | % 93
   e4 d2 d4 r d4 e4 f4
   | % 95
-  e4 d4 r r2 e8 f4 r8 g8 g4 a r4*448/384 f8 f8~2 r4 e8 e8~2 r4 es8 es8~2 r4 d8 d8~2 r4 des8 des4.
-  | % 102
-  c8 c4. b8 b8~2 r4 as8 as8~2 r4 fis8 fis8~2 r4 f8 f8~2 r4 f8 f8~2 r4 f4 f2
-  | % 112
-  r1
-  | % 113
-  es8 es8~2 r4
-  | % 114
-  es8 es8~2. r4 r es8 es4.*5 es8 es8~2 r4 d8 d4.*5 des8 des8~2 r4 c8 c8~2 r4 des8 des4*1088/384 r4*2944/384 f8 f8 f8 f8 f4*3068/384 r4*772/384 b2 des2. des4 es1 d4*3068/384
+  e4 d4 r r2 e8 f4 r8 g8 g4 a8 r4
+
+  % 147 Rablók. Csak a T2
+  f8 f8~2 r4 e8 e8~2 r4
+  es8 es8~2 r4 d8 d8~2 r4
+  des8 8~4 c8 8~4 b8 8~2 r4
+  as8 8~2 r4 ges8 8~2 r4 f8 8~2 r4 f8 8~2
+  r1 r r r
+  f4 f2.
+  r2
+  r4 es8 es8~2
+  r4 es8 es8~2. r4
+  r es8 es8~4 r4
+  r es8 es8~2
+  r4 d8 d8~4 r4
+  r des8 des8~2 
+  r4 c8 c8~2 
+  r4 des8 des8~2~8 r r4 r2 r1
+ f8 f8 f8 f8 f2~2.~2. r2 b2 des2. des4 es1 d1
 }
 
 Bass = \relative c {
@@ -594,11 +585,11 @@ Bass = \relative c {
 
   % 59. És kötélböl ostort fonván kihajtá öket a templomból,
   b4 des8 c4 b8 fis'4 fis4 f4 es4
-  c'8 b4 f8 es4 des8 es8 f4 es4 b8 c8 d8 \breathe 
+  c'8 b4 f8 es4 des8 es8 f4 es4 b8 c8 d8 \breathe
   es8 f4 es4 b8 c8 d8 es8 f4
 
   % 70. Szalad a sok
-  b,8 c8 d8 es8 f8 ges8 
+  b,8 c8 d8 es8 f8 ges8
   as8 ges8 f4 es4 \breathe
 
   | % 75. Kavarog
@@ -675,7 +666,7 @@ Bass = \relative c {
         \Key
         \TimeAndTempo
         \new Voice = "Tenor"    { \voiceOne \Tenor }
-        % \new Voice = "TenorTwo" { \voiceTwo \TenorTwo }
+        \new Voice = "TenorTwo" { \voiceTwo \TenorTwo }
       >>
       % Bass staff
       \new Staff = "B" <<
