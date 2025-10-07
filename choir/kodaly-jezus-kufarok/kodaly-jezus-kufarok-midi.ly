@@ -113,15 +113,15 @@ Soprano = \relative c {
   c'8 f4 es4 d4 c4 b8 c8 d16 c16 b16 a16 g4 fis2 r2*14 r4
 
   % 35. És kötélböl ostort fonván kihajtá öket a templomból,
-  d4 f8 e4 d8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8  g8 a4 g4 d4
+  d4 f8 e4 d8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8  g8 a4 g4 d4 \breathe
 
   % 41. Kavarog
   d8 e8 fis8 g8 a8 d,8 r4
-  d8 e8 fis8 g8 a4
-  d,8 e8 fis8 g8 a4 d,
+  d8 e8 fis8 g8 a4 % \breathe ?
+  d,8 e8 fis8 g8 a4 d,8 r
 
-  g8 a8 b8 c8 d4
-  g,8 r8 g8 a8 b8 c8 d8 g,4.
+  g8 a8 b8 c8 d8 r
+  g,8 r8 g8 a8 b8 c8 d8 g,4. % \breathe ?
   g8 a8 b8 c8 d8 r8
 
   | % 53. És kötélböl ostort fonván kihajtá öket a templomból,
@@ -129,11 +129,11 @@ Soprano = \relative c {
   g'8 f4 c8 \tempo "4. oldal" b4 as8 b8 c4 b4 f4. r8
 
   | % ... kihajtá a templomból,
-  fis2\tenuto as2\tenuto b2\tenuto c2\tenuto des2\tenuto es8 f8 fis4 f4
+  fis2\tenuto as2\tenuto b2\tenuto c2\tenuto des2\tenuto es8 f8 fis4 f4 \breathe
 
   | % 66. Szalad a sok árus,
   b,8 c8 d8 es8 f4 b,8 r
-  b8 c8 d8 es8 f4
+  b8 c8 d8 es8 f4 \breathe % ?
   b,8 c8 d8 es8 f8 b,4.
   b8 c8 des8 es8 f4 b,8 r
   b8 c8 des8 es8 f8 b,4.~b8 a b8 c8 des8 c8 des8 es8 f8 e8 f8 g8 f8 e8 f8 g8
@@ -145,11 +145,11 @@ Soprano = \relative c {
   f8. c16 g16 f16 g16 as16 b16 as16 g16 f16 c4 r r2*3/2 r2 r2*3/2 r4
 
   b'8. c16 d16 c16 b16 a16 g4 f4 b4 f'4
-  g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 d4
+  g8. d16 a16 g16 a16 b16 c16 b16 a16 g16 d4 \breathe
 
   % 97. És asztalaikat feldönté.
-  d'4 e4 e8 e d8 e4. f4 d e2
-      e4 e8 e \tempo "6. oldal" d8 e4. g4 d e2
+  d'4 e4 e8 e d8 e4. f4 d e2 \breathe
+      e4 e8 e \tempo "6. oldal" d8 e4. g4 d e2 \breathe
       e4 e8 e d8 e4. a4 d, a r r
 
   % 110. És a pénzváltók sok pénzét szerteszórá,
@@ -223,7 +223,7 @@ Alto = \relative c {
   d g4 f4 e4 d4 c8 d8 e16 d16 c16 b16 a4 g4 r2 r4 r8
 
   % 15. és ott terpeszkedtek a pénzváltók.
-  b8 es4 d4 c4 b4 a8 b8 c16 d16 e16 f16 g4 a8 \noBeam
+  b8 es4 d4 c4 b4 a8 b8 c16 d16 e16 f16 g4 a8 \breathe
   f8 b4 a4 g4 f4 e8 f8 g16 f16 e16 d16 c4 d4 r8
 
   % 19. És ott terpeszkedtek a pénzváltók.
@@ -234,22 +234,24 @@ Alto = \relative c {
   a'8 g4 d8 c4 b8 c8 \tempo "3. oldal" d4 c4 g2~g r8
 
   % 36. szalad a sok ökör
-  d'8 e8 f8 g8 f8 e4 f4 g8 a8 b8 a4 g8 f8 g8 e4
+  d'8 e8 f8 g8 f8 e4 % \breathe ?
+  f4 g8 a8 b8 a4 g8 f8 g8 e4 \breathe
 
   % 41. Kavarog
-  d8 e8 fis8 g8 a8 d,4.
-  d8 e8 fis8 g8 a4
+  d8 e8 fis8 g8 a8 d,4. % \breathe ?
+  d8 e8 fis8 g8 a4 % \breathe ?
   d,8 e8 fis8 g8 a4 d,4 r4 r
   g8 a8 b8 c8 d4 g,8 r8
   g8 a8 b8 c8 d8 g,8 r4
-  g8 f8 e8 d8 c4
-  c4 c8 d8 e8 f8 g8 as8 b8 as8 g4 r8
+  g8 f8 e8 d8 c4 % \breathe ?
+  c4 c8 d8 e8 f8 g8 as8  % \breathe ?
+  b8 as8 g4 r8
   as8 b8 c8 des8 c4 b8 as8 b8 fis4 f8 es8 des4 b8 r
 
   | % 61. És kötélböl
   b4 des8 c4 b8 fis'4 fis4 f4 es4
   c'8 b4 f8 es4 des8 es8
-  f8 es8 d8 c8 b4 c4 d4
+  f8 es8 d8 c8 b4 c4 d4 \breathe
   as'8 fis8 f8 es8 d4
   as'8 fis8 f8 es8 d4 es4 f8 r
 
@@ -265,10 +267,12 @@ Alto = \relative c {
   es,8. f16 g16 f16 es16 d16 c4 b4
   es4 b'4 c8. g16 d16 c16 d16 es16
   f16 es16 d16 c16 g4 r4 r2*3/2 r4
-  f'8. g16 a16 g16 f16 e16 d4 c4 f4 b4
+  f'8. g16 a16 g16 f16 e16 d4 c4 f4 b4 \breathe
 
   % 97. asztalaikat
-  a4 a8 a g8 a4. b4 g4 a2 a4 a8 a g8 a4. c4 g4 a2 a4 a8 a g8 a4. d4 g,4 d4 r r
+  a4 a8 a g8 a4. b4 g4 a2 \breath 
+  a4 a8 a g8 a4. c4 g4 a2 \breath 
+  a4 a8 a g8 a4. d4 g,4 d4 r r
 
   % 110. És a pénzváltók pénzét szerteszórá,
   f8. g16 a16 g16 f16 e16 d4 c4 g'4 f4 c'4
@@ -309,7 +313,7 @@ Alto = \relative c {
   \tuplet 3/2 {d8 c8 b8} a8 b8 c8. b16 a8 r8
   \tuplet 3/2 {h'8 a8 g8} f8 g8 a8. g16
   | % 115
-  \tuplet 3/2 {f8 r
+  \tuplet 3/2 {f8 r \breath
 
   % mert féltek vala töle
   c}
@@ -329,15 +333,15 @@ Tenor = \relative c, {
   f8 g16 a16 b16 a16 g4 f4 d'4 c4 f8 c4 d8 b16 c16 d16 c16 b8 a8 g r r4 r2 r8
 
   % 11. Più mosso. És ott terpeszkedtek a pénzváltók.
-  a8 d4 c4 b4 a4 g8 a8 b16 a16 g16 f16 e4 d8 \noBeam
-  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c8 \noBeam
+  a8 d4 c4 b4 a4 g8 a8 b16 a16 g16 f16 e4 d8 \breathe
+  g8 c4 b4 a4 g4 f8 g8 a16 g16 f16 e16 d4 c8 \breathe
   f8 b4 a4 g4 fis4 e8 fis8 g16 f16 es16 d16 c4 f4 r2 r4 r8
-  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 fis4
+  a8 b4 c4 d4 e4 f8 e8 d16 c16 b16 a16 b8 g8 fis4 \breathe
   g4 a4 b4 c8 b8 a16 b16 c16 d16 e4 fis2 r2*7 r4
 
   % 21. Con moto. És kötélböl ostort fonván kihajtá öket a templomból,
   g,4 b8 a4 g8 es'4 es4 d4 c4
-  a'8 g4 d8 c4 b8 c8 d4 c4 g2~g
+  a'8 g4 d8 c4 b8 c8 d4 c4 g2~g \breathe
 
   % 36. mind az ökröket, mind a juhokat, mind kihajtá
   g8 f8 e8 d8 des8 r r4 a'8 g8 f8 e8 d8 r8 d'8 d8 d4 des4 d4 r r
@@ -351,7 +355,7 @@ Tenor = \relative c, {
   % 54. És kötélböl ostort fonván kihajtá öket a templomból,
   f4 as8 g4 f8 des'4 des4 c4 b4
   g'8 f4 c8 b4 as8 b8 c4 b4 f2
-  es'2 des2 as'4 fis4 f4 b,8 as8 fis8 as8 b8 c8 d8 c8 b8 as8 fis4 as4 b4
+  es'2 des2 as'4 fis4 f4 b,8 as8 fis8 as8 b8 c8 d8 c8 b8 as8 fis4 as4 b4 \breathe
 
   f'8 es8 d8 c8 b4 f'8 es8
   d8 c8 b4 c4 des8 r8
@@ -371,12 +375,12 @@ Tenor = \relative c, {
 
   % Tenor
   % asztalaikat feldönté
-  e'4 e8 e8 d8 e4. f4 d4 e2
-  e4 e8 e8 d8 e4. g4 d4 e2
-  a4 d,4 e2~4
+  e'4 e8 e8 d8 e4. f4 d4 e2 \breathe
+  e4 e8 e8 d8 e4. g4 d4 e2 \breathe
+  a4 d,4 e2~4 \breathe
 
   | % 109. és kötélböl ostort fonván kihajtá öket a templomból,
-  e,4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 8 g8 a4 g4 d4
+  e,4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 8 g8 a4 g4 d4 \breathe
   a'4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r r4 r
 
   % 127. Vigyétek
@@ -576,7 +580,7 @@ Bass = \relative c {
   % 22. És kötélböl ostort fonván kihajtá öket a templomból,
   d,4 es8 d4 c8 as'4 as4 g4 f4 d'8 c4 g8 f4 es8 f8 g4 f4 c2~c~c8
   h c8 d8 es8 d8 es8 f8 g8 fis8 g8 a8 b8 a8 b8 c8 d4 c4 g2 g,~g8
-  fis8 g8 a8 b8 a8 b8 c8 d8 des8 d8 e8 f8 e8 d4 b'2~b8 a8 g4
+  fis8 g8 a8 b8 a8 b8 c8 d8 des8 d8 e8 f8 e8 d4 b'2~b8 a8 g4 \breathe
 
   % 42. Kavarog a barom, szalad a sok juh,
   d8 e8 fis8 g8 a8 d,4.
@@ -586,16 +590,16 @@ Bass = \relative c {
   g8 a8 h8 c8 d8 g,4.~g8 r8
 
   % 53. És kihajtá a
-  c,4 f2\tenuto b,2\tenuto es2\tenuto d2\tenuto des2\tenuto c2\tenuto b4
+  c,4 f2\tenuto b,2\tenuto es2\tenuto d2\tenuto des2\tenuto c2\tenuto b4 \breathe
 
   % 59. És kötélböl ostort fonván kihajtá öket a templomból,
   b4 des8 c4 b8 fis'4 fis4 f4 es4
-  c'8 b4 f8 es4 des8 es8 f4 es4
-  b8 c8 d8 es8 f4 es4
-  b8 c8 d8 es8 f4
+  c'8 b4 f8 es4 des8 es8 f4 es4 b8 c8 d8 \breathe 
+  es8 f4 es4 b8 c8 d8 es8 f4
 
   % 70. Szalad a sok
-  b,8 c8 d8 es8 f8 fis8 as8 fis8 f4 es4
+  b,8 c8 d8 es8 f8 ges8 
+  as8 ges8 f4 es4 \breathe
 
   | % 75. Kavarog
   es8 f8 g8 as8 b4 es,4 es8 f8 g8 as8 b8 c8 des8 c8 des8 c8 b8 c8 b4
@@ -607,12 +611,12 @@ Bass = \relative c {
   c8. g16 d16 c16 d16 es16 f16 es16 d16 c16 g2 r4 r2 r2*3/2 r2 r
 
   % 98. asztalaikat feldönté.
-  a'4 a8 a8 g8 a4. b4 g4 a2
-  a4 a8 a8 g8 a4. c4 g4 a2
-  d4 g,4 a2~a4
+  a'4 a8 a8 g8 a4. b4 g4 a2 \breathe
+  a4 a8 a8 g8 a4. c4 g4 a2 \breathe
+  d4 g,4 a2~a4 \breathe
 
   | % 110. És kötélböl ostort fonván kihajtá őket a templomból
-  e4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8 g8 a4 g4 d4
+  e4 f8 e4 8 b'4 b4 a4 g4 e'8 d4 a8 g4 f8 g8 a4 g4 d4 \breathe
   a4 b8 a4 g8 es'4 es4 d4 c4 a'8 g4 d8 c4 b8 c8 d4 c4 g2 r r r2*3/2 r2*3/2 r4
 
   % 127 Vigyétek
@@ -626,15 +630,15 @@ Bass = \relative c {
   b8 r8 c8 a4. a4 g4 e4 r
 
   % 147 Rablók
-  e'8 e4.~4 d8 c8 a2 a2
-  d8 d4.~4 c8 b8 g2 g2~1~1
+  e'8 e4.~4 d8 c8 a2 a2 \breathe
+  d8 d4.~4 c8 b8 g2 g2~1~1 \breathe
   g8 g4.~4 f8 es8 c2 c~1~1 r
 
   % Hallván ezt a föpapok és irástudók
   c4 c4 c4 c4 des4. c8 c8 c4. f4 c4 8 c4.c2. r4
   \tuplet 3/2 {c8 c b} a b c8. b16 a8 r
   \tuplet 3/2 {d8 c b} a b c8. b16 a8 r
-  \tuplet 3/2 {b'8 a g} a g a8. g16 \tuplet 3/2 {f8 r
+  \tuplet 3/2 {b'8 a g} a g a8. g16 \tuplet 3/2 {f8 r \breathe
 
   % mert féltek vala töle Mivelhogy az egész nép úgy hallgatá Öt
   c}
