@@ -7,12 +7,13 @@
 global = { \key es \major }
 
 soprano = \relative b { \time 3/4 \partial 8
-  b8 g'8. fis16 g4. as8 g f-5 es c b4 \fermata
+  b8 g'8. fis16 g4. as8 g f-5 es (c) b4 \fermata
   \time 4/4 f'4-3 e8. f16 b4. as8-5 \time 3/4 f g es4.
-  b8 g'8. fis16 g4. as8 g f es c b4 \fermata
+  b8 g'8. fis16 g4. as8 g f es (c) b4 \fermata
   \time 4/4 f'4 e8. f16 b4  as \time 3/4 f8. g16 es4.
-  c8 c8. c16 es8 d c4 \time 4/4 g'8 fis g es c2 r8 g'8 g8. g16 c4 b as g8 b as f4.
-  b,4 g'8. fis16 g4 as \tuplet 3/2 {g4 es c4} b2
+  c8 c8. c16 es8 (d) c4 \time 4/4 g'8 fis g (es) c2 r8 g'8 g8. g16 c4 b as g8
+  b (as) f4.
+  b,4 g'8. fis16 g4 as \tuplet 3/2 {g4 (es) c4} b2
   f'4 e8. f16 b2 b4 b8. b16 b2 as4 f8. g16 es2 \bar "|."
   }
 
@@ -45,42 +46,42 @@ bass = \relative d {
   }
 
 FirstVerse = \lyricmode { \set stanza = #"1."
-Nagy -- asz -- szo -- nyunk, ha -- zánk re -- mé _ -- nye!
+Nagy -- asz -- szo -- nyunk, ha -- zánk re -- mé -- nye!
 Bús nem -- ze -- ted zo -- kog -- va esd!
-Nyújtsd ir -- ga -- lom -- jo -- bod fe -- lé _ -- je,
+Nyújtsd ir -- ga -- lom -- jo -- bod fe -- lé -- je,
 Bot -- lá -- si -- ért, ó, meg ne vesd!
-Mi lesz be -- lő _ -- lünk, hogy -- ha el _ -- hagysz?
-Bús ár -- va -- sá -- gunk sír -- ba her _ -- vaszt!
-Min -- den re -- mé -- nyünk csak _ Te vagy:
+Mi lesz be -- lő -- lünk, hogy -- ha el -- hagysz?
+Bús ár -- va -- sá -- gunk sír -- ba her -- vaszt!
+Min -- den re -- mé -- nyünk csak Te vagy:
 Ó, Szűz -- a -- nyánk, szent Szűz -- a -- nyánk,
 Ó, el ne hagyj!
 }
 
 SecondVerse = \lyricmode { \set stanza = #"2."
-Hoz -- zád sír a job -- bak ke -- ser _ -- ve
+Hoz -- zád sír a job -- bak ke -- ser -- ve
 Jám -- bor csa -- lá -- dok tűz -- he -- lyén!
-A szebb i -- dők u -- tán e -- seng _ -- ve,
+A szebb i -- dők u -- tán e -- seng -- ve,
 Mi -- kor nap ült ha -- zánk e -- gén.
-Ó, ké -- rjed Is -- tent új -- ra ér _ -- tünk;
-Ne hagyd el -- vesz -- ni ár -- va né _ -- pünk!
-Min -- den re -- mé -- nyünk csak _ Te vagy...
+Ó, ké -- rjed Is -- tent új -- ra ér -- tünk;
+Ne hagyd el -- vesz -- ni ár -- va né -- pünk!
+Min -- den re -- mé -- nyünk csak Te vagy...
 }
 
 ThirdVerse = \lyricmode { \set stanza = #"3."
 
-Ol -- tá -- ri -- dat kö -- rül -- zo -- kog _ -- juk
+Ol -- tá -- ri -- dat kö -- rül -- zo -- kog -- juk
 Na -- pon -- ta, ó, mert vét -- ke -- zénk!
-És sír -- va szent Ne -- ved ki -- ált _ -- juk:
+És sír -- va szent Ne -- ved ki -- ált -- juk:
 Szűz Má -- ri -- a, te -- kints fe -- lénk!
-Mu -- tasd meg egy -- szer még e nép _ -- nek,
-Hogy párt -- fo -- gá -- sod mit se -- gít _ -- het!
-Min -- den re -- mé -- nyünk csak _ Te vagy...
+Mu -- tasd meg egy -- szer még e nép -- nek,
+Hogy párt -- fo -- gá -- sod mit se -- gít -- het!
+Min -- den re -- mé -- nyünk csak Te vagy...
 }
 
 #(set-default-paper-size "a4landscape")
 
 \score {
-  % \transpose es f {
+   \transpose es f {
     <<
       \new PianoStaff <<
       \new Staff = "RH" \with {
@@ -102,7 +103,7 @@ Min -- den re -- mé -- nyünk csak _ Te vagy...
     >>
       >>
       >>
-   % }
+       }
 \layout {}
 \midi {}
 }
