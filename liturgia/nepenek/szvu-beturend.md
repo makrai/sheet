@@ -6,7 +6,6 @@
 56. A Golgota-lépcsőn állok (Miseének) \\
 294. Ah, hol vagy (Sz. István királyról) \\
 79. Áhítattal készülődjünk \\ (Miseének Nagycsütörtökre) \\
-79. Áhítattal készülődjünk \\ (Miseének Nagycsütörtökre) \\
 79. Áhítattal készülődjünk  \\ (Miseének Nagycsütörtökre) \\
 62. Ah! Jaj! Mit szemlélek \\
 1. A kereszténységben, hisszük (Mé) \\
@@ -28,10 +27,8 @@
 287. Angyaloknak királynéja \\ (Litánia-parafrázis) \\
 289. Angyaloknak nagyságos Asszonya \\
 7. Áron vesszeje virágzik \\
-7. Áron vesszeje virágzik \\
 49. Árva, bűnös lelkem reszket (Lelkigyakorlatokra, missióra) \\
 19. A szép Szűz Mária \\
-5. Ave María \\
 5. Ave María \\
 16. Az angyal énekel (Miseének) \\
 64. Az Atyának egy fiát \\
@@ -42,7 +39,6 @@
 6. Az Úristen Ádám atyánknak \\
 219. Az Úrnak dobban \\
 219. Az Úrnak dobban (Miseének) \\
-67. Bágyad gyötrelmében \\
 67. Bágyad gyötrelmében \\
 253. Bemegyek szent templomodba (Reggeli ének) \\
 284. Boldogasszony Anyánk \\
@@ -71,14 +67,11 @@
 114. Égből szállott szent kenyér \\
 285. Egek ékessége \\
 42. Égi lakomára készüljünk (Miseének) \\
-42. Égi lakomára készüljünk (Miseének) \\
 221. Egybegyűltünk, ó nagy Isten (Mé) \\
 238. Élők, holtak szent Istene \\
 143. Előtted, Jézusom, leborulok \\
 239. Én esendő, árva lélek \\
 81. Én nemzetem (Nagypéntekre) \\
-81. Én nemzetem (Nagypéntekre) \\
-80. E szín alatt (Nagycsütörtökre) \\
 80. E szín alatt (Nagycsütörtökre) \\
 112. Ez nagy Szentség valóban \\
 22. Ez nap nékünk dícséretes nap \\
@@ -90,7 +83,6 @@
 87. Föltámadt Krisztus \\
 216. Föltekintünk (Páduai Szt. Antalról) \\
 222. Futva jöttem elibéd (Miseének) \\
-94. Galileai férfiak \\
 94. Galileai férfiak \\
 290. Gyászba borult \\
 280A. Gyermekszívek \\
@@ -105,7 +97,6 @@
 2. Harmatozzatok (Miseének) \\
 60. Hogyha hozzád járulunk (Miseének) \\
 275. Hol szent Péter (Pápai himnusz) \\
-68. Hol vagy, édes Jézus \\
 68. Hol vagy, édes Jézus \\
 146. Hol vagy én szerelmes Jézus Krisztusom \\
 181. Hozzád futok bánatommal \\
@@ -147,7 +138,6 @@
 71. Keresztények, sírjatok \\
 182. Keserű gondok \\
 72. Keservesen siratja \\
-72. Keservesen siratja \\
 211. Két oszlopa igazságnak (Szt. Péterről és Szt. Pálról) \\
 229. Kezdődik az ének \\
 229. Kezdődik az ének (Miseének) \\
@@ -155,11 +145,9 @@
 163. Ki negyven nap előtt (Gyertyaszentelő, február 2.) \\
 241. Ki ragyogni látod \\
 82. Királyi zászló jár elől (Nagypéntekre) \\
-82. Királyi zászló jár elől (Nagypéntekre) \\
 204. Királynéja az egeknek  (Gyertyaszentelőtől a nagyhét közepéig) \\
 53. Könyörülj, Istenem \\ (Könyörgő körmenetre, missióra, lelkigyakorlatokra) \\
 95. Krisztus a mennybe fölmene \\
-73. Krisztus Anyja, Szűz Mária \\
 73. Krisztus Anyja, Szűz Mária \\
 88. Krisztus feltámadott! Halljátok meg \\
 84. Krisztus feltámadott, üljük meg (Mé) \\
@@ -176,7 +164,6 @@
 184. Mária, édes Szűzanya \\
 165. Mária kis hajlékában \\ (Gyümölcsoltó, március 25.) \\
 185. Mária, Szűzanya (Mária Szívéről) \\
-185. Mária, Szűzanya (Mária Szívéről) \\
 10. Mária, szűz virág \\
 161. Máriát dícsérje lelkünk (Szeplőtelen Fogantatásra, dec. 8.) \\
 292. Máriát dícsérni \\
@@ -190,14 +177,11 @@
 265. Menny, föld, tűz (Megnyugvás Istenben) \\
 205. Mennynek Királyné Asszonya  \\ (Nagyszombattól pünkösd utáni szombatig) \\
 12. Mennyországi fényes hajnal \\
-12. Mennyországi fényes hajnal \\
 206. Mennyországnak Királynéja, Alleluja  (Nagyszombattól pünkösd utáni szombatig) \\
 203. Mennyországnak Királynéja, angyaloknak (Gyertyaszentelőtől a nagyhét közepéig) \\
 207. Mennyországnak Királynéja, irgalmasságnak  (Szentháromság vasárnapjától advent előtti szombatig) \\
 243. Ments meg engem, Uram \\
-243. Ments meg engem, Uram \\
 120. Menyegzős köntösbe \\
-305. Mért feledkezel el (Könyörgés Krisztus-Királyhoz) \\
 305. Mért feledkezel el (Könyörgés Krisztus-Királyhoz) \\
 26. Midőn a Szűz Magzatát \\
 256. Mikor reggel lelkem (Reggeli ének) \\
@@ -235,15 +219,12 @@
 192. Ó dicsőséges, ó ékességes \\
 298. Ó dicsőséges szent Jobbkéz (A Szent Jobbról) \\
 193. Ó dicsőült szép kincs \\
-193. Ó dicsőült szép kincs \\
 159. Ó édes Jézus, ég és föld (Krisztus-Királyról) \\
 247. Ó édes Megváltóm \\
 245. Ó egeknek Királynéja (Mária-ének) \\
 246. Ó emberi gyarló nemzetség \\
-246. Ó emberi gyarló nemzetség \\
 149. Ó én Jézusom, hol merre jársz-kelsz \\
 248. Ó értem vért ontott \\
-11. Ó, fényességes szép hajnal \\
 11. Ó, fényességes szép hajnal \\
 29. Ó, gyönyörűszép titokzatos éj \\
 152. Ó Jézus, emlékezni rád (Jézus szent Nevéről) \\
@@ -253,7 +234,6 @@
 172. Ó, Mária, drága név (Mária névnapjára, szeptember 12.) \\
 194. Ó Mária szent Szíve (Mária Szívéről) \\
 249. Ó Megváltó, kegyes Jézus \\
-14. Ó, nemes, ékes \\
 14. Ó, nemes, ékes \\
 250. Ó örök fény napja \\
 31. Örülj, te boldog Betlehem \\
@@ -317,12 +297,10 @@
 15. Üdvözlégy, ó drága vendég (Mé) \\
 136. Üdvözlégy Oltáriszentség \\
 197. Üdvözlégy, ó szép mennyek \\
-197. Üdvözlégy, ó szép mennyek \\
 282. Üdvözlégy, szent orvosunk (Krisztus-Királyról) \\
 137. Üdvözlégy, szent test \\
 138. Üdvözlégy, szép rózsa \\
 140. Üdvözlégy, üdvösséges Ostya \\
-263. Uram, hiszlek (Hit, remény, szeretet) \\
 263. Uram, hiszlek (Hit, remény, szeretet) \\
 199. Uram,\dots (b lorettói litánia) \\
 200. Uram,\dots (c lorettói litánia) \\
