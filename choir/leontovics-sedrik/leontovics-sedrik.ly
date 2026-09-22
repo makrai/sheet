@@ -1,4 +1,4 @@
-\version "2.14.0"
+\version "2.23.0"
 \language "deutsch"
 
 TimeAndTempo = {
@@ -10,7 +10,42 @@ Key = {
   \time 3/4
  }
 
-SopranoLyrics = \lyricmode {Sop -- ra -- no ly -- rics}
+SopranoLyricsOne = \lyricmode {
+  Ще -- дрик, ще -- дрик, ще -- дрі -- воч -- ка,
+    При -- ле -- ті -- ла лас -- ті -- воч -- ка,
+    Ста -- ла со -- бі ще -- бе -- та -- ти,
+    Гос -- по -- да -- ря ви -- кли -- ка -- ти.
+      Вий -- ди, вий -- ди, гос -- по -- да -- рю,
+    По -- ди -- ви -- ся на ко -- ша -- ру.
+      Там о -- веч -- ки по -- ко -- ти -- лись,
+    А яг -- нич -- ки на -- ро -- ди -- лись.
+      В те -- бе то -- вар весь хо -- ро -- ший,
+    Бу -- деш ма -- ти мір -- ку гро -- шей,
+    Хоч не гро -- ші, то по -- ло -- ва,
+    В те -- бе жін -- ка чор -- но -- бро -- ва.
+      Хоч не гро -- ші, то по -- ло -- ва,
+    В те -- бе жін -- ка чор -- но -- бро -- ва.
+}
+
+SopranoLyricsTwo = \lyricmode {
+% Shchedryk lyrics, Hungarian phonetic transliteration
+% Note: syllable-to-note mapping should be checked against the actual score
+  Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
+  Pri -- le -- ti -- la lasz -- ti -- vocs -- ka,
+  Szta -- la szo -- bi scse -- be -- ta -- ti,
+  Hosz -- po -- da -- rja vik -- li -- ka -- ti:
+  Vij -- di, vij -- di, hosz -- po -- da -- rju,
+  Po -- di -- vi -- sza na ko -- sa -- ru,
+  Tam o -- vecs -- ki po -- ko -- ti -- lisz,
+  A jah -- nyics -- ki na -- ro -- di -- lisz.
+  V te -- be to -- var vesz ho -- ro -- sij,
+  Bu -- des ma -- ti mir -- ku hro -- sej,
+  Hocs ne hro -- si, to po -- lo -- va,
+  V te -- be zsin -- ka csor -- no -- bro -- va,
+  Hocs ne hro -- si, to po -- lo -- va,
+  V te -- be zsin -- ka csor -- no -- bro -- va.
+} 
+
 AltoLyrics = \lyricmode {Al -- to ly -- rics}
 TenorLyrics = \lyricmode {Te -- nor ly -- rics}
 BassLyrics = \lyricmode {Bass ly -- rics}
@@ -26,6 +61,7 @@ SopranoMusic = \relative g' {
     g'4 8 8 f(es) d4 8 8 c(b) c4 8 8 d(c) g4 8 8 4
       \repeat unfold 2 {d8 (e fis g s b) c(d) c4 b}
     \repeat unfold 4 {b4 a8 b8 g4}
+    }
     % 33
       \alternative {
         \volta 1 {b4 a8 b8 g4}
