@@ -6,7 +6,7 @@ TimeAndTempo = {
  }
 
 Key = {
-  \key g \minor 
+  \key g \minor
   \time 3/4
  }
 
@@ -19,36 +19,86 @@ SopranoLyricsOne = \lyricmode {
     По -- ди -- ви -- ся на ко -- ша -- ру.
       Там о -- веч -- ки по -- ко -- ти -- лись,
     А яг -- нич -- ки на -- ро -- ди -- лись.
-      В те -- бе то -- вар весь хо -- ро -- ший,
+      В_те -- бе то -- вар весь хо -- ро -- ший,
     Бу -- деш ма -- ти мір -- ку гро -- шей,
-    Хоч не гро -- ші, то по -- ло -- ва,
-    В те -- бе жін -- ка чор -- но -- бро -- ва.
+    % Хоч не гро -- ші, то по -- ло -- ва,
+    В_те -- бе жін -- ка чор -- но -- бро -- ва.
       Хоч не гро -- ші, то по -- ло -- ва,
-    В те -- бе жін -- ка чор -- но -- бро -- ва.
+    В_те -- бе жін -- ка чор -- но -- бро -- ва.
+
+  Ще -- дрик, ще -- дрик,
+  M лас -- ті -- воч -- ка,
 }
 
 SopranoLyricsTwo = \lyricmode {
-% Shchedryk lyrics, Hungarian phonetic transliteration
-% Note: syllable-to-note mapping should be checked against the actual score
-  Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
-  Pri -- le -- ti -- la lasz -- ti -- vocs -- ka,
-  Szta -- la szo -- bi scse -- be -- ta -- ti,
-  Hosz -- po -- da -- rja vik -- li -- ka -- ti:
-  Vij -- di, vij -- di, hosz -- po -- da -- rju,
-  Po -- di -- vi -- sza na ko -- sa -- ru,
-  Tam o -- vecs -- ki po -- ko -- ti -- lisz,
-  A jah -- nyics -- ki na -- ro -- di -- lisz.
-  V te -- be to -- var vesz ho -- ro -- sij,
-  Bu -- des ma -- ti mir -- ku hro -- sej,
-  Hocs ne hro -- si, to po -- lo -- va,
-  V te -- be zsin -- ka csor -- no -- bro -- va,
-  Hocs ne hro -- si, to po -- lo -- va,
-  V te -- be zsin -- ka csor -- no -- bro -- va.
-} 
+  Scse -- drik, scse -- drik, scse -- dr'i -- vocs -- ka,
+       Pri -- le -- tyí -- la lasz -- tyi -- vocs -- ka,
+       Szta -- la szo -- b'i scse -- be -- ta -- ti,
+       Hosz -- po -- da -- r'a vik -- li -- ka -- ti.
+         Vij -- di, vij -- di, hosz -- po -- da -- r'u,
+       Po -- di -- vi -- sz'a na ko -- sa -- ru.
+         Tam o -- vecs -- ki po -- ko -- ti -- lisz',
+       A jah -- nyics -- ki na -- ro -- di -- lisz'.
+         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+         % Hocs ne hro -- si, to po -- lo -- va,
+       V_te -- be zsin -- ka csor -- no -- bro -- va.
+         Hocs ne hro -- si, to po -- lo -- va,
+       V_te -- be zsin -- ka csor -- no -- bro -- va.
 
-AltoLyrics = \lyricmode {Al -- to ly -- rics}
-TenorLyrics = \lyricmode {Te -- nor ly -- rics}
-BassLyrics = \lyricmode {Bass ly -- rics}
+  Scse -- drik, scse -- drik,
+  M lasz -- tyi -- vocs -- ka.
+}
+
+AltoLyrics = \lyricmode {
+       Szta -- la szo -- b'i scse -- be -- ta -- ti,
+         Tam o -- vecs -- ki po -- ko -- ti -- lisz',
+       A jah -- nyics -- ki na -- ro -- di -- lisz'.
+         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+       V_te -- be zsin -- ka csor -- no -- bro -- va.
+       M m lasz -- tyi -- vocs -- ka.
+}
+
+TenorLyricsOne = \lyricmode {
+  % ще -- бе -- та -- ти,
+    % Там о -- веч -- ки по -- ко -- ти -- лись,
+    % А яг -- нич -- ки на -- ро -- ди -- лись.
+ % В_те --
+    _ _ _ _
+    _ _ _ _ _ _ _ _
+    _ _ _ _ _ _ _ _
+    _
+ бе то -- вар % весь
+      хо -- ро -- ший,
+      В_те -- бе то -- вар весь хо -- ро -- ший,
+    Бу -- деш ма -- ти мір -- ку гро -- шей,
+    Хоч не гро -- ші, то по -- ло -- ва,
+    В_те -- бе жін -- ка чор -- но -- бро -- ва.
+}
+
+TenorLyricsTwo = \lyricmode {
+  scse -- be -- ta -- ti,
+       Tam o -- vecs -- ki po -- ko -- ti -- lisz',
+       A jah -- nyics -- ki na -- ro -- di -- lisz'.
+         V_te -- be to -- var % vesz'
+         ho -- ro -- sij,
+       V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+       Hocs ne hro -- si, to po -- lo -- va,
+       V_te -- be zsin -- ka csor -- no -- bro -- va.
+         M
+         Scse -- drik, scse -- drik, scse -- dr'i -- vocs -- ka,
+       Pri -- le -- tyí -- la
+}
+
+BassLyrics = \lyricmode {
+  Tam o -- vecs -- ki po -- ko -- ti -- lisz',
+      A jah -- nyics -- ki na -- ro -- di -- lisz'.
+        V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+      V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+      % Hocs ne hro -- si, to po -- lo -- va,
+      V_te -- be zsin -- ka M m
+}
 % PianoRHMusic = \relative {c' e g c}
 % PianoDynamics = {s2\mp s4 s4}
 % PianoLHMusic = \relative {c e g c}
