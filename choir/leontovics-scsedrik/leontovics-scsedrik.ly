@@ -1,14 +1,16 @@
 \version "2.23.0"
 \language "deutsch"
 
-TimeAndTempo = {
-  \tempo "Allegretto"
- }
+\header {
+  title = "Scsedrik"
+    composer = "Mikola Leontovics"
+}
+
 
 Key = {
   \key g \minor
-  \time 3/4
- }
+    \time 3/4
+}
 
 SopranoLyricsOne = \lyricmode {
   Ще -- дрик, ще -- дрик, ще -- дрі -- воч -- ка,
@@ -104,80 +106,105 @@ BassLyrics = \lyricmode {
 % PianoLHMusic = \relative {c e g c}
 
 SopranoMusic = \relative g' {
-    b4 a8 b8 g4
-  \repeat volta 2 {
-    \repeat unfold 15 {b4 a8 b8 g4}
-    \repeat unfold 4 {d'4 c8 d b4}
-    g'4 8 8 f(es) d4 8 8 c(b) c4 8 8 d(c) g4 8 8 4
-      \repeat unfold 2 {d8 (e fis g s b) c(d) c4 b}
-    \repeat unfold 4 {b4 a8 b8 g4}
+  \tempo "Allegretto"
+    b4->\mf a8 b8 g4\tenuto
+    \repeat volta 2 {
+      b4-> a8 b8 g4\tenuto
+        b4->\pp a8 b8 g4\tenuto
+        b4^\markup{\italic simile} a8 b8 g4
+
+        b4\cresc a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4
+        b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4\!
+        b4\mp a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4
+
+        d'4\mf c8 d b4 d4\< c8 d b4 d4 c8 d b4 d4 c8 d b4\!
+
+        g'4\f 8 8 f(es) d4 8 8 c(b) c4 8 8 d(c) g4\dim 8 8 4
+        d8\mf\< (e fis g a b)\! c\>(d) c4 b\!
+        d,8\pp\< (e fis g a b)\! c\>(d) c4 b\!
+        b4\mp\dim a8 b8 g4
+        b4 a8 b8 g4
+        b4 a8 b8 g4
+        b4 a8 b8 g4\!
     }
-    % 33
-      \alternative {
-        \volta 1 {b4 a8 b8 g4}
-        \volta 2 {g2.~g~g d'4 c8 d g, r }
-      }
-  }
+  % 33
+    \alternative {
+      \volta 1 {b4\mf a8 b8 g4}
+      \volta 2 {g2.~g~g d'4-> \tempo "rit." c8 d g,\noBeam r }
+    }
+  \bar "|."
 }
 
 AltoMusic = \relative g' {
   r2.
-  \repeat volta 2 {
-    \repeat unfold 3 {r2.}
-    \repeat unfold 2 {g2. f es d}
-    % 13
-      \repeat unfold 4 {g4 8 8 4}
-    % 17
-      \repeat unfold 4 {b4 a8 b g4}
-    % 21
-      \repeat unfold 4 {g4 8 8 4}
-    % 25
-      \repeat unfold 2 {d2. e4 fis g}
-    % 29
-      d2.(c f es
-      \alternative {
-        \volta 1{d2) r4}
-      \volta 2{d2.~d~d b'4 a8 b g r }
-      }
-  }
+    \repeat volta 2 {
+      \repeat unfold 3 {r2.}
+      g2.\pp f es d
+        g2.\p f es d
+        % 13
+        g4\mp 8 8 4 g4 8 8 4 g4 8 8 4 g4 8 8 4
+        % 17
+        b4\mf a8 b g4 b4\< a8 b g4 b4 a8 b g4 b4 a8 b g4\!
+        % 21
+        g4\f 8 8 4 g4 8 8 4 g4 8 8 4 g4\dim 8 8 4\!
+        % 25
+        d2.\mf e4 fis g
+        d2.\pp e4 fis g
+        % 29
+        d2.\mp(c f es
+            \alternative {
+            \volta 1{d2) r4}
+        \volta 2{d2.~d~d b'4-> a8 b g r }
+            }
+    }
+  \bar "|."
 }
 
 TenorMusic = \relative es' {
   r2.
-  \repeat volta 2 {
-    \repeat unfold 7 {r2.}
-    es2. d c g
-      % 13
-      c4 8 8 4 d4 8 8 4 es4 8 8 4 d4 8 8 4
-      d2. e f4(es) d g8(f) es4 d
-      % 21
-      d4 es8 es d(c) d4 8 8 4 es4 8 8 f(es) d4 8 8 4
-      % 25
-      \repeat unfold 4 {b4 a8 b8 g4}
-    g2.~g~g~g~
-      \alternative {
-        \volta 1{g2 r4}
-        \volta 2{\repeat unfold 3{b4 a8 b8 g4} r2.}
-      }
-  }
+    \repeat volta 2 {
+      \repeat unfold 7 {r2.}
+      es2.\p d c g
+        % 13
+        c4\mp 8 8 4 d4 8 8 4 es4 8 8 4 d4 8 8 4
+        d2.\mf e\< f4(es) d g8(f) es4 d\!
+        % 21
+        d4\f es8 es d(c) d4 8 8 4 es4 8 8 f(es) d4\dim 8 8 4\!
+        % 25
+        b4\mf\< a8 b8 g4\!  b4\> a8 b8 g4\!
+        b4\pp\< a8 b8 g4\!  b4\> a8 b8 g4\!
+        g2.\mp~g~g~g~
+        \alternative {
+          \volta 1{g2 r4}
+          \volta 2{\repeat unfold 3{b4 a8 b8 g4} r2.}
+        }
+    }
+  \bar "|."
 }
 
 BassMusic = \relative es {
   r2.
-  \repeat volta 2 {
-    \repeat unfold 11 {r2.}
-    es4 8 8 4
-      g4 8 8 4
-      c4 8 8 4
-      g4 8 8 4
-      \repeat unfold 4 {g4 8 8 4}
-    \repeat unfold 4 {b4 a8 b8 g4}
-    d2. d d~d2 es4 g2.~g~g~g~
-      \alternative {
-        \volta 1{g2 r4}
-        \volta 2{g2.~g~g r}
-      }
-  }
+    \repeat volta 2 {
+      \repeat unfold 11 {r2.}
+      es4\mp 8 8 4
+        g4 8 8 4
+        c4 8 8 4
+        g4 8 8 4
+        g4\mf 8 8 4
+        g4\< 8 8 4
+        g4 8 8 4
+        g4 8 8 4\!
+        b4->\f a8-> b8-> g4->\tenuto
+        b4^\markup{\italic simile} a8 b8 g4
+        b4 a8 b8 g4
+        b4\dim a8 b8 g4\!
+        d2.\mf d d\pp~d2 es4 g2.\mp~g~g~g~
+        \alternative {
+          \volta 1{g2 r4}
+          \volta 2{g2.~g~g r}
+        }
+    }
+  \bar "|."
 }
 
 \include "satb.ly"
