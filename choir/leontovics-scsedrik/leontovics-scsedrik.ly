@@ -34,7 +34,7 @@ SopranoLyricsOne = \lyricmode {
 
 SopranoLyricsTwo = \lyricmode {
   Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
-       Pri -- le -- tyí -- la lasz -- tyi -- vocs -- ka,
+       Pri -- le -- tyi -- la lasz -- tyi -- vocs -- ka,
        Szta -- la szo -- bi scse -- be -- ta -- ti,
        Hosz -- po -- da -- ra vik -- li -- ka -- ti.
          Vij -- di, vij -- di, hosz -- po -- da -- ru,
@@ -90,7 +90,7 @@ TenorLyricsTwo = \lyricmode {
        V_te -- be zsin -- ka csor -- no -- bro -- va.
          M
          Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
-       Pri -- le -- tyí -- la
+       Pri -- le -- tyi -- la
 }
 
 BassLyrics = \lyricmode {
