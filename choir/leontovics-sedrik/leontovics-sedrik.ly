@@ -31,16 +31,16 @@ SopranoLyricsOne = \lyricmode {
 }
 
 SopranoLyricsTwo = \lyricmode {
-  Scse -- drik, scse -- drik, scse -- dr'i -- vocs -- ka,
+  Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
        Pri -- le -- tyí -- la lasz -- tyi -- vocs -- ka,
-       Szta -- la szo -- b'i scse -- be -- ta -- ti,
-       Hosz -- po -- da -- r'a vik -- li -- ka -- ti.
-         Vij -- di, vij -- di, hosz -- po -- da -- r'u,
-       Po -- di -- vi -- sz'a na ko -- sa -- ru.
-         Tam o -- vecs -- ki po -- ko -- ti -- lisz',
-       A jah -- nyics -- ki na -- ro -- di -- lisz'.
-         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
-         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+       Szta -- la szo -- bi scse -- be -- ta -- ti,
+       Hosz -- po -- da -- ra vik -- li -- ka -- ti.
+         Vij -- di, vij -- di, hosz -- po -- da -- ru,
+       Po -- di -- vi -- sza na ko -- sa -- ru.
+         Tam o -- vecs -- ki po -- ko -- ti -- lisz,
+       A jah -- nyics -- ki na -- ro -- di -- lisz.
+         V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
+         V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
          % Hocs ne hro -- si, to po -- lo -- va,
        V_te -- be zsin -- ka csor -- no -- bro -- va.
          Hocs ne hro -- si, to po -- lo -- va,
@@ -51,11 +51,11 @@ SopranoLyricsTwo = \lyricmode {
 }
 
 AltoLyrics = \lyricmode {
-       Szta -- la szo -- b'i scse -- be -- ta -- ti,
-         Tam o -- vecs -- ki po -- ko -- ti -- lisz',
-       A jah -- nyics -- ki na -- ro -- di -- lisz'.
-         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
-         V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+       Szta -- la szo -- bi scse -- be -- ta -- ti,
+         Tam o -- vecs -- ki po -- ko -- ti -- lisz,
+       A jah -- nyics -- ki na -- ro -- di -- lisz.
+         V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
+         V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
        V_te -- be zsin -- ka csor -- no -- bro -- va.
        M m lasz -- tyi -- vocs -- ka.
 }
@@ -79,23 +79,23 @@ TenorLyricsOne = \lyricmode {
 
 TenorLyricsTwo = \lyricmode {
   scse -- be -- ta -- ti,
-       Tam o -- vecs -- ki po -- ko -- ti -- lisz',
-       A jah -- nyics -- ki na -- ro -- di -- lisz'.
-         V_te -- be to -- var % vesz'
+       Tam o -- vecs -- ki po -- ko -- ti -- lisz,
+       A jah -- nyics -- ki na -- ro -- di -- lisz.
+         V_te -- be to -- var % vesz
          ho -- ro -- sij,
-       V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+       V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
        Hocs ne hro -- si, to po -- lo -- va,
        V_te -- be zsin -- ka csor -- no -- bro -- va.
          M
-         Scse -- drik, scse -- drik, scse -- dr'i -- vocs -- ka,
+         Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
        Pri -- le -- tyí -- la
 }
 
 BassLyrics = \lyricmode {
-  Tam o -- vecs -- ki po -- ko -- ti -- lisz',
-      A jah -- nyics -- ki na -- ro -- di -- lisz'.
-        V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
-      V_te -- be to -- var vesz' ho -- ro -- sij, Bu -- des ma -- ti m'ir -- ku hro -- sej,
+  Tam o -- vecs -- ki po -- ko -- ti -- lisz,
+      A jah -- nyics -- ki na -- ro -- di -- lisz.
+        V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
+      V_te -- be to -- var vesz ho -- ro -- sij, Bu -- des ma -- ti mir -- ku hro -- sej,
       % Hocs ne hro -- si, to po -- lo -- va,
       V_te -- be zsin -- ka M m
 }
