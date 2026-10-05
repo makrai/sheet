@@ -37,8 +37,8 @@ SopranoLyricsTwo = \lyricmode {
   Scse -- drik, scse -- drik, scse -- dri -- vocs -- ka,
        Pri -- le -- tyi -- la lasz -- tyi -- vocs -- ka,
        Szta -- la szo -- bi scse -- be -- ta -- ti,
-       Hosz -- po -- da -- ra vik -- li -- ka -- ti.
-         Vij -- di, vij -- di, hosz -- po -- da -- ru,
+       Hosz -- po -- da -- rja vik -- li -- ka -- ti.
+         Vij -- di, vij -- di, hosz -- po -- da -- rju,
        Po -- di -- vi -- sza na ko -- sa -- ru.
          Tam o -- vecs -- ki po -- ko -- ti -- lisz,
        A jah -- nyics -- ki na -- ro -- di -- lisz.
@@ -108,14 +108,16 @@ BassLyrics = \lyricmode {
 
 SopranoMusic = \relative g' {
   \tempo "Allegretto"
+  \textMark "Solo"
     b4->\mf a8 b8 g4\tenuto
     \repeat volta 2 {
       b4-> a8 b8 g4\tenuto
+      \textMark "Tutti"
         b4->\pp a8 b8 g4\tenuto
         b4^\markup{\italic simile} a8 b8 g4
 
-        b4\cresc a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4
-        b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4\!
+        b4\cresc a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4\!
+        b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4
         b4\mp a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4 b4 a8 b8 g4
 
         d'4\mf c8 d b4 d4\< c8 d b4 d4 c8 d b4 d4 c8 d b4\!
@@ -130,8 +132,8 @@ SopranoMusic = \relative g' {
     }
   % 33
     \alternative {
-      \volta 1 {b4\mf a8 b8 g4}
-      \volta 2 {g2.~g~g d'4-> \tempo "rit." c8 d g,\noBeam r }
+      \volta 1 {\textMark "Solo" b4\mf a8 b8 g4}
+      \volta 2 {g2.~g~g \textMark "Solo" d'4-> \tempo "rit." c8 d g,\noBeam r }
     }
   \bar "|."
 }
@@ -199,10 +201,10 @@ BassMusic = \relative es {
         b4^\markup{\italic simile} a8 b8 g4
         b4 a8 b8 g4
         b4\dim a8 b8 g4\!
-        d2.\mf d d\pp~d2 es4 g2.\mp~g~g~g~
+        d2.\mf d d\pp~d2 es4 f2.\mp(es d c
         \alternative {
-          \volta 1{g2 r4}
-          \volta 2{g2.~g~g r}
+          \volta 1{g2) r4}
+          \volta 2{g'2.~g~g r}
         }
     }
   \bar "|."
